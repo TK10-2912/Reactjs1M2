@@ -16,11 +16,11 @@ const BestSellers = () => {
         <Product
           _id="1011"
           img={bestSellerOne}
-          productName="Flower Base"
-          price="35.00"
-          color="Blank and White"
+          productName="Laptop gaming Lenovo LOQ 15IAX9"
+          price="20.490.000đ"
+          currentPrice="18.990.000đ"
           badge={true}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+          des="Laptop siuuu rẻ"
         />
         <Product
           _id="1012"

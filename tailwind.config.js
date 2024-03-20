@@ -26,6 +26,7 @@ module.exports = {
       colors: {
         primeColor: "#262626",
         lightText: "#6D6D6D",
+        Discounts:"#ff0000"
       },
       boxShadow: {
         testShadow: "0px 0px 54px -13px rgba(0,0,0,0.7)",
