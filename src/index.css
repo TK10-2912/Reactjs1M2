@@ -14,7 +14,7 @@
 }
 
 /* ============= NavLink active Start here ============== */
-nav .active li {
+/* nav .active li {
   color: black;
   font-weight: 600;
   text-decoration: 1px underline black;
@@ -30,5 +30,5 @@ nav .active li {
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
-}
+} */
 /* ============= NavLink active End here ================ */
