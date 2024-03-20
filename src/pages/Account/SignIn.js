@@ -29,6 +29,7 @@ const SignIn = () => {
   const handleSignUp = (e) => {
     e.preventDefault();
 
+	
     if (!email) {
       setErrEmail("Enter your email");
     }
