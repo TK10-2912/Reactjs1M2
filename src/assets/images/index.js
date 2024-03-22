@@ -75,6 +75,52 @@ import ricoh5 from "../images/products/imprimante/ricoh5.webp";
 import espson1 from "../images/products/imprimante/espson1.webp";
 import espson2 from "../images/products/imprimante/espson2.webp";
 
+// Card
+import product_card_1 from "../images/products/card/product_card_1.jpg";
+import product_card_2 from "../images/products/card/product_card_2.jpg";
+import product_card_3 from "../images/products/card/product_card_3.jpg";
+import product_card_4 from "../images/products/card/product_card_4.jpg";
+import product_card_5 from "../images/products/card/product_card_5.jpg";
+import product_card_6 from "../images/products/card/product_card_6.jpg";
+import product_card_7 from "../images/products/card/product_card_7.jpg";
+import product_card_8 from "../images/products/card/product_card_8.jpg";
+import product_card_9 from "../images/products/card/product_card_9.jpg";
+import product_card_10 from "../images/products/card/product_card_10.jpg";
+//Case
+import product_case_1 from "../images/products/case/product_case_1.jpg";
+import product_case_2 from "../images/products/case/product_case_2.jpg";
+import product_case_3 from "../images/products/case/product_case_3.jpg";
+import product_case_4 from "../images/products/case/product_case_4.jpg";
+import product_case_5 from "../images/products/case/product_case_5.jpg";
+import product_case_6 from "../images/products/case/product_case_6.jpg";
+import product_case_7 from "../images/products/case/product_case_7.jpg";
+import product_case_8 from "../images/products/case/product_case_8.jpg";
+import product_case_9 from "../images/products/case/product_case_9.jpg";
+import product_case_10 from "../images/products/case/product_case_10.jpg";
+import product_case_11 from "../images/products/case/product_case_11.jpg";
+import product_case_12 from "../images/products/case/product_case_12.jpg";
+//Chair
+import product_chair_1 from "../images/products/chair/product_chair_1.jpg";
+import product_chair_2 from "../images/products/chair/product_chair_2.jpg";
+import product_chair_3 from "../images/products/chair/product_chair_3.jpg";
+import product_chair_4 from "../images/products/chair/product_chair_4.jpg";
+import product_chair_5 from "../images/products/chair/product_chair_5.jpg";
+//laptop
+import product_laptop_1 from "../images/products/laptop/product_laptop_1.jpg";
+import product_laptop_2 from "../images/products/laptop/product_laptop_2.jpg";
+import product_laptop_3 from "../images/products/laptop/product_laptop_3.jpg";
+import product_laptop_4 from "../images/products/laptop/product_laptop_4.jpg";
+import product_laptop_5 from "../images/products/laptop/product_laptop_5.jpg";
+import product_laptop_6 from "../images/products/laptop/product_laptop_6.jpg";
+import product_laptop_7 from "../images/products/laptop/product_laptop_7.jpg";
+//Screen
+import product_screen_1 from "../images/products/screen/product_screen_1.jpg";
+import product_screen_2 from "../images/products/screen/product_screen_2.jpg";
+import product_screen_3 from "../images/products/screen/product_screen_3.jpg";
+import product_screen_4 from "../images/products/screen/product_screen_4.jpg";
+import product_screen_5 from "../images/products/screen/product_screen_5.jpg";
+import product_screen_6 from "../images/products/screen/product_screen_6.jpg";
+
 export {
   logo,
   logoLight,
@@ -154,4 +200,51 @@ export {
   ricoh5,
   espson1,
   espson2,
+
+  // Card
+  product_card_1,
+product_card_2,
+product_card_3,
+product_card_4,
+product_card_5,
+product_card_6,
+product_card_7,
+product_card_8,
+product_card_9,
+product_card_10,
+//Case
+product_case_1,
+product_case_2,
+product_case_3,
+product_case_4,
+product_case_5,
+product_case_6,
+product_case_7,
+product_case_8,
+product_case_9,
+product_case_10,
+product_case_11,
+product_case_12,
+
+//Chair
+product_chair_1,
+product_chair_2,
+product_chair_3,
+product_chair_4,
+product_chair_5,
+//Laptop
+product_laptop_1,
+product_laptop_2,
+product_laptop_3,
+product_laptop_4,
+product_laptop_5,
+product_laptop_6,
+product_laptop_7,
+//Screen
+product_screen_1,
+product_screen_2,
+product_screen_3,
+product_screen_4,
+product_screen_5,
+product_screen_6,
 };

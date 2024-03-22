@@ -6,6 +6,7 @@ import {
   Route,
   ScrollRestoration,
 } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
 import Footer from "./components/home/Footer/Footer";
 import FooterBottom from "./components/home/Footer/FooterBottom";
 import Header from "./components/home/Header/Header";
@@ -24,7 +25,7 @@ import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import Shop from "./pages/Shop/Shop";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import { FaArrowUp } from 'react-icons/fa';
 const Layout = () => {
   return (
     <div>
@@ -71,11 +72,38 @@ const router = createBrowserRouter(
     </Route>
   )
 );
+const App=()=> {
+  const [showButton, setShowButton] = useState(false);
 
-function App() {
+  const handleScroll = () => {
+    if (window.scrollY > 300) {
+      setShowButton(true);
+    } else {
+      setShowButton(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
     <div className="font-bodyFont">
       <RouterProvider router={router} />
+      <div className="flex flex-col justify-between">
+        {showButton && (
+          <button
+            className="fixed bottom-4 right-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onClick={scrollToTop}
+          >
+            <FaArrowUp />
+          </button>
+        )}
+      </div>
     </div>
   );
 }
