@@ -1,51 +1,31 @@
-import React, { useState } from "react";
-import { BsCheckCircleFill } from "react-icons/bs";
-import { Link } from "react-router-dom";
-import { logoLight } from "../../assets/images";
+import React, { useState, } from "react";
+import { Link,useNavigate } from "react-router-dom";
+import { Navigate   } from "react-router-dom";
 import Header from "../../components/home/Header/Header";
 import Footer from "../../components/home/Footer/Footer";
+import { message } from "antd";
 
 const SignIn = () => {
   // ============= Initial State Start here =============
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // ============= Initial State End here ===============
-  // ============= Error Msg Start here =================
-  const [errEmail, setErrEmail] = useState("");
-  const [errPassword, setErrPassword] = useState("");
-
-  // ============= Error Msg End here ===================
-  const [successMsg, setSuccessMsg] = useState("");
-  // ============= Event Handler Start here =============
-  const handleEmail = (e) => {
-    setEmail(e.target.value);
-    setErrEmail("");
-  };
-  const handlePassword = (e) => {
-    setPassword(e.target.value);
-    setErrPassword("");
-  };
-  // ============= Event Handler End here ===============
-  const handleSignUp = (e) => {
-    e.preventDefault();
-
-	
-    if (!email) {
-      setErrEmail("Enter your email");
+  const navigate = useNavigate();
+  const login=(email,password)=>
+  {
+  
+    if(email != "" && password !="")
+    {
+      if (email === "admin@gmail.com" && password === "qazwsxedc@123A") {
+        navigate("/shop")
+      } else {
+        message.warning("Mật khẩu hoặc tên đăng nhập không đúng!");
+      }
+    } else {
+      message.warning("Vui lòng nhập email và mật khẩu!");
     }
+  }
 
-    if (!password) {
-      setErrPassword("Create a password");
-    }
-    // ============== Getting the value ==============
-    if (email && password) {
-      setSuccessMsg(
-        `Hello dear, Thank you for your attempt. We are processing to validate your access. Till then stay connected and additional assistance will be sent to you by your mail at ${email}`
-      );
-      setEmail("");
-      setPassword("");
-    }
-  };
+
   return (
     <div  style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
       <Header />
@@ -64,7 +44,11 @@ const SignIn = () => {
                 <path fill-rule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clip-rule="evenodd" />
               </svg>
             </div>
-            <input type="text" id="email-address-icon" class="bg-gray-50 border px-10 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Email" />
+            <input
+            onChange={(e)=> {setEmail(e.target.value)}}
+             type="text" id="email-address-icon" 
+             class="bg-gray-50 border px-10 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Email" />
           </div>
         </form>
 
@@ -75,12 +59,15 @@ const SignIn = () => {
                 <path fill-rule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clip-rule="evenodd" />
               </svg>
             </div>
-            <input type="text" id="email-address-icon" class="bg-gray-50 border px-10 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Mật khẩu" />
+            <input 
+              onChange={(e)=> {setPassword(e.target.value)}}
+            type="text" id="email-address-icon" 
+            class="bg-gray-50 border px-10 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Mật khẩu" />
           </div>
         </form>
         <div className="text-center">
           <div >
-            <button type="button" class="max-w-sm py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Đăng nhập</button>
+            <button onClick={()=> login(email,password)} type="button" class="max-w-sm py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Đăng nhập</button>
 
           </div>
           <p>Quên mật khẩu</p>
