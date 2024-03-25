@@ -62,28 +62,23 @@ export const formatNumber=(input )=>{
 export const navBarList = [
   {
     _id: 1001,
-    title: "Home",
+    title: "Sản phẩm",
     link: "/",
   },
   {
     _id: 1002,
-    title: "Shop",
-    link: "/shop",
+    title: "Tin tức",
+    link: "/news",
   },
   {
     _id: 1003,
-    title: "About",
-    link: "/about",
+    title: "Giới thiệu",
+    link: "/introduce",
   },
   {
     _id: 1004,
-    title: "Contact",
+    title: "Liên hệ",
     link: "contact",
-  },
-  {
-    _id: 1005,
-    title: "Journal",
-    link: "/journal",
   },
 ];
 // =================== NavBarList End here ======================
