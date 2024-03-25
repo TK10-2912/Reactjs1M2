@@ -120,8 +120,20 @@ import product_screen_3 from "../images/products/screen/product_screen_3.jpg";
 import product_screen_4 from "../images/products/screen/product_screen_4.jpg";
 import product_screen_5 from "../images/products/screen/product_screen_5.jpg";
 import product_screen_6 from "../images/products/screen/product_screen_6.jpg";
+//camket
+import pig from "../images/YenTamMuaHang/pig.png";
+import promis from "../images/YenTamMuaHang/promis.png";
+import ship from "../images/YenTamMuaHang/ship.png";
+import win from "../images/YenTamMuaHang/win.png";
+
 
 export {
+  //camket
+  pig,
+  promis,
+  ship,
+  win,
+  //=======================================
   logo,
   logoLight,
   bannerImgOne,

@@ -1,16 +1,24 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../../redux/orebiSlice";
-
+import { Checkbox, Col, Rate, Row, Select, Tag } from "antd";
+import { formatNumber } from "../../../constants";
+import {
+  pig,
+  promis,
+  ship,
+  win,
+}from "../../../assets/images/index";
 const ProductInfo = ({ productInfo }) => {
+  console.log("sản phẩm", productInfo);
   const highlightStyle = {
-    color: "#d0121a", // Change this to the desired color
-    fontWeight: "bold", // Change this to the desired font weight
+    color: "#d0121a",
+    fontWeight: "bold",
   };
 
   const renderDescription = () => {
     if (!productInfo.des) {
-      return null; // or handle accordingly if product.des is not defined
+      return null;
     }
 
     const description = productInfo.des.split(/:(.*?)-/).map((part, index) => {
@@ -24,95 +32,85 @@ const ProductInfo = ({ productInfo }) => {
     return <>{description}</>;
   };
   const dispatch = useDispatch();
+
   return (
+
     <div className="flex flex-col gap-5">
       <h2 className="text-4xl font-semibold">{productInfo.productName}</h2>
-      <p className="text-2xl font-semibold">
-        {productInfo.price} Dt
-        <span className="text-xl font-semibold line-through ml-2">540</span>
-        <span className="text-xs ml-2 inline-flex items-center px-3 py-1 rounded-full bg-green-600 text-white">
-          Save 100
-        </span>
-      </p>
       <hr />
-      <p className="text-base text-gray-600">{renderDescription()}</p>
+      <p>Tình trạng: {productInfo.inStock == true ? <Tag color="green">Còn hàng</Tag> : <Tag color="red">Hết hàng</Tag>}</p>
+      <hr />
+      <span>
+        <Rate disabled={true} value={productInfo.stars} />
+        <a href="#"> Xem đánh giá</a>
+      </span>
+      <hr />
+      <Row align={"middle"}>
+        <Col span={12}>
+          <h2 style={{ fontSize: "25px", color: "red", fontWeight: 'bold' }}>{formatNumber(productInfo.price)}</h2>
+        </Col>
+        <Col span={6} style={{ justifyContent: 'end', display: 'flex' }}>
+          <strike ><h2 style={{ fontSize: "25px" }}>{formatNumber(productInfo.priceOriginal)}</h2></strike>
+        </Col>
+        &nbsp; &nbsp; &nbsp;
+        <Tag color="red" style={{ height: 22 }}>{productInfo.sale}%</Tag>
+      </Row>
+      <Row>
+        <Col span={8} style={{ fontSize: 18, borderRight: "1px solid black" }}>
+          Thương hiệu: <span style={{ color: "red" }}>{productInfo.brand}</span>
+        </Col>
 
-      <div className="flex items-center">
-        <p className="text-sm mr-2"> leave a review </p>
-
-        <svg
-          className="w-4 h-4 text-yellow-300 ms-1"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          viewBox="0 0 22 20"
+        <Col span={8} style={{ fontSize: 18, borderRight: "1px solid black", textAlign: 'center' }}>
+          Loại: <span style={{ color: "red" }}>{productInfo.type}</span>
+        </Col>
+        <Col span={8} style={{ fontSize: 18, textAlign: 'center' }}>
+          MSP: <span style={{ color: "red" }}>{productInfo.prCode}</span>
+        </Col>
+      </Row>
+    
+            <Row gutter={20}>
+            {productInfo.configuration !== undefined &&
+              productInfo.configuration.map(item => (
+                <Col className="rounded-lg xl:m-2 p-3" offset={item.id % 2 === 0 ? 2 : 0} style={{boxShadow: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",background:"#FFFFFF"}} span={11} key={"pr_" + item.id}>
+                  <Checkbox style={{ fontSize: "16px",fontWeight:'600' }} value={item.id}>{item.select1}</Checkbox>
+                  <p style={{ fontSize: "14px",textAlign:'center',fontWeight:'bold' }} className="text-red-700">{formatNumber(Number(item.priceSelect))}</p>
+                </Col>
+              ))}
+            </Row>
+      <div className="flex justify-between">
+        <button
+          onClick={() =>
+            dispatch(
+              addToCart({
+                _id: productInfo.id,
+                name: productInfo.productName,
+                quantity: 1,
+                image: productInfo.img,
+                badge: productInfo.badge,
+                price: productInfo.price,
+                colors: productInfo.color,
+              })
+            )
+          }
+          className="w-1/3  py-4 bg-blue-500 hover:bg-blue-600 duration-300 text-white text-lg font-titleFont rounded-md"
         >
-          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-        </svg>
-        <svg
-          className="w-4 h-4 text-yellow-300 ms-1"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          viewBox="0 0 22 20"
+          Thêm vào giỏ hàng
+        </button>
+        <button
+          className="bor w-1/3 py-4 bg-blue-500 hover:bg-blue-600 duration-300 text-white text-lg font-titleFont rounded-md"
         >
-          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-        </svg>
-        <svg
-          className="w-4 h-4 text-yellow-300 ms-1"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          viewBox="0 0 22 20"
-        >
-          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-        </svg>
-        <svg
-          className="w-4 h-4 text-yellow-300 ms-1"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          viewBox="0 0 22 20"
-        >
-          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-        </svg>
-        <svg
-          className="w-4 h-4 ms-1 text-gray-300 dark:text-gray-500"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          viewBox="0 0 22 20"
-        >
-          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-        </svg>
+          Mua ngay
+        </button>
       </div>
-
-      <p className="text-base text-green-600 font-medium">En Stock</p>
-      <p className="font-medium text-lg">
-        <span className="font-normal">Colors:</span> {productInfo.color}
-      </p>
-      <button
-        onClick={() =>
-          dispatch(
-            addToCart({
-              _id: productInfo.id,
-              name: productInfo.productName,
-              quantity: 1,
-              image: productInfo.img,
-              badge: productInfo.badge,
-              price: productInfo.price,
-              colors: productInfo.color,
-            })
-          )
-        }
-        className="w-full py-4 bg-blue-500 hover:bg-blue-600 duration-300 text-white text-lg font-titleFont"
-      >
-        Add to Cart
-      </button>
-      <p className="font-normal text-sm">
-        <span className="text-base font-medium"> Categories:</span> Spring
-        collection, Streetwear, Women Tags: featured SKU: N/A
-      </p>
+      <div className="rounded-lg bg-white "  style={{boxShadow: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"}}>
+          <h1 style={{textAlign:"center",color:"white",lineHeight:2,borderTopRightRadius:6,borderTopLeftRadius:6,background:"#D0011A"}}>Yên tâm khi mua hàng tại SKY GEAR</h1>
+          <div style={{fontSize:14,fontWeight:"bold"}} className="p-4">
+            <Row style={{alignItems:"center"}}><img style={{width:'2.2rem'}} src={promis} />Bảo hành chính hãng</Row>
+            <Row style={{alignItems:"center"}}><img style={{width:'2.2rem'}} src={win}></img>Windows bản quyền tích hợp</Row>
+            <Row style={{alignItems:"center"}}><img style={{width:'2.2rem'}} src={ship}></img>Miễn phí giao hàng toàn quốc</Row>
+            <Row style={{alignItems:"center"}}><img style={{width:'2.2rem'}}src={pig}></img>Hỗ trợ trả góp</Row>
+          </div>
+      </div>
     </div>
   );
 };

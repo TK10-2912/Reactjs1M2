@@ -56,6 +56,9 @@ import {
 import "./style.css";
 
 // =================== NavBarList Start here ====================
+export const formatNumber=(input )=>{
+     return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(Number(input))
+}
 export const navBarList = [
   {
     _id: 1001,
