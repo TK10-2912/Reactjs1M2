@@ -3,6 +3,7 @@ import Heading from "../Products/Heading";
 import Product from "../Products/Product";
 import { SplOfferData } from "../../../constants";
 import { useParams } from "react-router-dom";
+import { FilterOutlined } from "@ant-design/icons";
 
 const SpecialOffers = () => {
   const { category } = useParams();
@@ -17,7 +18,9 @@ const SpecialOffers = () => {
     <div className="w-full pb-20">
       <div class="grid grid-cols-7 gap-3">
         <>
-          <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-black border-solid border-slate-400 border-[3px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-lg px-3 py-2 dark:bg-blue-600 dark:focus:ring-blue-800 font-semibold text-xl" type="button">Bộ lọc
+          <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-black border-solid border-slate-400 border-[3px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-lg px-3 py-2 dark:bg-blue-600 dark:focus:ring-blue-800 font-semibold text-xl" type="button">
+          <FilterOutlined />
+            Bộ lọc
           </button>
         </>
 
