@@ -9,8 +9,10 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../../redux/orebiSlice";
 import { toast } from "react-toastify";
+import { logDOM } from "@testing-library/react";
 
 const Product = (props) => {
+  console.log("aaaaaa",props);
   const dispatch = useDispatch();
   const _id = props.productName;
   const idString = (_id) => {
@@ -59,8 +61,14 @@ const Product = (props) => {
                     quantity: 1,
                     image: props.img,
                     badge: props.badge,
-                    price: props.price,
                     colors: props.color,
+                    prCode: props.prCode,
+                    instock:props.instock,
+                    sale:props.sale,
+                    priceOriginal:props.priceOriginal,
+                    stars:props.stars,
+                    configuration:props.configuration,
+                    
                   })
                 )
               }
