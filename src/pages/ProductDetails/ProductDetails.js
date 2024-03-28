@@ -5,6 +5,7 @@ import ProductInfo from "../../components/pageProps/productDetails/ProductInfo";
 import { FaDownload } from "react-icons/fa";
 import ProductDescrible from "./ProductDescribe";
 import ThongSoKyThuat from "../../components/pageProps/productDetails/ThongSoKyThuat";
+import DanhGia from "../../components/pageProps/productDetails/DanhGia";
 
 const tabs = [
 	{
@@ -48,7 +49,6 @@ const ProductDetails = () => {
 		setProductInfo(location.state.item);
 		setPrevLocation(location.pathname);
 	}, [location, productInfo.ficheTech]);
-	console.log("product", location);
 	return (
 
 		<div className="w-full mx-auto border-b-[1px] border-b-gray-300">
@@ -72,6 +72,9 @@ const ProductDetails = () => {
 					</div>
 					<div className="h-full w-full md:col-span-2 xl:col-span-3 xl:px-4 flex flex-col gap-6 justify-center">
 						<ThongSoKyThuat />
+					</div>
+					<div className="h-full w-full md:col-span-2 xl:col-span-6 flex flex-col gap-6 justify-center">
+						<DanhGia productInfo={productInfo}/>
 					</div>
 				</div>
 				<div>
