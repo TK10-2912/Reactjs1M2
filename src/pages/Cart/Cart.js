@@ -7,6 +7,7 @@ import { resetCart } from "../../redux/orebiSlice";
 import { emptyCart } from "../../assets/images/index";
 import ItemCard from "./ItemCard";
 import { Col, Row } from "antd";
+import { formatNumber } from "../../constants";
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -32,12 +33,12 @@ const Cart = () => {
   }, [totalAmt]);
   return (
     <div className="max-w-container mx-auto px-4">
-      <Breadcrumbs title="Cart" />
+      <Breadcrumbs title="Giỏ hàng" />
       {products.length > 0 ? (
         <Row>
           <Col span={16}>
             <div className="w-full h-20 bg-[#F5F7F7] text-primeColor hidden lgl:grid grid-cols-5 place-content-center px-6 text-lg font-titleFont font-semibold">
-              <h2 className="col-span-2">Product</h2>
+              <h2 className="col-span-2">Sản phẩm</h2>
               <h2>Price</h2>
               <h2>Quantity</h2>
               <h2>Sub Total</h2>
@@ -45,7 +46,7 @@ const Cart = () => {
             <div className="mt-5">
               {products.map((item) => (
                 <div key={item._id}>
-                  <ItemCard item={item} />
+                  <ItemCard item={item} payment={false} />
                 </div>
               ))}
             </div>
@@ -56,55 +57,56 @@ const Cart = () => {
             >
               Reset cart
             </button>
-
-            <div className="flex flex-col mdl:flex-row justify-between border py-4 px-4 items-center gap-2 mdl:gap-0">
-              <div className="flex items-center gap-4">
-                <input
-                  className="w-44 mdl:w-52 h-8 px-4 border text-primeColor text-sm outline-none border-gray-400"
-                  type="text"
-                  placeholder="Coupon Number"
-                />
-                <p className="text-sm mdl:text-base font-semibold">
-                  Apply Coupon
-                </p>
-              </div>
-              <p className="text-lg font-semibold">Update Cart</p>
-            </div>
-
           </Col>
-          <Col span={8}>        
-            <div  class="block max-w-7xl gap-4 justify-end mt-4 p-6 bg-white border mx-5 rounded-lg ">           
+          <Col span={8}>
+            <div class="block max-w-7xl gap-4 justify-end p-6 bg-white border mx-5 rounded-lg ">
               <div className="w-96 flex flex-col gap-4">
-                <h1 className="text-2xl font-semibold text-right">Cart totals</h1>
+                <h1 className="text-2xl font-semibold border-b-2 border-x-stone-800">Tóm tắt đơn hàng</h1>
                 <div>
-                  <p className="flex items-center justify-between border-[1px] border-gray-400 border-b-0 py-1.5 text-lg px-4 font-medium">
-                    Subtotal
+                  <p className="flex items-center justify-between   py-1.5 text-lg px-4 font-medium">
+                    Tổng tiền hàng
                     <span className="font-semibold tracking-wide font-titleFont">
-                      ${totalAmt}
+                      {formatNumber(totalAmt)}
                     </span>
                   </p>
-                  <p className="flex items-center justify-between border-[1px] border-gray-400 border-b-0 py-1.5 text-lg px-4 font-medium">
-                    Shipping Charge
+                  <p className="flex items-center justify-between   py-1.5 text-lg px-4 font-medium">
+                   Phí vận chuyển
                     <span className="font-semibold tracking-wide font-titleFont">
-                      ${shippingCharge}
+                      {formatNumber(shippingCharge)}
                     </span>
                   </p>
-                  <p className="flex items-center justify-between border-[1px] border-gray-400 py-1.5 text-lg px-4 font-medium">
-                    Total
+                  <p className="flex items-center border-b-2 border-x-stone-800 justify-between  py-1.5 text-lg px-4 font-medium">
+                    Tổng tạm tính
                     <span className="font-bold tracking-wide text-lg font-titleFont">
-                      ${totalAmt + shippingCharge}
+                      {formatNumber(totalAmt + shippingCharge)}
                     </span>
                   </p>
                 </div>
+              </div>
+              <div className="w-96 flex flex-col gap-4">
+                <h1 className="text-xl font-semibold ">Vocher</h1>
+                <div>
+
+                  <form>
+                    <label for="search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                    <div class="relative">
+                      <input type="search" id="search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Nhập mã giảm giá" required />
+                      <button type="submit" class=" text-white absolute end-2.5 bottom-2.5 bg-red-700 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Áp dụng</button>
+                    </div>
+                  </form>
+                  
+                </div>
+                <p className="text-base  font-semibold ">TỔNG THANH TOÁN: <span className="text-red-700">{formatNumber(totalAmt + shippingCharge)}</span></p>
                 <div className="flex justify-end">
                   <Link to="/paymentgateway">
-                    <button className="w-52 h-10 bg-primeColor text-white hover:bg-black duration-300">
-                      Proceed to Checkout
+                    <button className="w-52 h-11 font-medium rounded-xl bg-blue-600 text-white hover:bg-black duration-300">
+                      Tiến hành thanh toán 
                     </button>
                   </Link>
                 </div>
               </div>
             </div>
+
           </Col>
         </Row>
 
@@ -122,20 +124,7 @@ const Cart = () => {
               alt="emptyCart"
             />
           </div>
-          <div className="max-w-[500px] p-4 py-8 bg-white flex gap-4 flex-col items-center rounded-md shadow-lg">
-            <h1 className="font-titleFont text-xl font-bold uppercase">
-              Your Cart feels lonely.
-            </h1>
-            <p className="text-sm text-center px-10 -mt-2">
-              Your Shopping cart lives to serve. Give it purpose - fill it with
-              books, electronics, videos, etc. and make it happy.
-            </p>
-            <Link to="/shop">
-              <button className="bg-primeColor rounded-md cursor-pointer hover:bg-black active:bg-gray-900 px-8 py-2 font-titleFont font-semibold text-lg text-gray-200 hover:text-white duration-300">
-                Continue Shopping
-              </button>
-            </Link>
-          </div>
+     
         </motion.div>
       )}
     </div>
