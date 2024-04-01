@@ -82,16 +82,15 @@ const HeaderBottom = () => {
             <li>
               <a href="#" class="block py-2 px-3 text-white border-b border-gray-100 hover:bg-gray-50 hover:text-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700 whitespace-nowrap tracking-wider" aria-current="page">Sản phẩm</a>
             </li>
-            <li>
-              <a href="#" class="block py-2 px-3 text-white border-b border-gray-100 hover:bg-gray-50 hover:text-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700 whitespace-nowrap tracking-wider" aria-current="page">Giới thiệu</a>
-            </li>
+           
             <li>
               <a href="#" class="block py-2 px-3 text-white border-b border-gray-100 hover:bg-gray-50 hover:text-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700 whitespace-nowrap tracking-wider" aria-current="page">Liên hệ</a>
             </li>
-            <li className="text-white px-4 py-1 ">
-              <Link to={"/instruction"}>
-                Hướng dẫn
-              </Link>
+            <li>
+              <a href="#" class="block py-2 px-3 text-white border-b border-gray-100 hover:bg-gray-50 hover:text-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700 whitespace-nowrap tracking-wider" aria-current="page">Chính sách bảo hành</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-white border-b border-gray-100 hover:bg-gray-50 hover:text-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700 whitespace-nowrap tracking-wider" aria-current="page">Hướng dẫn</a>
             </li>
           </ul>
         </div>
