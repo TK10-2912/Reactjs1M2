@@ -29,6 +29,7 @@ import { FaArrowUp } from 'react-icons/fa';
 import PaymentQR from "./pages/payment/PaymentQR";
 import PaymentSuccess from "./pages/payment/PaymentSucess";
 import News from "./pages/News/News";
+import Instruction from "./components/home/Header/About";
 const Layout = () => {
   return (
     <div>
@@ -72,6 +73,7 @@ const router = createBrowserRouter(
         <Route path="/paymentQR" element={<PaymentQR />}></Route>
         <Route path="/paymentSuccess" element={<PaymentSuccess />}></Route>
         <Route path="/news" element={<News />}></Route>
+        <Route path="/instruction" element={<Instruction />}></Route>
       </Route>
       <Route path="/signup" element={<SignUp />}></Route>
       <Route path="/signin" element={<SignIn />}></Route>
