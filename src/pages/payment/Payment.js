@@ -13,7 +13,8 @@ const Payment = () => {
   useEffect(() => {
     let price = 0;
     products.map((item) => {
-      price += item.price * item.quantity;
+      const piceSale= item.price - (item.price * item.sale)/100;
+      price +=  piceSale * item.quantity;
       return price;
     });
     setTotalAmt(price);
@@ -37,9 +38,9 @@ const Payment = () => {
         <div className="h-full xl:col-span-3   bg-gray-100 p-4 rounded-xl">
           <div className="w-full h-20 bg-[#F5F7F7] text-primeColor hidden lgl:grid grid-cols-5 place-content-center px-6 text-lg font-titleFont font-semibold">
             <h2 className="col-span-2">Sản phẩm</h2>
-            <h2>Price</h2>
-            <h2>Quantity</h2>
-            <h2>Sub Total</h2>
+            <h2>Giá tiền</h2>
+            <h2>Số lượng</h2>
+            <h2>Tổng tiền</h2>
           </div>
           <div className="mt-5">
             {products.map((item) => (
@@ -70,7 +71,7 @@ const Payment = () => {
             <Button className="text-base w-1/2 h-1/3">Thanh toán qua ví điện tử VNPAY</Button><br/>
             <Button className="text-base w-1/2 h-1/3">Quét QR bằng ứng dụng ngân hàng</Button><br/>
             
-            <Link to="/paymentgateway">
+            <Link to="/paymentQR">
               <button className="w-52 h-11 font-medium rounded-xl bg-blue-600 text-white hover:bg-black duration-300">
                 Thanh toán
               </button>

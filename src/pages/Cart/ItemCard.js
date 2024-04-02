@@ -50,7 +50,7 @@ const ItemCard = ({ item, payment }) => {
 
         </div>
         <div className="w-1/3  text-red-700 flex items-center font-titleFont font-bold text-lg">
-          <p>{formatNumber(item.quantity * item.price)}</p>
+          <p>{formatNumber(item.quantity * item.price)} (-{item.sale}%)</p>
         </div>
       </div>
     </div>

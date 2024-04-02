@@ -125,9 +125,14 @@ import pig from "../images/YenTamMuaHang/pig.png";
 import promis from "../images/YenTamMuaHang/promis.png";
 import ship from "../images/YenTamMuaHang/ship.png";
 import win from "../images/YenTamMuaHang/win.png";
+//
+import anhmaQR from "../images/anhmaQR.png";
+import tickSuccess from "../images/tick.png";
 
 
 export {
+  anhmaQR,
+  tickSuccess,
   //camket
   pig,
   promis,
