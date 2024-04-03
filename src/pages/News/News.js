@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { bestSellerOne } from "../../assets/images";
+import { bestSellerFour, bestSellerOne } from "../../assets/images";
 import Breadcrumbs from "../../components/pageProps/Breadcrumbs";
 import { Col, Row } from "antd";
+import { CaretDownOutlined } from "@ant-design/icons";
 const News = () => {
     const newHeader = {
         img: bestSellerOne,
@@ -66,9 +67,10 @@ const News = () => {
     const newMain = [
         {
             img: bestSellerOne,
-            title: "Monica ứng dụng AI miễn phí đa dụng",
+            title: "Monica ứng dụng AI miễn phí đa dụng Game NFT là gì ? Cách kiếm tiền từ game NFT - Xu hướng game 2024",
             dateUpLoad: "27/03/2024"
         },
+
         {
             img: bestSellerOne,
             title: "Game NFT là gì ? Cách kiếm tiền từ game NFT - Xu hướng game 2024",
@@ -81,7 +83,7 @@ const News = () => {
         },
         {
             img: bestSellerOne,
-            title: "Cách download game Dragon City cực dễ cho PC, laptop",
+            title: "Monica ứng dụng AI miễn phí đa dụng Game NFT là gì ? Cách kiếm tiền từ game NFT - Xu hướng game 2024",
             dateUpLoad: "24/03/2024"
         },
     ]
@@ -100,19 +102,38 @@ const News = () => {
                     </Row>
                     {
                         newMain.map(item => (
-                                <Row className="mx-3    ">
-                                    <Col span={12}>
-                                        <img src={item.img} alt="anh"></img>
-                                    </Col>
-                                    <Col span={12}>
-                                        <h2 className="text-lg font-medium">{item.title}</h2>
-                                        <p>{item.dateUpLoad}</p>
-                                    </Col>
-                                </Row>
+                            <Row className="my-3 border-b-2 border-gray-900 mb-2">
+                                <Col span={12}>
+                                    <img className="rounded-3xl w-1/2 mb-5" src={item.img} alt="anh"></img>
+                                </Col>
+                                <Col span={12}>
+                                    <h2 className="text-lg font-medium">{item.title}</h2>
+                                    <p>{item.dateUpLoad}</p>
+                                </Col>
+                            </Row>
                         ))
                     }
+                    <button className=" px-2 w-auto text-2xl h-11 font-medium rounded-xl bg-red-600 text-white hover:bg-black duration-300">
+                        Xem thêm bài viết <CaretDownOutlined />
+                    </button>
                 </div>
+                <div className="h-full xl:col-span-2 rounded-xl flex flex-col items-center ">
+                    {news.map(item => (
+                        <div className=" bg-gray-100 rounded-xl mb-3 p-2.5">
+                            <p className="text-base text-red-700 mb-2 border-b-2 border-gray-900  leading-8 font-semibold">{item.title}</p>
+                            {item.item.map(e => (
+                                <Row className="pb-2" >
+                                    <Col span={10}>
+                                    <img className="w-2/4 rounded-lg" src={e.img}></img>
+                                    </Col>
+                                    <Col span={14}>{e.desc}</Col>
+                                </Row>
+                            ))}
 
+                        </div>
+                    ))}
+
+                </div>
             </div>
         </div>
     </>)
