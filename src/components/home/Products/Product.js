@@ -65,6 +65,7 @@ const Product = (props) => {
                     prCode: props.prCode,
                     instock:props.instock,
                     sale:props.sale,
+                    price:props.price,
                     priceOriginal:props.priceOriginal,
                     stars:props.stars,
                     configuration:props.configuration,
