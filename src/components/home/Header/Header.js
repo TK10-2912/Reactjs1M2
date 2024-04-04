@@ -43,7 +43,7 @@ const Header = () => {
     <div className="w-full bg-[#d0021b] relative">
       <div className="max-w-container mx-auto">
         <Flex className="flex flex-col lg:flex-row items-start lg:items-center justify-between w-full px-4 pb-4 lg:pb-0 h-full lg:h-24">
-          <a href="https://flowbite.com" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <a target="_blank" href="https://flowbite.com/docs/getting-started/quickstart/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="https://s3-alpha-sig.figma.com/img/d4b5/3b5a/48d71e6c22b6d2b753f9a4b84a3b9939?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QgFwQokalR6LweE-jGpImQdv0oDKV4ze8S5BbxPimewJQejlklp4qWNyKkj5Nx919dapTtRmOl2cRGYIHQv7mnnnkgdrIipdclTgpvwirzn8Udl1vMfBBjumJ3zgrPjLisiQkL3gyDT6e61a2j2nCilpT92fsSZM0b0FDsLWnsGeid-VmoaFSJF-ZCzmhYUqH8VJcPsGW4BQarMtCfwxZqYLgrkUB5Q88VSggECCwYed-2MhV45o0oHouPu~gSpue4k2V4wE2fbFflJBIKPOBqxrtbgAap4jMUq2bDfQ6pM~bU~UD8ZnIT5JL7kfKgSFfkHZfhPhtBDK4VPw~m7H6A__" class="h-8" alt="Flowbite Logo" />
           </a>
           <div className="relative w-full lg:w-[600px] h-[50px] text-base text-primeColor bg-white flex items-center gap-2 justify-between px-6 rounded-xl">
@@ -118,19 +118,21 @@ const Header = () => {
               >
                 <Link to="/signin">
                   <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
-                    Login
+                    Đăng nhập
                   </li>
                 </Link>
                 <Link onClick={() => setShowUser(false)} to="/signup">
                   <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
-                    Sign Up
+                    Đăng ký
                   </li>
                 </Link>
+                <Link to="/account">
                 <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
-                  Profile
+                  Tài khoản
                 </li>
+                </Link>
                 <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer">
-                  Others
+                  Khác
                 </li>
               </motion.ul>
             )}

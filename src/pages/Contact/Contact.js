@@ -70,8 +70,8 @@ const Contact = () => {
 				<p className="pb-20 w-96 font-medium text-green-500">{successMsg}</p>
 			) : (
 				<form className="pb-20 px-10 flex gap-10">
-				
-					<div class="relative overflow-hidden px-10  bg-white rounded-lg shadow-lg flex-1">
+
+					<div class="relative overflow-hidden px-10  bg-gray-50 rounded-lg shadow-lg flex-1">
 						<div class="absolute inset-0 bg-gradient-to-r"></div>
 						<div class="relative px-4 py-10 text-center">
 							<h1 class="text-3xl font-semibold ">Chăm sóc khách hàng</h1>
@@ -91,37 +91,40 @@ const Contact = () => {
 					</div>
 
 
-					<div className="w-[500px] shadow-lg px-10 h-auto py-6 flex flex-col gap-6 flex-1">
+					<div className="w-[500px] shadow-lg px-10 bg-gray-50 rounded-lg h-auto py-6 flex flex-col gap-6 flex-1">
+						<div class="relative px-4 py-10 text-center">
+							<h1 class="text-3xl font-semibold ">Liên hệ chúng tôi</h1>
+						</div>
 						<div className="flex justify-between">
 
-								<input
-									onChange={handleName}
-									value={clientName}
-									className=" py-1 rounded-full border-b-2 px-2 text-base font-medium placeholder:font-normal placeholder:text-sm outline-none focus-within:border-primeColor"
-									type="text"
-									placeholder="Họ tên"
-								/>
-								{errClientName && (
-									<p className="text-red-500 text-sm  font-titleFont font-semibold mt-1 px-2 flex items-center gap-1">
-										<span className="text-sm italic font-bold">!</span>
-										{errClientName}
-									</p>
-								)}
-							
-								<input
-									onChange={handleEmail}
-									value={email}
-									className="rounded-full py-1 border-b-2 px-2 text-base font-medium placeholder:font-normal placeholder:text-sm outline-none focus-within:border-primeColor"
-									type="email"
-									placeholder="Email"
-								/>
-								{errEmail && (
-									<p className="text-red-500 text-sm font-titleFont font-semibold mt-1 px-2 flex items-center gap-1">
-										<span className="text-sm italic font-bold">!</span>
-										{errEmail}
-									</p>
-								)}
-							
+							<input
+								onChange={handleName}
+								value={clientName}
+								className=" py-1 rounded-full border-b-2 px-2 text-base font-medium placeholder:font-normal placeholder:text-sm outline-none focus-within:border-primeColor"
+								type="text"
+								placeholder="Họ tên"
+							/>
+							{errClientName && (
+								<p className="text-red-500 text-sm  font-titleFont font-semibold mt-1 px-2 flex items-center gap-1">
+									<span className="text-sm italic font-bold">!</span>
+									{errClientName}
+								</p>
+							)}
+
+							<input
+								onChange={handleEmail}
+								value={email}
+								className="rounded-full py-1 border-b-2 px-2 text-base font-medium placeholder:font-normal placeholder:text-sm outline-none focus-within:border-primeColor"
+								type="email"
+								placeholder="Email"
+							/>
+							{errEmail && (
+								<p className="text-red-500 text-sm font-titleFont font-semibold mt-1 px-2 flex items-center gap-1">
+									<span className="text-sm italic font-bold">!</span>
+									{errEmail}
+								</p>
+							)}
+
 						</div>
 
 						<div>
