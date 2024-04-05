@@ -128,9 +128,77 @@ import win from "../images/YenTamMuaHang/win.png";
 //
 import anhmaQR from "../images/anhmaQR.png";
 import tickSuccess from "../images/tick.png";
-
+//news
+import headerNews from "../images/news/headerNew.png";
+import newsMain1 from "../images/news/newMain1.png";
+import newsMain2 from "../images/news/newMain2.png";
+import newsMain3 from "../images/news/newMain3.png";
+import newsMain4 from "../images/news/newMain4.png";
+import hotNews1 from "../images/news/hotnew1.png";
+import newsTech1 from "../images/news/newTech1.png";
+import newsTech2 from "../images/news/newTech2.png";
+import newsTech3 from "../images/news/newTech3.png";
+import newsSale1 from "../images/news/newSale1.png";
+import newsSale2 from "../images/news/newSale2.png";
+import newsSale3 from "../images/news/newSale3.png";
+// Laptop
+import laptop1 from "../images/Laptop/laptop1.png";
+import laptop2 from "../images/Laptop/laptop2.png";
+import laptop3 from "../images/Laptop/laptop3.png";
+import laptop4 from "../images/Laptop/laptop4.png";
+import laptop5 from "../images/Laptop/laptop5.png";
+import laptop6 from "../images/Laptop/laptop6.png";
+//Keyboard
+import keyboard1 from "../images/Keyboard/keyboard1.png";
+import keyboard2 from "../images/Keyboard/keyboard2.png";
+import keyboard3 from "../images/Keyboard/keyboard3.png";
+import keyboard4 from "../images/Keyboard/keyboard4.png";
+import keyboard5 from "../images/Keyboard/keyboard5.png";
+import keyboard6 from "../images/Keyboard/keyboard6.png";
+//screen
+import screen1 from "../images/screen/screen1.png";
+import screen2 from "../images/screen/screen2.png";
+import screen3 from "../images/screen/screen3.png";
+import screen4 from "../images/screen/screen4.png";
+import screen5 from "../images/screen/screen5.png";
+import screen6 from "../images/screen/screen6.png";
 
 export {
+  //Laptop
+  laptop1,
+laptop2,
+laptop3,
+laptop4,
+laptop5,
+laptop6,
+//keyboard
+keyboard1,
+keyboard2,
+keyboard3,
+keyboard4,
+keyboard5,
+keyboard6,
+//screen
+screen1,
+screen2,
+screen3,
+screen4,
+screen5,
+screen6,
+  //news
+  headerNews,
+  newsMain1,
+  newsMain2,
+  newsMain3,
+  newsMain4,
+  hotNews1,
+  newsTech1,
+  newsTech2,
+  newsTech3,
+  newsSale1,
+  newsSale2,
+  newsSale3,
+  //payment
   anhmaQR,
   tickSuccess,
   //camket
@@ -220,48 +288,48 @@ export {
 
   // Card
   product_card_1,
-product_card_2,
-product_card_3,
-product_card_4,
-product_card_5,
-product_card_6,
-product_card_7,
-product_card_8,
-product_card_9,
-product_card_10,
-//Case
-product_case_1,
-product_case_2,
-product_case_3,
-product_case_4,
-product_case_5,
-product_case_6,
-product_case_7,
-product_case_8,
-product_case_9,
-product_case_10,
-product_case_11,
-product_case_12,
+  product_card_2,
+  product_card_3,
+  product_card_4,
+  product_card_5,
+  product_card_6,
+  product_card_7,
+  product_card_8,
+  product_card_9,
+  product_card_10,
+  //Case
+  product_case_1,
+  product_case_2,
+  product_case_3,
+  product_case_4,
+  product_case_5,
+  product_case_6,
+  product_case_7,
+  product_case_8,
+  product_case_9,
+  product_case_10,
+  product_case_11,
+  product_case_12,
 
-//Chair
-product_chair_1,
-product_chair_2,
-product_chair_3,
-product_chair_4,
-product_chair_5,
-//Laptop
-product_laptop_1,
-product_laptop_2,
-product_laptop_3,
-product_laptop_4,
-product_laptop_5,
-product_laptop_6,
-product_laptop_7,
-//Screen
-product_screen_1,
-product_screen_2,
-product_screen_3,
-product_screen_4,
-product_screen_5,
-product_screen_6,
+  //Chair
+  product_chair_1,
+  product_chair_2,
+  product_chair_3,
+  product_chair_4,
+  product_chair_5,
+  //Laptop
+  product_laptop_1,
+  product_laptop_2,
+  product_laptop_3,
+  product_laptop_4,
+  product_laptop_5,
+  product_laptop_6,
+  product_laptop_7,
+  //Screen
+  product_screen_1,
+  product_screen_2,
+  product_screen_3,
+  product_screen_4,
+  product_screen_5,
+  product_screen_6,
 };

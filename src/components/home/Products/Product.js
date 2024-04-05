@@ -10,6 +10,7 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../../../redux/orebiSlice";
 import { toast } from "react-toastify";
 import { logDOM } from "@testing-library/react";
+import { formatNumber } from "../../../constants";
 
 const Product = (props) => {
   console.log("aaaaaa",props);
@@ -36,13 +37,13 @@ const Product = (props) => {
     console.log(wishList);
   };
   return (
-    <div className="w-full relative group border-solid border-2 rounded-2xl ">
+    <div className="w-full group relative border-solid border-2 rounded-2xl ">
       <div className="max-w-80 max-h-80 relative overflow-y-hidden rounded-2xl">
         <div onClick={handleProductDetails}>
           <Image className="w-full h-full cursor-pointer" imgSrc={props.img} />
         </div>
         <div className="absolute top-1 right-1  ">
-          {props.badge && <Badge text="-7%" />}
+          {props.badge && <Badge text={"-"+ props.sale +"%"}  />}
         </div>
         <div className="w-full h-32 absolute bg-white -bottom-[130px] group-hover:bottom-0 duration-700">
           <ul className="w-full h-full flex flex-col items-end justify-center gap-2 font-titleFont px-2 border-l border-r">
@@ -103,15 +104,15 @@ const Product = (props) => {
       </div>
       <div className="max-w-80 py-6 flex flex-col gap-1 px-4">
         <div className="flex items-center justify-between font-titleFont">
-          <h2 className="text-lg text-primeColor font-bold">
+          <h2 className="text-base text-primeColor font-bold">
             {props.productName}
           </h2>
         </div>
         <div>
-          <del className="text-[#767676] text-[14px]">${props.price}</del>
+          <del className="text-[#767676] text-[14px]">${formatNumber(props.priceOriginal)}</del>
         </div>
         <div>
-          <p className="text-[#ff0000] text-[19px]">{props.currentPrice}</p>
+          <p className="text-[#ff0000] text-[19px] font-semibold">{formatNumber(props.price)}</p>
         </div>
         <div class="flex items-center">
           <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">

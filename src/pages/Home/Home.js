@@ -1,18 +1,19 @@
 import React from "react";
-import Banner from "../../components/Banner/Banner";
-import BestSellers from "../../components/home/BestSellers/BestSellers";
-import NewArrivals from "../../components/home/NewArrivals/NewArrivals";
 import Sale from "../../components/home/Sale/Sale";
 import SpecialOffers from "../../components/home/SpecialOffers/SpecialOffers";
 import YearProduct from "../../components/home/YearProduct/YearProduct";
+import Laptop from "../../components/home/Laptop/NewArrivals";
+import Screen from "../../components/home/Screen/Screen";
+import Keyboard from "../../components/home/Keyboard/Keyboard";
 
 const Home = () => {
   return (
     <div className="w-full mx-auto">
       <div className="max-w-container mx-auto px-4">
         <Sale />
-        <NewArrivals />
-        <BestSellers />
+        <Laptop />
+        <Screen />
+        <Keyboard />
         <YearProduct />
         <SpecialOffers />
       </div>
