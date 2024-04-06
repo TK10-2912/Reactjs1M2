@@ -1,21 +1,26 @@
 import React, { useState, } from "react";
-import { Link,useNavigate } from "react-router-dom";
-import { Navigate   } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import Header from "../../components/home/Header/Header";
 import Footer from "../../components/home/Footer/Footer";
 import { message } from "antd";
+import { setUserLocalStorage } from "../../constants";
+import { logo } from "../../assets/images";
 
 const SignIn = () => {
   // ============= Initial State Start here =============
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
-  const login=(email,password)=>
-  {
-  
-    if(email != "" && password !="")
-    {
+  const login = (email, password) => {
+
+    if (email != "" && password != "") {
       if (email === "admin@gmail.com" && password === "qazwsxedc@123A") {
+        const user = {
+          usEmail: email,
+          usPassword: password,
+          avatar: logo,
+        }
         navigate("/shop")
       } else {
         message.warning("Mật khẩu hoặc tên đăng nhập không đúng!");
@@ -27,50 +32,57 @@ const SignIn = () => {
 
 
   return (
-    <div  style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+    <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
       <Header />
-      <div className=" col-start-1 space-y-4 mx-auto bg-gray-200 p-6 my-20 rounded-lg h-1/6 w-2/6 ">
-        <h1 className="text-center text-xl ">ĐĂNG NHẬP NGƯỜI DÙNG </h1>
+      <div className=" col-start-1 space-y-4 mx-auto bg-gray-200 p-6 my-20 rounded-3xl h-1/6 w-1/2 ">
+        <h1 className="text-center text-xl font-semibold ">ĐĂNG NHẬP NGƯỜI DÙNG </h1>
         <p className="text-center">Bạn chưa có tài khoản, đăng ký &nbsp;
           <Link to="/signup">
             <span className="text-red-500 hover:text-red-400">tại đây</span>
 
           </Link>
         </p>
-        <form class="max-w-sm mx-auto">
+        <form class="mx-auto">
           <div class="relative">
-            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+            <div class="absolute inset inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
               <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                 <path fill-rule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clip-rule="evenodd" />
               </svg>
             </div>
             <input
-            onChange={(e)=> {setEmail(e.target.value)}}
-             type="text" id="email-address-icon" 
-             class="bg-gray-50 border px-10 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              onChange={(e) => { setEmail(e.target.value) }}
+              type="text" id="email-address-icon"
+              class="bg-gray-50 border px-10 border-gray-300 text-gray-900 text-xl rounded-3xl focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Email" />
           </div>
         </form>
 
-        <form class="max-w-sm mx-auto">
+        <form class=" mx-auto">
           <div class="relative">
             <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                <path fill-rule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clip-rule="evenodd" />
+              <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14v3m-3-6V7a3 3 0 1 1 6 0v4m-8 0h10a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1Z" />
               </svg>
             </div>
-            <input 
-              onChange={(e)=> {setPassword(e.target.value)}}
-            type="text" id="email-address-icon" 
-            class="bg-gray-50 border px-10 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Mật khẩu" />
+            <input
+              onChange={(e) => { setPassword(e.target.value) }}
+              type="password" id="email-address-icon"
+              class="bg-gray-50 border px-10 border-gray-300 text-gray-900 text-xl rounded-3xl focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Mật khẩu" />
           </div>
         </form>
+        <div class="flex items-center mb-4">
+          <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+            <label for="default-checkbox" class="ms-2 text-xl font-medium text-gray-900 dark:text-gray-300">Nhớ mật khẩu</label>
+        </div>
         <div className="text-center">
           <div >
-            <button onClick={()=> login(email,password)} type="button" class="max-w-sm py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Đăng nhập</button>
-
+            <button onClick={() => login(email, password)} type="button" class="max-w-lg py-2.5 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none bg-red-600 rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Đăng nhập</button>
           </div>
-          <p>Quên mật khẩu</p>
+          <Link to="/forgetpassword">
+          <p className="text-blue-500"><i>Quên mật khẩu</i></p>
+
+          </Link>
+         
           <p>Hoặc đăng nhập bằng</p>
           <div>
             <button type="button" class="text-white bg-[#3b5998] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 me-2 mb-2">

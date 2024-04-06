@@ -13,7 +13,6 @@ import { logDOM } from "@testing-library/react";
 import { formatNumber } from "../../../constants";
 
 const Product = (props) => {
-  console.log("aaaaaa",props);
   const dispatch = useDispatch();
   const _id = props.productName;
   const idString = (_id) => {

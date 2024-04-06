@@ -56,9 +56,24 @@ import {
 import "./style.css";
 
 // =================== NavBarList Start here ====================
-export const formatNumber=(input )=>{
-     return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(Number(input))
+export const formatNumber = (input) => {
+  return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(Number(input))
 }
+export const setUserLocalStorage = (key, object) => {
+  window.localStorage.setItem(key, JSON.stringify(object))
+}
+export const getUserLocalStorage = (key) => {
+  const data = localStorage.getItem(key);
+  const result = data ? JSON.parse(data) : null;
+
+  console.log("aaaa", result);
+  return result
+}
+
+export const removeUserLocalStorage = (user) => {
+  localStorage.removeItem(`${user}`);
+}
+
 export const navBarList = [
   {
     _id: 1001,

@@ -5,8 +5,9 @@ import { FaSearch, FaUser, FaCaretDown, FaShoppingCart, FaMap } from "react-icon
 import Flex from "../../designLayouts/Flex";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { paginationItems } from "../../../constants";
+import { getUserLocalStorage, paginationItems, removeUserLocalStorage } from "../../../constants";
 import { BsSuitHeartFill } from "react-icons/bs";
+import { screen1 } from "../../../assets/images";
 
 const Header = () => {
   const products = useSelector((state) => state.orebiReducer.products);
@@ -24,10 +25,10 @@ const Header = () => {
     });
   }, [show, ref]);
 
+  const checkUser = getUserLocalStorage("loginUser")
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [showSearchBar, setShowSearchBar] = useState(false);
-
   const handleSearch = (e) => {
     setSearchQuery(e.target.value);
   };
@@ -106,10 +107,17 @@ const Header = () => {
           <div className="flex gap-4 mt-2 lg:mt-0 items-center pr-6 cursor-pointer relative">
             <FaMap style={{ color: "white" }} />
             <BsSuitHeartFill style={{ color: "white" }} />
-            <div onClick={() => setShowUser(!showUser)} className="flex">
+            <div onClick={() => setShowUser(true)}
+              className="flex">
               <FaCaretDown style={{ color: "white" }} />
-              <FaUser style={{ color: "white" }} />
+              {checkUser != undefined && checkUser != null ?
+                <img className="w-6 rounded-full" src={screen1}></img> : <FaUser style={{ color: "white" }} />
+              }
+
             </div>
+            {showUser && (
+              <div onClick={() => setShowUser(false)} className="fixed inset-0 z-40"></div>
+            )}
             {showUser && (
               <motion.ul
                 initial={{ y: 30, opacity: 0 }}
@@ -117,24 +125,33 @@ const Header = () => {
                 transition={{ duration: 0.5 }}
                 className="absolute top-6 left-0 z-50 bg-primeColor w-44 text-[#767676] h-auto p-4 pb-6"
               >
-                <Link to="/signin">
-                  <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
-                    Đăng nhập
-                  </li>
-                </Link>
-                <Link onClick={() => setShowUser(false)} to="/signup">
-                  <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
-                    Đăng ký
-                  </li>
-                </Link>
+                {checkUser != undefined && checkUser != null ? "" :
+                  <>
+                    <Link to="/signin">
+                      <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                        Đăng nhập
+                      </li>
+                    </Link>
+                    <Link onClick={() => setShowUser(false)} to="/signup">
+                      <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                        Đăng ký
+                      </li>
+                    </Link>
+                  </>
+                }
                 <Link to="/account">
-                <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
-                  Tài khoản
-                </li>
+                  <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                    Tài khoản
+                  </li>
                 </Link>
-                <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer">
-                  Khác
-                </li>
+                {checkUser != undefined && checkUser != null ?
+                  <Link onClick={() => removeUserLocalStorage("loginUser")} to="/">
+                    <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                      Đăng xuất
+                    </li>
+                  </Link> : ""
+                }
+
               </motion.ul>
             )}
             <Link to="/cart">

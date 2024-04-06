@@ -31,6 +31,7 @@ import PaymentQR from "./pages/payment/PaymentQR";
 import PaymentSuccess from "./pages/payment/PaymentSucess";
 import News from "./pages/News/News";
 import Instruction from "./components/home/Header/About";
+import ForgetPasswords from "./pages/Account/ForgetPassword";
 const Layout = () => {
   return (
     <div>
@@ -75,6 +76,7 @@ const router = createBrowserRouter(
         <Route path="/paymentQR" element={<PaymentQR />}></Route>
         <Route path="/paymentSuccess" element={<PaymentSuccess />}></Route>
         <Route path="/news" element={<News />}></Route>
+        <Route path="/forgetpassword" element={<ForgetPasswords />}></Route>
         <Route path="/instruction" element={<Instruction />}></Route>
       </Route>
       <Route path="/signup" element={<SignUp />}></Route>
