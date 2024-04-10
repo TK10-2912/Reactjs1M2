@@ -10,7 +10,7 @@ import {
   laptop6,
   newArrOne,
 } from "../../../assets/images/index";
-import { Col, Row } from "antd";
+import { Button, Col, Row } from "antd";
 
 const Laptop = () => {
 
@@ -121,6 +121,9 @@ const Laptop = () => {
             </Col>
           </Row>
         </Col>
+      </Row>
+      <Row>
+        <Button>Xem tất cả {">>"}</Button>
       </Row>
     </div>
   );

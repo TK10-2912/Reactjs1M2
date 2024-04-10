@@ -14,7 +14,6 @@ const Home = () => {
         <Laptop />
         <Screen />
         <Keyboard />
-        <YearProduct />
         <SpecialOffers />
       </div>
     </div>

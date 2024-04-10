@@ -21,6 +21,7 @@ const SignIn = () => {
           usPassword: password,
           avatar: logo,
         }
+        setUserLocalStorage("loginUser",user)
         navigate("/shop")
       } else {
         message.warning("Mật khẩu hoặc tên đăng nhập không đúng!");

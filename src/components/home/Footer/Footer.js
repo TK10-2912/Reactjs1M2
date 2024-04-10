@@ -40,14 +40,14 @@ const Footer = () => {
             <FooterListTitle title="Sky Gear - No Tech No Life" />
             <h3 className="text-xl font-bodyFont font-semibold mb-2 text-white">{"Liên hệ"}</h3>
             <ul className="flex flex-col gap-2">
-              <li className="font-titleFont text-base text-white hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+              <li className="font-titleFont text-base text-white hover:text-red-600 text  hover:tracking-wide decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
                 <EnvironmentOutlined />  100 Bạch Mai, quận Hai Bà Trưng,
                 thành phố Hà Nội
               </li>
-              <li className="font-titleFont text-base text-white hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+              <li className="font-titleFont text-base text-white hover:text-red-600 text  hover:tracking-wide decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
                 <PhoneOutlined /> 0857929124
               </li>
-              <li className="font-titleFont text-base text-white hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+              <li className="font-titleFont text-base text-white hover:text-red-600 text  hover:tracking-wide decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
                 <MailOutlined /> Skygear@gmail.com
               </li>
             </ul>
@@ -56,16 +56,16 @@ const Footer = () => {
         <div>
           <FooterListTitle title="Chính sách" />
           <ul className="flex flex-col gap-2">
-            <li className="font-titleFont text-base text-white hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-white hover:text-red-600 text  hover:tracking-wide decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Điều khoản và điều kiện
             </li>
-            <li className="font-titleFont text-base text-white hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-white hover:text-red-600 text  hover:tracking-wide decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Chính sách đổi trả
             </li>
-            <li className="font-titleFont text-base text-white hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-white hover:text-red-600 text  hover:tracking-wide decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Chính sách bảo mật
             </li>
-            <li className="font-titleFont text-base text-white hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-white hover:text-red-600 text  hover:tracking-wide decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Chính sách giao hàng
             </li>
           </ul>
@@ -73,13 +73,13 @@ const Footer = () => {
         <div>
           <FooterListTitle title="Hướng dẫn" />
           <ul className="flex flex-col gap-2">
-            <li className="font-titleFont text-base text-white hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-white hover:text-red-600 text  hover:tracking-wide decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Hướng dẫn mua hàng
             </li>
-            <li className="font-titleFont text-base text-white hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-white hover:text-red-600 text  hover:tracking-wide decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Phương thức thanh toán
             </li>
-            <li className="font-titleFont text-base text-white hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-white hover:text-red-600 text  hover:tracking-wide decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Hướng dẫn trả góp
             </li>
           </ul>
@@ -115,7 +115,7 @@ const Footer = () => {
                 </div>
                 <button
                   onClick={handleSubscription}
-                  className="bg-white text-lightText w-[30%] h-12 hover:bg-black hover:text-white duration-300 text-base tracking-wide"
+                  className="bg-white text-lightText w-[30%] h-12 hover:bg-red-600 hover:text-white duration-300 text-base  hover:tracking-wide"
                 >
                   ĐĂNG KÝ
                 </button>
@@ -128,7 +128,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">
+                  <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-red-600 duration-300">
                     <FaYoutube />
                   </li>
                 </a>
@@ -137,7 +137,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">
+                  <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-red-600 duration-300">
                     <FaGithub />
                   </li>
                 </a>
@@ -146,7 +146,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">
+                  <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-red-600 duration-300">
                     <FaFacebook />
                   </li>
                 </a>
@@ -155,7 +155,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">
+                  <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-red-600 duration-300">
                     <FaLinkedin />
                   </li>
                 </a>
