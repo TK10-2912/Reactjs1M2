@@ -38,7 +38,7 @@ const Footer = () => {
               <img src="https://s3-alpha-sig.figma.com/img/5831/43e1/2df7503cd78572d094c3be47ad5f2c09?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AZd9eFjxj7nB0nqrc3u6Z2Q~FLddPtpIIf6-eJBXQA2dInj2JqU2FCN3bOYYYGfSu8aIjIDDJT~3J8e0~EkrjKmMCAlGGgsZnvX-5n3q59j3NylzKdZLAQCrBu2kaukCl4frXi21FIHuqQPaQsA5Om3DvtjJcCfefk2X4sWESvhoLDFT8HXF6rgodwisQo5~ksH-IeQ2j-X~g0IN4ypnxEADIT2uVknmz6Jnh9rio8pVhk2ndc0GeqFlEvbn74BqvZrHsfMaIFFhnTHrCFAu6pijYy031afXpPpAnvutALSWd5N4RSLIqyReI2HOCqocoEMeIOuNX3gBP9tdZqDtfw__" class="h-20" alt="Flowbite Logo" />
             </a>
             <FooterListTitle title="Sky Gear - No Tech No Life" />
-            <h3 className="text-xl font-bodyFont font-semibold mb-2 text-white">{"Liên hệ"}</h3>
+            <h3 className="text-xl w-full text-left font-bodyFont pl-4 font-semibold mb-2 text-white">{"Liên hệ"}</h3>
             <ul className="flex flex-col gap-2">
               <li className="font-titleFont text-base text-white hover:text-red-600 text  hover:tracking-wide decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
                 <EnvironmentOutlined />  100 Bạch Mai, quận Hai Bà Trưng,

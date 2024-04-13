@@ -195,7 +195,7 @@ export const SplOfferData = [
     color: "Mixed",
     badge: true,
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
-    cat: "ancre",
+    cat: "manhinh",
   },
   {
     _id: "210",
@@ -205,7 +205,7 @@ export const SplOfferData = [
     color: "Black",
     badge: true,
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
-    cat: "ancre",
+    cat: "manhinh",
   },
   {
     _id: "211",

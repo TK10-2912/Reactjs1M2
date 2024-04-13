@@ -44,7 +44,7 @@ const Account = () => {
             <div className="pb-20 px-24 flex gap-10">
 
                 {/* Danh sách các mục */}
-                <div className="lg:w-auto h-fit bg-gray-100 rounded-lg shadow-lg mb-4 lg:mb-0">
+                <div className="lg:w-auto h-fit bg-white rounded-lg shadow-lg mb-4 lg:mb-0">
                     {/* Danh sách các mục */}
                     <div className="py-2 px-4 cursor-pointer hover:bg-gray-200 hover:text-red-600 flex items-center" onClick={() => scrollToContent('thong-tin-ca-nhan')}>
                         <span className="material-icons mr-2"><SlUser /></span>
@@ -68,7 +68,7 @@ const Account = () => {
                 {/* Cột bên phải */}
                 <div className="w-full lg:w-3/4 ">
                     {/* Nội dung tương ứng với từng mục */}
-                    <div id="thong-tin-ca-nhan" className="py-4 px-8 bg-gray-100 rounded-lg shadow-lg mb-4">
+                    <div id="thong-tin-ca-nhan" className="py-4 px-8 bg-white rounded-lg shadow-lg mb-4">
                         <div className="text-center text-2xl font-bold mb-4 uppercase">Thông tin cá nhân</div>
                         <div className="flex gap-4">
                             <div className="flex flex-col w-1/4 ">
@@ -110,7 +110,7 @@ const Account = () => {
 
                         {/* Thêm thông tin cá nhân khác tại đây */}
                     </div>
-                    <div id="tai-khoan" className="py-4 px-8 bg-gray-100 rounded-lg shadow-lg mb-4">
+                    <div id="tai-khoan" className="py-4 px-8 bg-white rounded-lg shadow-lg mb-4">
                         <div className="text-center text-2xl font-bold mb-4 uppercase">Tài khoản và bảo mật</div>
                         <div>
 
@@ -154,9 +154,9 @@ const Account = () => {
                             </div>
                         </form>
                     </div>
-                    <div id="dia-chi" className="py-4 px-8 bg-gray-100 rounded-lg shadow-lg mb-4">
+                    <div id="dia-chi" className="py-4 px-8 bg-white rounded-lg shadow-lg mb-4">
                         <div className="text-center text-2xl font-bold mb-4 uppercase">Địa chỉ</div>
-                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-black mb-3 border-solid border-slate-400 border-[3px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-lg px-2 py-2 text-center inline-flex items-center dark:bg-blue-600 dark:focus:ring-blue-800 font-semibold text-xl" type="button">Địa chỉ 1<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-black mb-3 border-solid border-slate-400 border-[3px] hover:bg-white dark:hover:bg-gray-600 dark:hover:text-white rounded-lg px-2 py-2 text-center inline-flex items-center dark:bg-blue-600 dark:focus:ring-blue-800 font-semibold text-xl" type="button">Địa chỉ 1<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
                         </svg>
                         </button>
@@ -198,7 +198,7 @@ const Account = () => {
                             </Col>
                         </Row>
                     </div>
-                    <div id="don-mua" className="py-4 px-8 bg-gray-100 rounded-lg shadow-lg mb-4">
+                    <div id="don-mua" className="py-4 px-8 bg-white rounded-lg shadow-lg mb-4">
                         <div className="text-center text-2xl font-bold mb-4 uppercase">Đơn mua</div>
                         <Col span={24} style={{ border: "1px solid black" }} className='rounded-2xl'>
                             <div className="p-4">

@@ -16,7 +16,7 @@ import { Button, Col, Row } from "antd";
 const Keyboard = () => {
 
   return (
-    <div className="w-full bg-gray-100 mt-5 h-full rounded-lg  pb-16">
+    <div className="w-full bg-white mt-5 h-full rounded-lg  pb-16">
       <Heading heading="Bàn Phím" />
       <Row >
         <Col span={6} className="h-full p-4 rounded-xl flex flex-col items-center ">
@@ -123,8 +123,8 @@ const Keyboard = () => {
           </Row>
         </Col>
       </Row>
-      <Row>
-        <Button>Xem tất cả {">>"}</Button>
+      <Row justify={"center"}>
+        <Button className="text-2xl h-1/2">Xem tất cả {">>"}</Button>
       </Row>
     </div>
   );

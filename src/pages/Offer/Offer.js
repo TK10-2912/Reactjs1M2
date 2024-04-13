@@ -9,25 +9,13 @@ const Offer = () => {
   const { category } = useParams();
 
   return (
-    // <div className="max-w-container mx-auto">
-    //   <Breadcrumbs title={category} prevLocation={prevLocation} />
-    //   <div className="pb-10">
-    //     <SpecialOffers />
-    //   </div>
-    // </div>
-
     <div className="max-w-container mx-auto px-4">
-      <Breadcrumbs title={category} prevLocation={prevLocation} />
-      {/* ================= Products Start here =================== */}
-      <div className="w-full h-full flex pb-20 gap-10">
-        <div className="w-[20%] lgl:w-[25%] hidden mdl:inline-flex h-full">
-          <ShopSideNav />
-        </div>
-        <div className="w-full mdl:w-[80%] lgl:w-[75%] h-full flex flex-col gap-10">
-          <SpecialOffers />
-        </div>
+      <Breadcrumbs title="Products" />
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 gap-4 h-full -mt-5 xl:-mt-8 pb-10 ">
+        <div className="h-full xl:col-span-6  bg-white p-4 rounded-xl flex flex-col items-center ">  
+            <SpecialOffers />
+          </div>
       </div>
-      {/* ================= Products End here ===================== */}
     </div>
   );
 };

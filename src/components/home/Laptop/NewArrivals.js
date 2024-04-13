@@ -15,7 +15,7 @@ import { Button, Col, Row } from "antd";
 const Laptop = () => {
 
   return (
-    <div className="w-full bg-gray-100 rounded-lg  h-full  pb-16">
+    <div className="w-full bg-white rounded-lg  h-full  pb-16">
       <Heading heading="Laptop" />
       <Row >
         <Col span={6} className="h-full p-4 rounded-xl flex flex-col items-center ">
@@ -122,8 +122,8 @@ const Laptop = () => {
           </Row>
         </Col>
       </Row>
-      <Row>
-        <Button>Xem tất cả {">>"}</Button>
+      <Row justify={"center"}>
+        <Button className="text-2xl h-1/2">Xem tất cả {">>"}</Button>
       </Row>
     </div>
   );

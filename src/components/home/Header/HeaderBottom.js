@@ -56,22 +56,27 @@ const HeaderBottom = () => {
             >
               <Link to={"category/imprimante"}>
                 <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
-                  Imprimante
+                 Laptop
                 </li>
               </Link>
-              <Link to={"category/ancre"}>
+              <Link to={"category/manhinh"}>
                 <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
-                  ancre
+                  Màn hình
                 </li>
               </Link>
               <Link to={"category/Ruban"}>
                 <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
-                  ruban
+                  Bàn phím
                 </li>
               </Link>
               <Link to={"category/Bac"}>
                 <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
-                  Bac de dechet
+                  Chuột
+                </li>
+              </Link>
+              <Link to={"category/Bac"}>
+                <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                  Tai nghe
                 </li>
               </Link>
             </motion.ul>
