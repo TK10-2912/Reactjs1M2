@@ -32,6 +32,7 @@ import PaymentSuccess from "./pages/payment/PaymentSucess";
 import News from "./pages/News/News";
 import Instruction from "./components/home/Header/About";
 import ForgetPasswords from "./pages/Account/ForgetPassword";
+import Introduction from "./components/home/Header/components/Introduction";
 const Layout = () => {
   return (
     <div>
@@ -66,6 +67,7 @@ const router = createBrowserRouter(
         <Route path="/shop" element={<Shop />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/introduction" element={<Introduction />}></Route>
         <Route path="/journal" element={<Journal />}></Route>
         {/* ==================== Header Navlink End here ===================== */}
         <Route path="/category/:category" element={<Offer />}></Route>
