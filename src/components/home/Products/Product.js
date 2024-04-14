@@ -35,6 +35,7 @@ const Product = (props) => {
     setWishList(wishList.push(props));
     console.log(wishList);
   };
+  console.log("sale: ", props.sale);
   return (
     <div className="w-full group relative border-solid border-2 rounded-2xl ">
       <div className="max-w-80 max-h-80 relative overflow-y-hidden rounded-2xl">

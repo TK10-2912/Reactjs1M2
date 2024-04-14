@@ -104,7 +104,7 @@ const App=()=> {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   return (
-    <div className="font-bodyFont">
+    <div className="font-bodyFont bg-gray-100">
       <RouterProvider router={router} />
       <div className="flex flex-col justify-between">
         {showButton && (
