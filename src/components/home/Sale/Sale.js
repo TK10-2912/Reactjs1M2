@@ -4,6 +4,13 @@ import {
 	saleImgOne,
 	saleImgTwo,
 	saleImgThree,
+	slide1,
+	slide2,
+	slide3,
+	slide4,
+	slide5,
+	slide6,
+	slide7,
 } from "../../../assets/images/index";
 import Image from "../../designLayouts/Image";
 import ShopNow from "../../designLayouts/buttons/ShopNow";
@@ -27,7 +34,7 @@ const Sale = () => {
 						<h3 style={contentStyle}> <Link to="/shop">
 							<Image
 								className="h-full w-full "
-								imgSrc={saleImgThree}
+								imgSrc={slide1}
 							/>
 						</Link></h3>
 					</div>
@@ -35,7 +42,7 @@ const Sale = () => {
 						<h3 style={contentStyle}> <Link to="/shop">
 							<Image
 								className="h-full w-full "
-								imgSrc={saleImgThree}
+								imgSrc={slide2}
 							/>
 						</Link></h3>
 					</div>
@@ -43,7 +50,7 @@ const Sale = () => {
 						<h3 style={contentStyle}> <Link to="/shop">
 							<Image
 								className="h-full w-full "
-								imgSrc={saleImgThree}
+								imgSrc={slide3}
 							/>
 						</Link></h3>
 					</div>
@@ -51,7 +58,15 @@ const Sale = () => {
 						<h3 style={contentStyle}> <Link to="/shop">
 							<Image
 								className="h-full w-full "
-								imgSrc={saleImgThree}
+								imgSrc={slide4}
+							/>
+						</Link></h3>
+					</div>
+					<div>
+						<h3 style={contentStyle}> <Link to="/shop">
+							<Image
+								className="h-full w-full "
+								imgSrc={slide7}
 							/>
 						</Link></h3>
 					</div>
@@ -62,7 +77,7 @@ const Sale = () => {
 					<Link to="/shop">
 						<Image
 							className="h-full w-full "
-							imgSrc={saleImgThree}
+							imgSrc={slide5}
 						/>
 					</Link>
 				</Col>
@@ -70,7 +85,7 @@ const Sale = () => {
 					<Link to="/shop">
 						<Image
 							className="h-full w-full "
-							imgSrc={saleImgThree}
+							imgSrc={slide6}
 						/>
 					</Link>
 				</Col>

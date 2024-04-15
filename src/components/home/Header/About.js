@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { paginationItems } from "../../../constants";
+import Breadcrumbs from "../../pageProps/Breadcrumbs";
 
 const Instruction = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -10,7 +11,7 @@ const Instruction = () => {
     setSearchQuery(e.target.value);
   };
 
-  useEffect(() => { 
+  useEffect(() => {
     const filtered = paginationItems.filter((item) =>
       item.productName.toLowerCase().includes(searchQuery.toLowerCase())
     );
@@ -18,34 +19,35 @@ const Instruction = () => {
   }, [searchQuery]);
 
   return (
-  <div className="max-w-[50%] max-h-[80%] mx-auto px-10 py-12 rounded-lg" >
-    <div className="w-full h-[490px] bg-[#F5F7F7] text-primeColor hidden lg:flex flex-col justify-center px-6 text-lg font-titleFont font-semibold rounded-lg">
-      <div className="flex flex-col items-center">
-          <h2 className="text-5xl font-bold italic mb-4 ">Câu hỏi thường gặp</h2>
+    <div className="max-w-container mx-auto px-4">
+      <Breadcrumbs prevLocation={"Trang chủ"} title="Hướng dẫn" />
+        <div className="w-full h-[490px] bg-white mb-5 text-primeColor hidden lg:flex flex-col justify-center px-6 text-lg font-titleFont font-semibold rounded-lg">
+          <div className="flex flex-col items-center">
+            <h2 className="text-5xl font-bold italic mb-4 ">Câu hỏi thường gặp</h2>
           </div>
-      <div className="flex flex-col ml-4">
-          <a className="text-lg my-4 " style={{fontSize: '19px'}}>
+          <div className="flex flex-col ml-4">
+            <a className="text-lg my-4 " style={{ fontSize: '19px' }}>
               Làm thế nào để mua hàng?
-          </a>
-          <hr className="mb-4"/>
-          <a className="text-lg my-4 " style={{fontSize: '19px'}}>
-              Các phương thức thanh toán? 
-          </a>
-          <hr className="mb-4"/>
-      </div>
-      <div className="flex flex-col ml-4 ">
-          <a className="text-lg my-4" style={{fontSize: '18px'}}>
+            </a>
+            <hr className="mb-4" />
+            <a className="text-lg my-4 " style={{ fontSize: '19px' }}>
+              Các phương thức thanh toán?
+            </a>
+            <hr className="mb-4" />
+          </div>
+          <div className="flex flex-col ml-4 ">
+            <a className="text-lg my-4" style={{ fontSize: '18px' }}>
               Chính sách đổi trả?
-          </a>
-          <hr className="mb-4"/>
-          <a className="text-lg my-4 " style={{fontSize: '18px'}}>
+            </a>
+            <hr className="mb-4" />
+            <a className="text-lg my-4 " style={{ fontSize: '18px' }}>
               Chính sách hậu mãi?
-          </a>
-          <hr className="mb-4"/>
-      </div>
+            </a>
+            <hr className="mb-4" />
+          </div>
+        </div>
     </div>
-  </div>
-);
+  );
 };
 
 export default Instruction;

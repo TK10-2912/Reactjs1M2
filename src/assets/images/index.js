@@ -164,8 +164,29 @@ import screen3 from "../images/screen/screen3.png";
 import screen4 from "../images/screen/screen4.png";
 import screen5 from "../images/screen/screen5.png";
 import screen6 from "../images/screen/screen6.png";
+//Logo
+import logoFooter from "../images/Logo/logoFooter.png";
+import logoHeader from "../images/Logo/logoHeader.png";
+//Slide
+import slide1 from "../images/Slide/slide1.jpg";
+import slide2 from "../images/Slide/slide2.jpg";
+import slide3 from "../images/Slide/slide3.jpg";
+import slide4 from "../images/Slide/slide4.jpg";
+import slide5 from "../images/Slide/slide5.jpg";
+import slide6 from "../images/Slide/slide6.jpg";
+import slide7 from "../images/Slide/slide7.jpg";
 
 export {
+  slide1,
+  slide2,
+  slide3,
+  slide4,
+  slide5,
+  slide6,
+  slide7,
+  //Logo
+  logoFooter,
+  logoHeader,
   //Laptop
   laptop1,
 laptop2,

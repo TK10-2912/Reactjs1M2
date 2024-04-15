@@ -10,7 +10,7 @@ const Offer = () => {
 
   return (
     <div className="max-w-container mx-auto px-4">
-      <Breadcrumbs title="Products" />
+      <Breadcrumbs title="Sản phẩm" />
       <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 gap-4 h-full -mt-5 xl:-mt-8 pb-10 ">
         <div className="h-full xl:col-span-6  bg-white p-4 rounded-xl flex flex-col items-center ">  
             <SpecialOffers />

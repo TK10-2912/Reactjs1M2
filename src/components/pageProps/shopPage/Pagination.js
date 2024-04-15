@@ -87,10 +87,9 @@ const Pagination = ({ itemsPerPage }) => {
         />
 
         <p className="text-base font-normal text-lightText">
-          Products from {itemStart} to {Math.min(endOffset, items.length)} of{" "}
+          Sản phẩm từ {itemStart} đến {Math.min(endOffset, items.length)} trong{" "}
           {items.length}
         </p>
-        <button onClick={() => console.log(selectedBrands)}> test</button>
       </div>
     </div>
   );

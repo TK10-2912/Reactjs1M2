@@ -3,6 +3,7 @@ import Breadcrumbs from "../../components/pageProps/Breadcrumbs";
 import Pagination from "../../components/pageProps/shopPage/Pagination";
 import ProductBanner from "../../components/pageProps/shopPage/ProductBanner";
 import ShopSideNav from "../../components/pageProps/shopPage/ShopSideNav";
+import SpecialOffers from "../../components/home/SpecialOffers/SpecialOffers";
 
 const Shop = () => {
   const [itemsPerPage, setItemsPerPage] = useState(48);
@@ -12,13 +13,11 @@ const Shop = () => {
 
   return (
     <div className="max-w-container mx-auto px-4">
-      <Breadcrumbs title="Products" />
+      <Breadcrumbs title="Sản phẩm" />
       {/* ================= Products Start here =================== */}
-      <div className="w-full h-full flex pb-20 gap-10">
-        <div className="w-[20%] lgl:w-[25%] hidden mdl:inline-flex h-full">
-          <ShopSideNav />
-        </div>
+      <div className="max-w-container mx-auto px-4 flex justify-center bg-white rounded-xl py-[15px]">
         <div className="w-full mdl:w-[80%] lgl:w-[75%] h-full flex flex-col gap-10">
+          <SpecialOffers />
           <ProductBanner itemsPerPageFromBanner={itemsPerPageFromBanner} />
           <Pagination itemsPerPage={itemsPerPage} />
         </div>

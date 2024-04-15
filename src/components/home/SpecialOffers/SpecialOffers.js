@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 import { FilterOutlined } from "@ant-design/icons";
 import { Col, Row, Select } from "antd";
 
-const SpecialOffers = () => {
+const SpecialOffers = (prop) => {
   const { category } = useParams();
 
   const [data, setData] = useState([]);
@@ -114,7 +114,7 @@ const SpecialOffers = () => {
   const catData = data.filter((item) => item.cat === category);
   return (
     <div className="w-full pb-20">
-      <Row gutter={16} className="pl-3" >
+      <Row gutter={16} className="pl-3 mb-3" >
         <>
           <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-black border-solid  border-[1px] dark:hover:text-white rounded-lg px-3 py-2 dark:bg-blue-600 dark:focus:ring-blue-800 " type="button">
             <FilterOutlined />
@@ -166,47 +166,8 @@ const SpecialOffers = () => {
           />
         </Col>
         <>
-
-          {/* <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-black border-solid border-slate-400 border-[3px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-lg px-3 py-2 text-center inline-flex items-center dark:bg-blue-600 dark:focus:ring-blue-800 font-semibold text-xl" type="button">Giá
-            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
-            </svg>
-          </button>
-        </>
-
-        <>
-          <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-black border-solid border-slate-400 border-[3px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-lg px-2 py-2 text-center inline-flex items-center dark:bg-blue-600 dark:focus:ring-blue-800 font-semibold text-xl" type="button">Màn hình<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
-          </svg>
-          </button>
-        </>
-
-        <>
-          <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-black border-solid border-slate-400 border-[3px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-lg px-3 py-2 text-center inline-flex items-center dark:bg-blue-600 dark:focus:ring-blue-800 font-semibold text-xl" type="button">CPU<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
-          </svg>
-          </button>
-        </>
-        <>
-
-
-          <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-black border-solid border-slate-400 border-[3px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-lg px-3 py-2 text-center inline-flex items-center dark:bg-blue-600 dark:focus:ring-blue-800 font-semibold text-xl" type="button">RAM<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
-          </svg>
-          </button>
-        </>
-        <>
-
-
-          <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-black border-solid border-slate-400 border-[3px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-lg px-3 py-2 text-center inline-flex items-center dark:bg-blue-600 dark:focus:ring-blue-800 font-semibold text-xl" type="button">Ổ cứng<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
-          </svg>
-          </button> */}
-
         </>
       </Row>
-
-      <Heading heading="Special Offers" />
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-3 xl:grid-cols-3 gap-10">
         {catData.map((data) => (
           <Product

@@ -91,7 +91,7 @@ const News = () => {
         <div className="max-w-container mx-auto px-4">
             <Breadcrumbs prevLocation={"Trang chủ"} title="Tin tức" />
             <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 gap-4 h-full -mt-5 xl:-mt-8 pb-10 ">
-                <div className="h-full xl:col-span-4  bg-gray-100 p-4 rounded-xl flex flex-col items-center ">
+                <div className="h-full xl:col-span-4  bg-white p-4 rounded-xl flex flex-col items-center ">
                     <Row gutter={16} className="border-b-2 border-gray-900 mb-2" >
                         <Col span={16}><img className="rounded-3xl mb-5" src={newHeader.img}></img></Col>
                         <Col span={8}><div>
@@ -119,7 +119,7 @@ const News = () => {
                 </div>
                 <div className="h-full xl:col-span-2 rounded-xl flex flex-col items-center ">
                     {news.map(item => (
-                        <div className=" bg-gray-100 rounded-xl mb-3 p-2.5">
+                        <div className=" bg-white rounded-xl mb-3 p-2.5">
                             <p className="text-base text-red-700 mb-2 border-b-2 border-gray-900  leading-8 font-semibold">{item.title}</p>
                             {item.item.map(e => (
                                 <Row gutter={8} className="pb-2" >

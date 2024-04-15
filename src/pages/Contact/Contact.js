@@ -69,7 +69,7 @@ const Contact = () => {
 			{successMsg ? (
 				<p className="pb-20 w-96 font-medium text-green-500">{successMsg}</p>
 			) : (
-				<form className="pb-20 px-10 flex gap-10">
+				<form className="pb-20 flex gap-10">
 
 					<div class="relative overflow-hidden px-10  bg-gray-50 rounded-lg shadow-lg flex-1">
 						<div class="absolute inset-0 bg-gradient-to-r"></div>

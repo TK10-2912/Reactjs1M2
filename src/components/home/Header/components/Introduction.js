@@ -37,7 +37,7 @@ const Introduction = () => {
     return (
 
         <div className="max-w-container mx-auto px-4">
-            <div className=" px-24 ">
+            <div>
                 <Breadcrumbs title="Giới thiệu" prevLocation={prevLocation} />
             </div>
 

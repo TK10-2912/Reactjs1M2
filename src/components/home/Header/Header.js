@@ -7,7 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { getUserLocalStorage, paginationItems, removeUserLocalStorage } from "../../../constants";
 import { BsSuitHeartFill } from "react-icons/bs";
-import { logo, screen1 } from "../../../assets/images";
+import { logo, logoHeader, screen1 } from "../../../assets/images";
 
 const Header = () => {
   const products = useSelector((state) => state.orebiReducer.products);
@@ -45,7 +45,7 @@ const Header = () => {
       <div className="max-w-container mx-auto">
         <Flex className="flex flex-col lg:flex-row items-start lg:items-center justify-between w-full px-4 pb-4 lg:pb-0 h-full lg:h-24">
           <Link to="/">
-            <img src={logo} class="h-8" alt="Flowbite Logo" />
+            <img src={logoHeader} class="h-[100px] p-[10px]" alt="Flowbite Logo" />
           </Link>
 
           <div className="relative w-full lg:w-[600px] h-[50px] text-base text-primeColor bg-white flex items-center gap-2 justify-between px-6 rounded-xl">
@@ -105,13 +105,13 @@ const Header = () => {
             )}
           </div>
           <div className="flex gap-4 mt-2 lg:mt-0 items-center pr-6 cursor-pointer relative">
-            <FaMap style={{ color: "white" }} />
-            <BsSuitHeartFill style={{ color: "white" }} />
+            <FaMap style={{ color: "white" }} className="text-xl mr-5" />
+            <BsSuitHeartFill className="text-2xl mr-5" style={{ color: "white" }} />
             <div onClick={() => setShowUser(true)}
-              className="flex">
-              <FaCaretDown style={{ color: "white" }} />
+              className="flex mr-5">
+              <FaCaretDown className="text-xl " style={{ color: "white" }} />
               {checkUser != undefined && checkUser != null ?
-                <img className="w-6 rounded-full" src={screen1}></img> : <FaUser style={{ color: "white" }} />
+                <img className="w-7 rounded-full " src={screen1}></img> : <FaUser style={{ color: "white" }} />
               }
 
             </div>
@@ -156,7 +156,7 @@ const Header = () => {
             )}
             <Link to="/cart">
               <div className="relative">
-                <FaShoppingCart color="white" />
+                <FaShoppingCart className="text-2xl" color="white" />
                 {products.length > 0 ? (
                   <span className="absolute font-titleFont top-3 right-[-0.5rem] text-xs w-4 h-4 flex items-center justify-center rounded-full bg-primeColor text-white">
                     {products.length}

@@ -46,7 +46,7 @@ const HeaderBottom = () => {
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
         <div onClick={() => setShow(!show)} ref={ref} className="flex h-14 cursor-pointer items-center gap-2 text-primeColor">
           <HiOutlineMenuAlt4 className="w-5 h-5" style={{ color: "white" }} />
-          <p className="text-[14px] font-normal text-white whitespace-nowrap tracking-wider">Danh mục sản phẩm</p>
+          <p className="text-[20px] font-normal text-white whitespace-nowrap tracking-wider">Danh mục sản phẩm</p>
           {show && (
             <motion.ul
               initial={{ y: 30, opacity: 0 }}
@@ -90,16 +90,17 @@ const HeaderBottom = () => {
             <li>
               <a href="/introduction" class="block py-2 px-3 text-white border-b border-gray-100 hover:bg-gray-50 hover:text-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700 whitespace-nowrap tracking-wider" aria-current="page">Giới thiệu</a>
             </li>
-           
-            <li>
-              <a href="#" class="block py-2 px-3 text-white border-b border-gray-100 hover:bg-gray-50 hover:text-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700 whitespace-nowrap tracking-wider" aria-current="page">Liên hệ</a>
-            </li>
+            <Link to="/contact">
+                <p className="text-white">Liên hệ</p> 
+            </Link>
+          
             <Link to="/news">
                 <p className="text-white">Tin tức</p> 
             </Link>
-            <li>
-              <a href="#" class="block py-2 px-3 text-white border-b border-gray-100 hover:bg-gray-50 hover:text-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700 whitespace-nowrap tracking-wider" aria-current="page">Hướng dẫn</a>
-            </li>
+            <Link to="/instruction">
+                <p className="text-white">Hướng dẫn</p> 
+            </Link>
+
           </ul>
         </div>
       </div>
