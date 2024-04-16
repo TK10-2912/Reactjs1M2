@@ -9,6 +9,7 @@ import {
   screen5,
   screen6,
   newArrOne,
+  headerLaptop,
 } from "../../../assets/images/index";
 import { Button, Col, Row } from "antd";
 
@@ -18,10 +19,10 @@ const Screen = () => {
     <div className="w-full bg-white mt-5  h-full rounded-lg pb-16">
       <Heading heading="Màn Hình" />
       <Row >
-        <Col span={6} className="h-full p-4 rounded-xl flex flex-col items-center ">
-          <img src={newArrOne}></img>
+        <Col span={10} className=" p-4 rounded-xl flex flex-col items-center ">
+          <img src={headerLaptop}></img>
         </Col>
-        <Col span={18} className="h-full p-4 rounded-xl flex flex-col items-center ">
+        <Col span={14} className="h-full p-4 rounded-xl flex flex-col items-center ">
           <Row gutter={32} className="mb-8">
             <Col span={8}>
               <Product

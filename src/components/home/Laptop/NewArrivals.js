@@ -2,6 +2,7 @@ import React from "react";
 import Heading from "../Products/Heading";
 import Product from "../Products/Product";
 import {
+  headerLaptop,
   laptop1,
   laptop2,
   laptop3,
@@ -18,10 +19,10 @@ const Laptop = () => {
     <div className="w-full bg-white rounded-lg  h-full  pb-16">
       <Heading heading="Laptop" />
       <Row >
-        <Col span={6} className="h-full p-4 rounded-xl flex flex-col items-center ">
-          <img src={newArrOne}></img>
+        <Col span={10} className="h-full p-4 rounded-xl flex flex-col items-center ">
+          <img className="mt-[10px]" src={headerLaptop}></img>
         </Col>
-        <Col span={18} className="h-full p-4 rounded-xl flex flex-col items-center ">
+        <Col span={14} className="h-full p-4 rounded-xl flex flex-col items-center ">
           <Row gutter={32} className="mb-8">
             <Col span={8}>
               <Product

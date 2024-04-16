@@ -150,6 +150,7 @@ import laptop3 from "../images/Laptop/laptop3.png";
 import laptop4 from "../images/Laptop/laptop4.png";
 import laptop5 from "../images/Laptop/laptop5.png";
 import laptop6 from "../images/Laptop/laptop6.png";
+import headerLaptop from "../images/Laptop/headerLap.png";
 //Keyboard
 import keyboard1 from "../images/Keyboard/keyboard1.png";
 import keyboard2 from "../images/Keyboard/keyboard2.png";
@@ -157,6 +158,7 @@ import keyboard3 from "../images/Keyboard/keyboard3.png";
 import keyboard4 from "../images/Keyboard/keyboard4.png";
 import keyboard5 from "../images/Keyboard/keyboard5.png";
 import keyboard6 from "../images/Keyboard/keyboard6.png";
+import headerKeyBoard from "../images/Keyboard/headerKeyboard.jpg";
 //screen
 import screen1 from "../images/screen/screen1.png";
 import screen2 from "../images/screen/screen2.png";
@@ -175,8 +177,14 @@ import slide4 from "../images/Slide/slide4.jpg";
 import slide5 from "../images/Slide/slide5.jpg";
 import slide6 from "../images/Slide/slide6.jpg";
 import slide7 from "../images/Slide/slide7.jpg";
+import chuot from "../images/Danhmucphobien/chuot.jpg";
+import tainghe from "../images/Danhmucphobien/tainghe.webp";
 
 export {
+  chuot,
+  tainghe,
+  headerKeyBoard,
+  headerLaptop,
   slide1,
   slide2,
   slide3,

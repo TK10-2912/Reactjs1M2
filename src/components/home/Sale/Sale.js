@@ -27,8 +27,8 @@ const Sale = () => {
 		borderRadius: "50%",
 	};
 	return (
-		<Row style={{ marginTop: "10px", marginBottom: "10px" }} gutter={[8, 8]}>
-			<Col span={16}>
+		<Row style={{ marginTop: "10px", marginBottom: "10px" }}   gutter={[8, 8]}>
+			<Col span={16} className="rounded-xl">
 				<Carousel style={{ height: "100%" }} autoplay >
 					<div>
 						<h3 style={contentStyle}> <Link to="/shop">
@@ -72,7 +72,7 @@ const Sale = () => {
 					</div>
 				</Carousel>
 			</Col>
-			<Col span={8}>
+			<Col span={8} className="rounded-xl">
 				<Col span={24} style={{ marginBottom: "10px" }}>
 					<Link to="/shop">
 						<Image

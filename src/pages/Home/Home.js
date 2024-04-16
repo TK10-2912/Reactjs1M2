@@ -5,12 +5,14 @@ import YearProduct from "../../components/home/YearProduct/YearProduct";
 import Laptop from "../../components/home/Laptop/NewArrivals";
 import Screen from "../../components/home/Screen/Screen";
 import Keyboard from "../../components/home/Keyboard/Keyboard";
+import Danhmucphobien from "../../components/home/Danhmucphobien/Danhmucphobien";
 
 const Home = () => {
   return (
     <div className="w-full mx-auto">
       <div className="max-w-container mx-auto px-4">
         <Sale />
+        <Danhmucphobien />
         <Laptop />
         <Screen />
         <Keyboard />

@@ -2,6 +2,7 @@ import React from "react";
 import Heading from "../Products/Heading";
 import Product from "../Products/Product";
 import {
+  headerKeyBoard,
   keyboard1,
   keyboard2,
   keyboard3,
@@ -19,10 +20,10 @@ const Keyboard = () => {
     <div className="w-full bg-white mt-5 h-full rounded-lg  pb-16">
       <Heading heading="Bàn Phím" />
       <Row >
-        <Col span={6} className="h-full p-4 rounded-xl flex flex-col items-center ">
-          <img src={keyboard1}></img>
+        <Col span={10} className=" p-4 rounded-xl flex flex-col items-center ">
+          <img className="h-full" src={headerKeyBoard}></img>
         </Col>
-        <Col span={18} className="h-full p-4 rounded-xl flex flex-col items-center ">
+        <Col span={14} className="h-full p-4 rounded-xl flex flex-col items-center ">
           <Row gutter={32} className="mb-8">
             <Col span={8}>
               <Product
