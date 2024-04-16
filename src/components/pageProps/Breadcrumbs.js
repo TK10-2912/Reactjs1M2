@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { HiOutlineChevronRight } from "react-icons/hi";
 import { useLocation } from "react-router-dom";
+import { translate } from "../../constants/translate";
 
 const Breadcrumbs = ({ prevLocation, title }) => {
   const location = useLocation();
@@ -21,7 +22,7 @@ const Breadcrumbs = ({ prevLocation, title }) => {
           <HiOutlineChevronRight />
         </span>
         <span className=" text-base capitalize font-semibold text-primeColor">
-          {locationPath}
+          {translate(locationPath)}
         </span>
       </p>
     </div>
