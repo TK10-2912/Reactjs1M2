@@ -10,6 +10,7 @@ import {
   screen6,
   newArrOne,
   headerLaptop,
+  manhinh,
 } from "../../../assets/images/index";
 import { Button, Col, Row } from "antd";
 
@@ -20,7 +21,7 @@ const Screen = () => {
       <Heading heading="Màn Hình" />
       <Row >
         <Col span={10} className=" p-4 rounded-xl flex flex-col items-center ">
-          <img src={headerLaptop}></img>
+          <img className="h-full" src={manhinh}></img>
         </Col>
         <Col span={14} className="h-full p-4 rounded-xl flex flex-col items-center ">
           <Row gutter={32} className="mb-8">

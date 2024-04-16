@@ -166,6 +166,7 @@ import screen3 from "../images/screen/screen3.png";
 import screen4 from "../images/screen/screen4.png";
 import screen5 from "../images/screen/screen5.png";
 import screen6 from "../images/screen/screen6.png";
+import manhinh from "../images/screen/screenHeader.png";
 //Logo
 import logoFooter from "../images/Logo/logoFooter.png";
 import logoHeader from "../images/Logo/logoHeader.png";
@@ -180,7 +181,9 @@ import slide7 from "../images/Slide/slide7.jpg";
 import chuot from "../images/Danhmucphobien/chuot.jpg";
 import tainghe from "../images/Danhmucphobien/tainghe.webp";
 
+
 export {
+  manhinh,
   chuot,
   tainghe,
   headerKeyBoard,

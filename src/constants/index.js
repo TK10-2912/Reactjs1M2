@@ -51,6 +51,16 @@ import {
   ricoh5,
   espson1,
   espson2,
+  laptop1,
+  laptop2,
+  laptop3,
+  laptop4,
+  laptop5,
+  screen1,
+  screen2,
+  screen3,
+  screen4,
+  screen5,
 } from "../assets/images/index";
 
 import "./style.css";
@@ -101,7 +111,7 @@ export const navBarList = [
 export const SplOfferData = [
   {
     _id: "201",
-    img: imprimante1,
+    img: laptop1,
     productName: "imprimante",
     currentPrice: "20.999.999đ",
     price: "18.999.999đ",
@@ -112,7 +122,7 @@ export const SplOfferData = [
   },
   {
     _id: "202",
-    img: imprimante2,
+    img: laptop2,
     productName: "imprimante",
     currentPrice: "20.999.999đ",
     price: "118.999.999đ",
@@ -123,7 +133,7 @@ export const SplOfferData = [
   },
   {
     _id: "203",
-    img: imprimante4,
+    img: laptop3,
     productName: "imprimante",
     currentPrice: "20.999.999đ",
     price: "18.999.999đ",
@@ -134,7 +144,7 @@ export const SplOfferData = [
   },
   {
     _id: "204",
-    img: imprimante5,
+    img: laptop4,
     productName: "imprimante",
     currentPrice: "20.999.999đ",
     price: "218.999.999đ",
@@ -145,7 +155,7 @@ export const SplOfferData = [
   },
   {
     _id: "205",
-    img: imprimante6,
+    img: laptop5,
     productName: "imprimante",
     currentPrice: "20.999.999đ",
     price: "18.999.999đ",
@@ -156,7 +166,7 @@ export const SplOfferData = [
   },
   {
     _id: "206",
-    img: imprimante7,
+    img: laptop1,
     productName: "imprimante",
     currentPrice: "20.999.999đ",
     price: "218.999.999đ",
@@ -167,7 +177,7 @@ export const SplOfferData = [
   },
   {
     _id: "207",
-    img: imprimante8,
+    img: laptop2,
     productName: "imprimante",
     currentPrice: "20.999.999đ",
     price: "18.999.999đ",
@@ -178,7 +188,7 @@ export const SplOfferData = [
   },
   {
     _id: "208",
-    img: imprimante9,
+    img: laptop3,
     productName: "imprimante",
     currentPrice: "20.999.999đ",
     price: "218.999.999đ",
@@ -189,7 +199,7 @@ export const SplOfferData = [
   },
   {
     _id: "209",
-    img: encre1,
+    img: laptop1,
     productName: "encre",
     price: "25.00",
     color: "Mixed",
@@ -199,7 +209,7 @@ export const SplOfferData = [
   },
   {
     _id: "210",
-    img: encre2,
+    img: laptop1,
     productName: "encre",
     price: "220.00",
     color: "Black",
@@ -209,7 +219,7 @@ export const SplOfferData = [
   },
   {
     _id: "211",
-    img: encre3,
+    img: laptop1,
     productName: "encre",
     price: "25.00",
     color: "Mixed",
@@ -219,7 +229,7 @@ export const SplOfferData = [
   },
   {
     _id: "212",
-    img: encre4,
+    img: laptop1,
     productName: "encre",
     price: "220.00",
     color: "Black",
@@ -229,7 +239,7 @@ export const SplOfferData = [
   },
   {
     _id: "213",
-    img: ruban1,
+    img: laptop1,
     productName: "Ruban",
     price: "25.00",
     color: "Mixed",
@@ -239,7 +249,7 @@ export const SplOfferData = [
   },
   {
     _id: "214",
-    img: ruban2,
+    img: laptop1,
     productName: "Ruban",
     price: "220.00",
     color: "Black",
@@ -249,7 +259,7 @@ export const SplOfferData = [
   },
   {
     _id: "215",
-    img: ruban3,
+    img: laptop1,
     productName: "Ruban",
     price: "25.00",
     color: "Mixed",
@@ -259,7 +269,7 @@ export const SplOfferData = [
   },
   {
     _id: "216",
-    img: ruban4,
+    img: laptop1,
     productName: "Ruban",
     price: "220.00",
     color: "Black",
@@ -269,7 +279,7 @@ export const SplOfferData = [
   },
   {
     _id: "217",
-    img: bac1,
+    img: screen1,
     productName: "Bac de dechet",
     price: "25.00",
     color: "Mixed",
@@ -279,7 +289,7 @@ export const SplOfferData = [
   },
   {
     _id: "219",
-    img: bac2,
+    img: screen2,
     productName: "Bac de dechet",
     price: "220.00",
     color: "Black",
@@ -289,7 +299,7 @@ export const SplOfferData = [
   },
   {
     _id: "220",
-    img: bac3,
+    img: screen3,
     productName: "Bac de dechet",
     price: "25.00",
     color: "Mixed",
@@ -299,7 +309,7 @@ export const SplOfferData = [
   },
   {
     _id: "221",
-    img: bac4,
+    img: screen4,
     productName: "Bac de dechet",
     price: "220.00",
     color: "Black",
@@ -315,7 +325,7 @@ export const SplOfferData = [
 export const paginationItems = [
   {
     _id: "201",
-    img: IMPRIMANTE_PANTUM_CP2200DW,
+    img: laptop1,
     productName: "Imprimante PANTUM CP2200DW",
     price: "35.00",
     color: "Blanc",
@@ -341,7 +351,7 @@ export const paginationItems = [
   },
   {
     _id: "202",
-    img: IMPRIMANTE_PANTUM_BM5100FDW,
+    img: laptop1,
     productName: "IMPRIMANTE PANTUM BM5100FDW",
     price: "450",
     color: "Blanc",
@@ -385,7 +395,7 @@ export const paginationItems = [
 
   {
     _id: "203",
-    img: IMPRIMANTE_PANTUM_BP5100DN,
+    img: laptop1,
     productName: "IMPRIMANTE PANTUM BP5100DN",
     price: "450",
     color: "Blanc",
@@ -428,7 +438,7 @@ export const paginationItems = [
   },
   {
     _id: "2005",
-    img: IMPRIMANTE_PANTUM_M6609N,
+    img: laptop1,
     productName: "IMPRIMANTE PANTUM M6559N",
     price: "450",
     color: "Blanc",
@@ -471,7 +481,7 @@ export const paginationItems = [
 
   {
     _id: "20005",
-    img: IMPRIMANTE_PANTUM_M6559N,
+    img: laptop1,
     productName: "IMPRIMANTE PANTUM M6559N",
     price: "450",
     color: "Blanc",
@@ -514,7 +524,7 @@ export const paginationItems = [
 
   {
     _id: "206",
-    img: IMPRIMANTE_PANTUM_P3300DN,
+    img: laptop1,
     productName: "IMPRIMANTE PANTUM P3300DN",
     price: "450",
     color: "Blanc",
@@ -568,7 +578,7 @@ export const paginationItems = [
 
   {
     _id: "207",
-    img: IMPRIMANTE_PANTUM_P3300DW,
+    img: laptop1,
     productName: "IMPRIMANTE PANTUM P3300DW",
     price: "450",
     color: "Blanc",
@@ -621,7 +631,7 @@ export const paginationItems = [
 
   {
     _id: "208",
-    img: IMPRIMANTE_PANTUM_P2509W,
+    img: laptop1,
     productName: "IMPRIMANTE PANTUM P2509W",
     price: "450",
     color: "Blanc",
@@ -663,7 +673,7 @@ export const paginationItems = [
   },
   {
     _id: "233",
-    img: IMPRIMANTE_PANTUM_P2509,
+    img: laptop1,
     productName: "IMPRIMANTE PANTUM P2509",
     price: "450",
     color: "Blanc",
@@ -676,7 +686,7 @@ export const paginationItems = [
   },
   {
     _id: "220",
-    img: bac3,
+    img: laptop1,
     productName: "Bac de dechet",
     price: "25.00",
     color: "Mixed",
@@ -686,7 +696,7 @@ export const paginationItems = [
   },
   {
     _id: "221",
-    img: bac4,
+    img: laptop1,
     productName: "Bac de dechet",
     price: "220.00",
     color: "Black",
@@ -696,7 +706,7 @@ export const paginationItems = [
   },
   {
     _id: "215",
-    img: ruban3,
+    img: laptop1,
     productName: "Ruban",
     price: "25.00",
     color: "Mixed",
@@ -706,7 +716,7 @@ export const paginationItems = [
   },
   {
     _id: "216",
-    img: ruban4,
+    img: laptop1,
     productName: "Ruban",
     price: "220.00",
     color: "Black",
@@ -716,7 +726,7 @@ export const paginationItems = [
   },
   {
     _id: "209",
-    img: encre1,
+    img: laptop1,
     productName: "encre",
     price: "25.00",
     color: "Mixed",
@@ -726,7 +736,7 @@ export const paginationItems = [
   },
   {
     _id: "210",
-    img: encre2,
+    img: laptop1,
     productName: "encre",
     price: "220.00",
     color: "Black",
@@ -737,7 +747,7 @@ export const paginationItems = [
 
   {
     _id: "211",
-    img: encre3,
+    img: laptop1,
     productName: "encre",
     price: "25.00",
     color: "Mixed",
@@ -747,7 +757,7 @@ export const paginationItems = [
   },
   {
     _id: "212",
-    img: encre4,
+    img: laptop1,
     productName: "encre",
     price: "220.00",
     color: "Black",
@@ -757,7 +767,7 @@ export const paginationItems = [
   },
   {
     _id: "213",
-    img: ruban1,
+    img: laptop1,
     productName: "Ruban",
     price: "25.00",
     color: "Mixed",
@@ -767,7 +777,7 @@ export const paginationItems = [
   },
   {
     _id: "214",
-    img: ruban2,
+    img: laptop1,
     productName: "Ruban",
     price: "220.00",
     color: "Black",
@@ -778,7 +788,7 @@ export const paginationItems = [
 
   {
     _id: "217",
-    img: bac1,
+    img: laptop1,
     productName: "Bac de dechet",
     price: "25.00",
     color: "Mixed",
@@ -788,7 +798,7 @@ export const paginationItems = [
   },
   {
     _id: "219",
-    img: bac2,
+    img: laptop1,
     productName: "Bac de dechet",
     price: "220.00",
     color: "Black",
@@ -801,7 +811,7 @@ export const paginationItems = [
 
   {
     _id: "hp1",
-    img: hp1,
+    img: laptop1,
     productName:
       "IMPRIMANTE HP JET D'ENCRE HP SMART TANK 516 COULEUR MFP 3EN1 A4 WIFI",
     price: "450",
@@ -866,7 +876,7 @@ export const paginationItems = [
 
   {
     _id: "hp2",
-    img: hp2,
+    img: screen1,
     productName: "IMPRIMANTE HP INK TANK WIRELESS 415 ALL-IN-ONE",
     price: "450",
     color: "Blanc",
@@ -880,7 +890,7 @@ export const paginationItems = [
 
   {
     _id: "hp3",
-    img: hp3,
+    img: screen2,
     productName: "IMPRIMANTE HP INK TANK WIRELESS 415 ALL-IN-ONE",
     price: "450",
     color: "Blanc",
@@ -984,7 +994,7 @@ export const paginationItems = [
   // =================== imprimante ricoh =================
   {
     _id: "ricoh1",
-    img: ricoh1,
+    img: screen3,
     productName: "IMPRIMANTE RICOH P501",
     price: "450",
     color: "Blanc",
@@ -1088,7 +1098,7 @@ export const paginationItems = [
 
   {
     _id: "ricoh2",
-    img: ricoh2,
+    img: screen4,
     productName: "IMPRIMANTE RICOH SP3710DN",
     price: "450",
     color: "Blanc",
@@ -1191,7 +1201,7 @@ export const paginationItems = [
   },
   {
     _id: "ricoh3",
-    img: ricoh3,
+    img: screen5,
     productName: "IMPRIMANTE RICOH SP4520DN",
     price: "450",
     color: "Blanc",
@@ -1294,7 +1304,7 @@ export const paginationItems = [
   },
   {
     _id: "ricoh4",
-    img: ricoh4,
+    img: screen1,
     productName: "IMPRIMANTE RICOH COULEUR LASER SPC840",
     price: "450",
     color: "Blanc",
@@ -1397,7 +1407,7 @@ export const paginationItems = [
   },
   {
     _id: "ricoh5",
-    img: ricoh5,
+    img: screen1,
     productName: "IMPRIMANTE RICOH SP4510DN (407313)",
     price: "450",
     color: "Blanc",
@@ -1503,7 +1513,7 @@ export const paginationItems = [
 
   {
     _id: "espson1",
-    img: espson1,
+    img: screen1,
     productName: "IMPRIMANTE EPSON L3251 3EN1 A4 WIFI",
     price: "450",
     color: "Blanc",
@@ -1607,7 +1617,7 @@ export const paginationItems = [
 
   {
     _id: "espson2",
-    img: espson2,
+    img: screen1,
     productName: "IMPRIMANTE EPSON JET D'ENCRE L3156 COULEUR A4  WIFI",
     price: "450",
     color: "Blanc",
