@@ -124,7 +124,7 @@ const Laptop = () => {
         </Col>
       </Row>
       <Row justify={"center"}>
-        <Button className="text-2xl h-1/2">Xem tất cả {">>"}</Button>
+        <Button className="text-2xl h-1/2  font-semibold border-2 border-black">Xem tất cả {">>"}</Button>
       </Row>
     </div>
   );

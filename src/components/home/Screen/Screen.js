@@ -73,7 +73,7 @@ const Screen = () => {
               inStock={true}
             /></Col>
           </Row>
-          <Row gutter={32} className="mb-8">
+          <Row gutter={32} >
             <Col span={8}>
               <Product
                 _id="100004"
@@ -125,7 +125,7 @@ const Screen = () => {
         </Col>
       </Row>
       <Row justify={"center"}>
-        <Button className="text-2xl h-1/2">Xem tất cả {">>"}</Button>
+        <Button className="text-2xl h-1/2  font-semibold border-2 border-black">Xem tất cả {">>"}</Button>
       </Row>
     </div>
   );

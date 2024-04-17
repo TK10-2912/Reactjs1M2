@@ -31,7 +31,7 @@ const Product = (props) => {
   };
 
   const handleWishList = () => {
-    toast.success("Product add to wish List");
+    toast.success("Thêm vào giỏ hàng thành công");
     setWishList(wishList.push(props));
     console.log(wishList);
   };

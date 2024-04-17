@@ -5,6 +5,8 @@ import introImageComment from "./intro-image-comment.png";
 import bannerImgOne from "./banner/bannerImgOne.webp";
 import bannerImgTwo from "./banner/bannerImgTwo.webp";
 import bannerImgThree from "./banner/bannerImgThree.webp";
+import bannerFooter1 from "./banner/bannerFooter1.webp";
+import bannerFooter2 from "./banner/bannerFooter2.webp";
 import saleImgOne from "./sale/saleImgOne.webp";
 import saleImgTwo from "./sale/saleImgTwo.webp";
 import saleImgThree from "./sale/saleImgThree.webp";
@@ -143,6 +145,7 @@ import newsTech3 from "../images/news/newTech3.png";
 import newsSale1 from "../images/news/newSale1.png";
 import newsSale2 from "../images/news/newSale2.png";
 import newsSale3 from "../images/news/newSale3.png";
+import newsFooter3 from "../images/news/newsFooter3.png";
 // Laptop
 import laptop1 from "../images/Laptop/laptop1.png";
 import laptop2 from "../images/Laptop/laptop2.png";
@@ -183,6 +186,8 @@ import tainghe from "../images/Danhmucphobien/tainghe.webp";
 
 
 export {
+  newsFooter3,
+  bannerFooter1,bannerFooter2,
   manhinh,
   chuot,
   tainghe,

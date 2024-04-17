@@ -9,12 +9,16 @@ import { Link } from "react-router-dom";
 const Payment = () => {
   const products = useSelector((state) => state.orebiReducer.products);
   const [totalAmt, setTotalAmt] = useState("");
+  const [nhanhang, setNhanHang] = useState(false);
+  const [momo, setMoMo] = useState(false);
+  const [vnPay, setVNPAY] = useState(false);
+  const [qr, setQr] = useState(false);
   const [shippingCharge, setShippingCharge] = useState("");
   useEffect(() => {
     let price = 0;
     products.map((item) => {
-      const piceSale= item.price - (item.price * item.sale)/100;
-      price +=  piceSale * item.quantity;
+      const piceSale = item.price - (item.price * item.sale) / 100;
+      price += piceSale * item.quantity;
       return price;
     });
     setTotalAmt(price);
@@ -28,6 +32,31 @@ const Payment = () => {
       setShippingCharge(20);
     }
   }, [totalAmt]);
+
+  const chooseNhanHang = () => {
+    setNhanHang(!nhanhang);
+    setMoMo(false)
+    setVNPAY(false)
+    setQr(false)
+  }
+  const chooseMOMO = () => {
+    setMoMo(!momo);
+    setNhanHang(false)
+    setVNPAY(false)
+    setQr(false)
+  }
+  const chooseVNPAY = () => {
+    setVNPAY(!vnPay);
+    setMoMo(false)
+    setNhanHang(false)
+    setQr(false)
+  }
+  const chooseQR = () => {
+    setQr(!qr);
+    setMoMo(false)
+    setVNPAY(false)
+    setNhanHang(false)
+  }
   return (
     <div className="max-w-container mx-auto px-4">
       <Breadcrumbs prevLocation={"Giỏ hàng"} title="Thanh toán" />
@@ -66,19 +95,19 @@ const Payment = () => {
           </div>
           <h1 className="text-2xl">*Phương thức thanh toán</h1>
           <div className="flex flex-col items-center ">
-            <Button className="text-base bg-red-600 w-1/2 text-white h-1/3" >Thanh toán khi nhận hàng</Button> <br/>
-            <Button className="text-base w-1/2 h-1/3" >Thanh toán qua ví điện tử Momo</Button><br/>
-            <Button className="text-base w-1/2 h-1/3">Thanh toán qua ví điện tử VNPAY</Button><br/>
-            <Button className="text-base w-1/2 h-1/3">Quét QR bằng ứng dụng ngân hàng</Button><br/>
-            
+            <div onClick={chooseNhanHang} className={`text-2xl text-center rounded-md leading-[3rem] w-full border border-slate-800 ${nhanhang == true ? "bg-red-600 text-white" : "bg-white"} hover:bg-red-600 hover:text-white h-1/3`}  >Thanh toán khi nhận hàng</div> <br />
+            <div onClick={chooseMOMO} className={`text-2xl text-center rounded-md leading-[3rem] w-full border border-slate-800 ${momo == true ? "bg-red-600 text-white" : "bg-white"} hover:bg-red-600 hover:text-white h-1/3`} >Thanh toán qua ví điện tử Momo</div><br />
+            <div onClick={chooseVNPAY} className={`text-2xl text-center rounded-md leading-[3rem] w-full border border-slate-800 ${vnPay == true ? "bg-red-600 text-white" : "bg-white"} hover:bg-red-600 hover:text-white h-1/3`}>Thanh toán qua ví điện tử VNPAY</div><br />
+            <div onClick={chooseQR} className={`text-2xl text-center rounded-md leading-[3rem] w-full border border-slate-800 ${qr == true ? "bg-red-600 text-white" : "bg-white"} hover:bg-red-600 hover:text-white h-1/3`}>Quét QR bằng ứng dụng ngân hàng</div><br />
+
             <Link to="/paymentQR">
               <button className="w-52 h-11 font-medium rounded-xl bg-blue-600 text-white hover:bg-black duration-300">
                 Thanh toán
               </button>
             </Link>
-         
+
           </div>
-        
+
         </div>
       </div>
     </div>

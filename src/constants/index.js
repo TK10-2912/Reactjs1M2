@@ -83,7 +83,16 @@ export const getUserLocalStorage = (key) => {
 export const removeUserLocalStorage = (user) => {
   localStorage.removeItem(`${user}`);
 }
-
+export const cssColResponsiveSpan = (xs, sm, md, lg, xl, xxl) => {
+	return {
+		xs: { span: xs },
+		sm: { span: sm },
+		md: { span: md },
+		lg: { span: lg },
+		xl: { span: xl },
+		xxl: { span: xxl },
+	};
+}
 export const navBarList = [
   {
     _id: 1001,
