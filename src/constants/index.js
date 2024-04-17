@@ -75,8 +75,6 @@ export const setUserLocalStorage = (key, object) => {
 export const getUserLocalStorage = (key) => {
   const data = localStorage.getItem(key);
   const result = data ? JSON.parse(data) : null;
-
-  console.log("aaaa", result);
   return result
 }
 
