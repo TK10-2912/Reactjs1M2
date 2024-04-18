@@ -12,20 +12,20 @@ import {
   headerLaptop,
   manhinh,
 } from "../../../assets/images/index";
-import { Button, Col, Row } from "antd";
+import { Button, div, Row } from "antd";
 
 const Screen = () => {
 
   return (
-    <div className="w-full bg-white mt-5  h-full rounded-lg pb-16">
+    <div className="w-full bg-white mt-5  rounded-lg pb-16">
       <Heading heading="Màn Hình" />
-      <Row >
-        <Col span={10} className=" p-4 rounded-xl flex flex-col items-center ">
-          <img className="h-full" src={manhinh}></img>
-        </Col>
-        <Col span={14} className="h-full p-4 rounded-xl flex flex-col items-center ">
-          <Row gutter={32} className="mb-8">
-            <Col span={8}>
+      <Row className="grid grid-cols-7 gap-4 " >
+        <div className=" p-4 col-span-3 rounded-xl flex flex-col items-center ">
+          <img className="h-[96%]" src={manhinh}></img>
+        </div>
+        <div className="p-4 col-span-4 rounded-xl flex flex-col items-center ">
+          <div className="grid grid-cols-3 gap-8">
+            <div>
               <Product
                 _id="100001"
                 img={screen1}
@@ -41,8 +41,8 @@ const Screen = () => {
                 brand="Lenovo"
                 des="Màn hình siuuu rẻ"
               />
-            </Col>
-            <Col span={8}>
+            </div>
+            <div >
               <Product
                 _id="100002"
                 img={screen2}
@@ -57,24 +57,25 @@ const Screen = () => {
                 des="Màn hình siuuu rẻ"
                 inStock={true}
               />
-            </Col>
-            <Col span={8}><Product
-              _id="100003"
-              img={screen3}
-              productName="Màn hình Viewsonic VA2432-H 24"
-              price={2190000}
-              priceOriginal={4550000}
-              color="Gray"
-              brand="Gigabyte"
-              badge={false}
-              stars={4}
-              sale={52}
-              des="Màn hình siuuu rẻ"
-              inStock={true}
-            /></Col>
-          </Row>
-          <Row gutter={32} >
-            <Col span={8}>
+            </div>
+            <div >
+              <Product
+                _id="100003"
+                img={screen3}
+                productName="Màn hình Viewsonic VA2432-H 24"
+                price={2190000}
+                priceOriginal={4550000}
+                color="Gray"
+                brand="Gigabyte"
+                badge={false}
+                stars={4}
+                sale={52}
+                des="Màn hình siuuu rẻ"
+                inStock={true}
+              /></div>
+
+
+            <div >
               <Product
                 _id="100004"
                 img={screen4}
@@ -89,8 +90,8 @@ const Screen = () => {
                 des="Màn hình siuuu rẻ"
                 inStock={true}
               />
-            </Col>
-            <Col span={8}>
+            </div>
+            <div >
               <Product
                 _id="100005"
                 img={screen5}
@@ -104,8 +105,8 @@ const Screen = () => {
                 sale={6}
                 des="Màn hình siuuu rẻ"
                 inStock={true}
-              /></Col>
-            <Col span={8}>
+              /></div>
+            <div >
               <Product
                 _id="100005"
                 img={screen6}
@@ -120,9 +121,10 @@ const Screen = () => {
                 des="Màn hình siuuu rẻ"
                 inStock={true}
               />
-            </Col>
-          </Row>
-        </Col>
+            </div>
+          </div>
+
+        </div>
       </Row>
       <Row justify={"center"}>
         <Button className="text-2xl h-1/2  font-semibold border-2 border-black">Xem tất cả {">>"}</Button>

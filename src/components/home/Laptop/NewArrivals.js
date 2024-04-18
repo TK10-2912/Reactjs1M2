@@ -16,15 +16,15 @@ import { Button, Col, Row } from "antd";
 const Laptop = () => {
 
   return (
-    <div className="w-full bg-white rounded-lg  h-full  pb-16">
+    <div className="w-full bg-white rounded-lg   pb-16">
       <Heading heading="Laptop" />
-      <Row >
-        <Col span={10} className="h-full p-4 rounded-xl flex flex-col items-center ">
-          <img className="mt-[10px]" src={headerLaptop}></img>
-        </Col>
-        <Col span={14} className="h-full p-4 rounded-xl flex flex-col items-center ">
-          <Row gutter={32} className="mb-8">
-            <Col span={8}>
+      <Row className="grid grid-cols-7 gap-4 " >
+        <div className=" p-4 col-span-3 rounded-xl flex flex-col items-start ">
+          <img className="h-[96%] rounded-xl " src={headerLaptop}></img>
+        </div>
+        <div className="p-4 col-span-4 rounded-xl flex flex-col items-center ">
+          <div  className="grid grid-cols-3 gap-8">
+            <div >
               <Product
                 _id="100001"
                 img={laptop1}
@@ -40,8 +40,9 @@ const Laptop = () => {
                 brand="Lenovo"
                 des="Laptop siuuu rẻ"
               />
-            </Col>
-            <Col span={8}>
+            </div>
+
+            <div >
               <Product
                 _id="100002"
                 img={laptop2}
@@ -56,8 +57,10 @@ const Laptop = () => {
                 des="Laptop siuuu rẻ"
                 inStock={true}
               />
-            </Col>
-            <Col span={8}><Product
+            </div>
+
+            <div >
+              <Product
               _id="100003"
               img={laptop3}
               productName="Laptop gaming ASUS ROG G14"
@@ -70,10 +73,9 @@ const Laptop = () => {
               sale={7}
               des="Laptop siuuu rẻ"
               inStock={true}
-            /></Col>
-          </Row>
-          <Row gutter={32} className="mb-8">
-            <Col span={8}>
+            />
+            </div>
+            <div >
               <Product
                 _id="100004"
                 img={laptop4}
@@ -88,8 +90,9 @@ const Laptop = () => {
                 des="Laptop siuuu rẻ"
                 inStock={true}
               />
-            </Col>
-            <Col span={8}>
+            </div>
+
+            <div >
               <Product
                 _id="100005"
                 img={laptop5}
@@ -103,8 +106,10 @@ const Laptop = () => {
                 sale={7}
                 des="Laptop siuuu rẻ"
                 inStock={true}
-              /></Col>
-            <Col span={8}>
+              />
+              </div>
+
+            <div >
               <Product
                 _id="100005"
                 img={laptop6}
@@ -119,9 +124,12 @@ const Laptop = () => {
                 des="Laptop siuuu rẻ"
                 inStock={true}
               />
-            </Col>
-          </Row>
-        </Col>
+            </div>
+          
+          </div>
+         
+           
+        </div>
       </Row>
       <Row justify={"center"}>
         <Button className="text-2xl h-1/2  font-semibold border-2 border-black">Xem tất cả {">>"}</Button>

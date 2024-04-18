@@ -28,52 +28,52 @@ const Sale = () => {
 		borderRadius: "50%",
 	};
 	return (
-		<Row style={{ marginTop: "10px", marginBottom: "10px" }}   gutter={[8, 8]}>
-			<Col {...cssColResponsiveSpan(24,16,16,16,16,16)} span={16} className="rounded-xl">
-				<Carousel style={{ height: "100%", }} className="max-[450px]:h-[300px] max-[450px]:w-[100%] " autoplay >
-					<div>
+		<Row style={{ marginTop: "10px", marginBottom: "10px" }}  gutter={[8, 8]}>
+			<Col {...cssColResponsiveSpan(24,16,16,16,16,16)} span={16} className="rounded-xl  max-[450px]:h-[150px]">
+				<Carousel style={{ height: "100%" }} className=" max-[450px]:h-[150px]" autoplay >
+					<div className=" max-[450px]:h-[150px]">
 						<h3 style={contentStyle}> <Link to="/shop">
 							<Image
-								className="h-full w-full  "
+								className="h-full w-full  max-[450px]:h-[150px] "
 								imgSrc={slide1}
 							/>
 						</Link></h3>
 					</div>
-					<div>
+					<div className=" max-[450px]:h-[150px]">
 						<h3 style={contentStyle}> <Link to="/shop">
 							<Image
-								className="h-full w-full "
+								className="h-full w-full  max-[450px]:h-[150px]"
 								imgSrc={slide2}
 							/>
 						</Link></h3>
 					</div>
-					<div>
+					<div className=" max-[450px]:h-[150px]">
 						<h3 style={contentStyle}> <Link to="/shop">
 							<Image
-								className="h-full w-full "
+								className="h-full w-full  max-[450px]:h-[150px]"
 								imgSrc={slide3}
 							/>
 						</Link></h3>
-					</div>
-					<div>
+					</div >
+					<div className=" max-[450px]:h-[150px]">
 						<h3 style={contentStyle}> <Link to="/shop">
 							<Image
-								className="h-full w-full "
+								className="h-full w-full max-[450px]:h-[150px] "
 								imgSrc={slide4}
 							/>
 						</Link></h3>
 					</div>
-					<div>
+					<div className=" max-[450px]:h-[150px]">
 						<h3 style={contentStyle}> <Link to="/shop">
 							<Image
-								className="h-full w-full "
+								className="h-full w-full max-[450px]:h-[150px]"
 								imgSrc={slide7}
 							/>
 						</Link></h3>
 					</div>
 				</Carousel>
 			</Col>
-			<Col {...cssColResponsiveSpan(24,8,8,8,8,8)} span={8} className="rounded-xl">
+			<Col {...cssColResponsiveSpan(24,8,8,8,8,8)} span={8} className="rounded-xl max-[450px]:hidden">
 				<Col span={24} style={{ marginBottom: "10px" }}>
 					<Link to="/shop">
 						<Image

@@ -37,7 +37,7 @@ const Product = (props) => {
   };
   console.log("sale: ", props.sale);
   return (
-    <div className="w-full group relative border-solid border-2 rounded-2xl ">
+    <div className="w-full group h-full relative border-solid border-2 rounded-2xl ">
       <div className="max-w-80 max-h-80 relative overflow-y-hidden rounded-2xl">
         <div onClick={handleProductDetails}>
           <Image className="w-full h-full cursor-pointer" imgSrc={props.img} />
