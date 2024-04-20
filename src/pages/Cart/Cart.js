@@ -37,9 +37,9 @@ const Cart = () => {
     <div className="max-w-container mx-auto px-4">
       <Breadcrumbs title="Giỏ hàng" />
       {products.length > 0 ? (
-        <Row>
-          <Col span={16}>
-            <div className=" w-full h-20 bg-[#F5F7F7] text-primeColor hidden lgl:grid grid-cols-5 place-content-center px-6 text-lg font-titleFont font-semibold">
+        <Row className="mb-5 grid grid-cols-3">
+          <div className="bg-white col-span-2 max-[450px]:col-span-3 rounded-lg">
+            <div className=" w-full h-20 bg-white text-primeColor   hidden lgl:grid grid-cols-5 place-content-center px-6 text-lg font-titleFont font-semibold">
               <h2 className="col-span-2">Sản phẩm</h2>
               <h2>Giá tiền</h2>
               <h2>Số lượng</h2>
@@ -55,53 +55,55 @@ const Cart = () => {
 
             <button
               onClick={() => dispatch(resetCart())}
-              className="py-2 px-10 bg-red-500 text-white font-semibold uppercase mb-4 hover:bg-red-700 duration-300"
+              className="py-2 px-10  max-[450px]:ml-2 rounded-xl bg-red-500 text-white font-semibold uppercase mb-4 hover:bg-red-700 duration-300"
             >
               Reset cart
             </button>
-          </Col>
-          <Col span={8}>
-            <div class="block max-w-7xl gap-4 justify-end p-6 bg-white border mx-5 rounded-lg ">
+          </div>
+
+
+          <div className="col-span-1 max-[450px]:col-span-3 ">
+            <div class="block max-w-7xl gap-4 justify-end p-6 max-[450px]:mx-0 max-[450px]:mt-4 bg-white border mx-5 rounded-lg ">
               <div className="w-96 flex flex-col gap-4">
-                <h1 className="text-2xl font-semibold border-b-2 border-x-stone-800">Tóm tắt đơn hàng</h1>
+                <h1 className="text-2xl max-[450px]:text-sm font-semibold border-b-2 border-x-stone-800">Tóm tắt đơn hàng</h1>
                 <div>
-                  <p className="flex items-center justify-between   py-1.5 text-lg px-4 font-medium">
-                    Tổng tiền hàng
-                    <span className="font-semibold tracking-wide font-titleFont">
+                  <p className="flex items-center justify-between  max-[450px]:justify-start max-[450px]:text-[10px] py-1.5 text-lg px-4 font-medium">
+                    Tổng tiền hàng:
+                    <span className="font-semibold tracking-wide  max-[450px]:ml-3 font-titleFont">
                       {formatNumber(totalAmt)}
                     </span>
                   </p>
-                  <p className="flex items-center justify-between   py-1.5 text-lg px-4 font-medium">
-                   Phí vận chuyển
-                    <span className="font-semibold tracking-wide font-titleFont">
+                  <p className="flex items-center justify-between max-[450px]:justify-start max-[450px]:text-[10px]   py-1.5 text-lg px-4 font-medium">
+                   Phí vận chuyển:
+                    <span className="font-semibold tracking-wide max-[450px]:ml-3 font-titleFont">
                       {formatNumber(shippingCharge)}
                     </span>
                   </p>
-                  <p className="flex items-center border-b-2 border-x-stone-800 justify-between  py-1.5 text-lg px-4 font-medium">
-                    Tổng tạm tính
-                    <span className="font-bold tracking-wide text-lg font-titleFont">
+                  <p className="flex items-center border-b-2 max-[450px]:justify-start max-[450px]:text-[10px] border-x-stone-800 justify-between  py-1.5 text-lg px-4 font-medium">
+                    Tổng tạm tính:
+                    <span className="font-bold tracking-wide text-lg text-red-700 max-[450px]:ml-3 font-titleFont">
                       {formatNumber(totalAmt + shippingCharge)}
                     </span>
                   </p>
                 </div>
               </div>
               <div className="w-96 flex flex-col gap-4">
-                <h1 className="text-xl font-semibold ">Vocher</h1>
+                <h1 className="text-xl font-semibold max-[450px]:text-sm">Vocher</h1>
                 <div>
 
                   <form>
                     <label for="search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                     <div class="relative">
-                      <input type="search" id="search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Nhập mã giảm giá" required />
-                      <button type="submit" class=" text-white absolute end-2.5 bottom-2.5 bg-red-700 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Áp dụng</button>
+                      <input type="search" id="search" class="block w-full max-[450px]:w-[90%] p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Nhập mã giảm giá" required />
+                      <button type="submit" class=" text-white absolute end-2.5 max-[450px]:right-[13%] bottom-2.5 bg-red-700 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Áp dụng</button>
                     </div>
                   </form>
                   
                 </div>
-                <p className="text-base  font-semibold ">TỔNG THANH TOÁN: <span className="text-red-700">{formatNumber(totalAmt + shippingCharge)}</span></p>
+                <p className="text-base max-[450px]:text-sm font-semibold ">TỔNG THANH TOÁN: <span className="text-red-700">{formatNumber(totalAmt + shippingCharge)}</span></p>
                 <div className="flex justify-end">
                   <Link to="/paymentgateway">
-                    <button className="w-52 h-11 font-medium rounded-xl bg-blue-600 text-white hover:bg-black duration-300">
+                    <button className="w-52 h-11 max-[450px]:justify-center font-medium max-[450px]:text-sm rounded-xl bg-blue-600 text-white hover:bg-black duration-300">
                       Tiến hành thanh toán 
                     </button>
                   </Link>
@@ -109,7 +111,7 @@ const Cart = () => {
               </div>
             </div>
 
-          </Col>
+          </div>
         </Row>
 
       ) : (

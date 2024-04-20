@@ -2,7 +2,8 @@ import { Col, Row } from "antd";
 import React from "react";
 import { Link } from "react-router-dom";
 const InformationDelivery = () => {
-    return (<>
+    return (
+    <>
 
         <p className="text-xl">Thông tin vận chuyển </p>
         <i className="text-base">Bạn đã có tài khoản? <a href="#" className="text-blue-500">Đăng nhập ngay</a> để tự động điền địa chỉ.</i>

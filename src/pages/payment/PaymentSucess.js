@@ -32,43 +32,43 @@ const PaymentSuccess = () => {
         <div className="max-w-container mx-auto px-4">
             <Breadcrumbs prevLocation={"Giỏ hàng"} title="Thanh toán" />
             <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 gap-4 h-full -mt-5 xl:-mt-8 pb-10 ">
-                <div className="h-full xl:col-span-6  bg-gray-100 p-4 rounded-xl flex flex-col items-center ">
+                <div className="h-full xl:col-span-6  bg-white 0 p-4 rounded-xl flex flex-col items-center ">
 
                     <img className="w-1/12" src={tickSuccess}></img>
-                    <p className="font-medium text-2xl">Giao dịch thành công</p>
-                    <p className=" text-lg">Cảm ơn vì đã tin tưởng đặt hàng</p>
-                    <p className=" text-lg">SKY Gear sẽ chuẩn bị đơn hàng cho bạn ngay</p>
-                    <p className=" text-lg">Bạn sẽ sớm nhận được email thông báo</p>
-                    <p className="font-medium text-left text-xl">Thông tin hóa đơn</p>
-                    <form className="w-1/3 mb-4">
+                    <p className="font-medium text-2xl max-[450px]:text-base">Giao dịch thành công</p>
+                    <p className=" text-lg max-[450px]:text-sm">Cảm ơn vì đã tin tưởng đặt hàng</p>
+                    <p className=" text-lg max-[450px]:text-sm">SKY Gear sẽ chuẩn bị đơn hàng cho bạn ngay</p>
+                    <p className=" text-lg max-[450px]:text-sm">Bạn sẽ sớm nhận được email thông báo</p>
+                    <p className="font-medium text-center text-xl w-full  max-[450px]:text-base max-[450px]:text-left  my-5 ">Thông tin hóa đơn</p>
+                    <form className="w-1/3 max-[450px]:w-full mb-4">
                         <Row className="border-b border-b-slate-500">
-                            <Col span="12" className="text-lg font-medium opacity-50">Mã đơn hàng:</Col>
-                            <Col span="12" className="text-lg font-medium opacity-50 text-right">342LHJYGKSHJKD</Col>
+                            <Col span="12" className="text-lg max-[450px]:text-sm font-medium opacity-50">Mã đơn hàng:</Col>
+                            <Col span="12" className="text-lg max-[450px]:text-sm font-medium opacity-50 text-right">342LHJYGKSHJKD</Col>
                         </Row>
                         <Row className="border-b border-b-slate-500">
-                            <Col span="12" className="text-lg font-medium opacity-50">Thành tiền: </Col>
-                            <Col span="12" className="text-lg font-medium opacity-50 text-right"> {formatNumber(totalAmt + shippingCharge)}</Col>
+                            <Col span="12" className="text-lg max-[450px]:text-sm font-medium opacity-50">Thành tiền: </Col>
+                            <Col span="12" className="text-lg max-[450px]:text-sm font-medium opacity-50 text-right"> {formatNumber(totalAmt + shippingCharge)}</Col>
                         </Row>
                         <Row className="border-b border-b-slate-500">
-                            <Col span="12" className="text-lg font-medium opacity-50">Phương thức thanh toán: </Col>
-                            <Col span="12" className="text-lg font-medium opacity-50 text-right">MOMO QR Code</Col>
+                            <Col span="12" className="text-lg max-[450px]:text-sm font-medium opacity-50">Phương thức thanh toán: </Col>
+                            <Col span="12" className="text-lg max-[450px]:text-sm font-medium opacity-50 text-right">MOMO QR Code</Col>
                         </Row>
                         <Row className="border-b border-b-slate-500">
-                            <Col span="12" className="text-lg font-medium opacity-50">Số hóa đơn: </Col>
-                            <Col span="12" className="text-lg font-medium opacity-50 text-right">2386713489</Col>
+                            <Col span="12" className="text-lg max-[450px]:text-sm font-medium opacity-50">Số hóa đơn: </Col>
+                            <Col span="12" className="text-lg max-[450px]:text-sm font-medium opacity-50 text-right">2386713489</Col>
                         </Row>
                         <Row className="border-b border-b-slate-500">
-                            <Col span="12" className="text-lg font-medium opacity-50">Thời gian đặt hàng: </Col>
-                            <Col span="12" className="text-lg font-medium opacity-50 text-right ">{formattedDate}</Col>
+                            <Col span="12" className="text-lg max-[450px]:text-sm font-medium opacity-50">Thời gian đặt hàng: </Col>
+                            <Col span="12" className="text-lg max-[450px]:text-sm font-medium opacity-50 text-right ">{formattedDate}</Col>
                         </Row>
                         <Row >
-                            <Col span="12" className="text-lg font-medium opacity-50">Thời gian thanh toán:</Col>
-                            <Col span="12" className="text-lg font-medium opacity-50 text-right">{formattedDate}</Col>
+                            <Col span="12" className="text-lg max-[450px]:text-sm font-medium opacity-50">Thời gian thanh toán:</Col>
+                            <Col span="12" className="text-lg max-[450px]:text-sm font-medium opacity-50 text-right">{formattedDate}</Col>
                         </Row>
                     </form>
 
                     <Link to="/shop">
-                        <button className=" px-2 w-full text-2xl h-11 font-medium rounded-xl bg-green-400 text-white hover:bg-black duration-300">
+                        <button className=" px-2 w-full max-[450px]:text-sm text-2xl h-11 font-medium rounded-xl bg-green-400 text-white hover:bg-black duration-300">
                             Tiếp tục mua hàng -------{">"}
                         </button>
                     </Link>
