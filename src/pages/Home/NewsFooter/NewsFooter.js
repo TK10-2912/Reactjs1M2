@@ -8,23 +8,23 @@ const NewsFooter = () => {
     return (
         <div className="w-full  mb-5 bg-white h-full rounded-lg ">
             <Heading heading="Tin tức" />
-            <Row gutter={16} className="px-5">
-                <Col span={8}>
+            <Row  className="px-5 grid grid-cols-3 max-[450px]:grid-cols-2 gap-4">
+                <div >
                     <img className="rounded-xl" src={newsMain3} />
-                    <p className="text-xl font-semibold">Disney cho ra mắt HoloTile liệu đây sẽ là cánh cửa mới để vực dậy cho Game thực tế ảo (VR) ?</p>
-                </Col>
-                <Col span={8}>
+                    <p className="text-xl font-semibold max-[450px]:text-sm">Disney cho ra mắt HoloTile liệu đây sẽ là cánh cửa mới để vực dậy cho Game thực tế ảo (VR) ?</p>
+                </div>
+                <div >
                     <img className="rounded-xl" src={newsMain2} />
-                    <p className="text-xl font-semibold">Game NFT là gì ? Cách kiếm tiền từ game NFT - Xu hướng game 2024</p>
-                </Col>
-                <Col span={8}>
-                    <img className="rounded-xl h-[77%] w-full" src={newsFooter3} />
+                    <p className="text-xl font-semibold max-[450px]:text-sm">Game NFT là gì ? Cách kiếm tiền từ game NFT - Xu hướng game 2024</p>
+                </div>
+                <div className="max-[450px]:hidden">
+                    <img className="rounded-xl h-[77%] w-full " src={newsFooter3} />
                     <p className="text-xl font-semibold">Highlights MWC 2024: Tương lai là ưu tiên hàng đầu</p>
-                </Col>
+                </div>
             </Row>
             <Row justify={"end"}>
                 <Link to="/news">
-                    <p className="text-xl font-medium">Xem thêm {`>>`} </p>
+                    <p className="text-xl  font-medium max-[450px]:text-sm">Xem thêm {`>>`} </p>
                 </Link>
             </Row>
         </div>

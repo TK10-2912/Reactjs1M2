@@ -37,8 +37,8 @@ const Footer = () => {
             <a href="https://flowbite.com" class="flex items-center space-x-3 rtl:space-x-reverse">
               <img src={logoFooter} class="h-20" alt="Flowbite Logo" />
             </a>
-            <FooterListTitle title="Sky Gear - No Tech No Life" />
-            <h3 className="text-xl w-full text-left font-bodyFont pl-4 font-semibold mb-2 text-white">{"Liên hệ"}</h3>
+            <FooterListTitle check={false} title="Sky Gear - No Tech No Life" />
+            <h3 className="text-xl w-full text-left font-bodyFont pl-4 font-semibold mb-2 border-b border-white text-white">{"Liên hệ"}</h3>
             <ul className="flex flex-col gap-2">
               <li className="font-titleFont text-base text-white hover:text-red-600 text  hover:tracking-wide decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
                 <EnvironmentOutlined />  100 Bạch Mai, quận Hai Bà Trưng,
@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <FooterListTitle title="Chính sách" />
+          <FooterListTitle check={true} title="Chính sách" />
           <ul className="flex flex-col gap-2">
             <li className="font-titleFont text-base text-white hover:text-red-600 text  hover:tracking-wide decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Điều khoản và điều kiện
@@ -71,7 +71,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <FooterListTitle title="Hướng dẫn" />
+          <FooterListTitle check={true} title="Hướng dẫn" />
           <ul className="flex flex-col gap-2">
             <li className="font-titleFont text-base text-white hover:text-red-600 text  hover:tracking-wide decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Hướng dẫn mua hàng
@@ -115,7 +115,7 @@ const Footer = () => {
                 </div>
                 <button
                   onClick={handleSubscription}
-                  className="bg-white text-lightText w-[30%] h-12 hover:bg-red-600 hover:text-white duration-300 text-base  hover:tracking-wide"
+                  className="bg-red-600 text-white w-[30%] h-12  hover:bg-red-500 duration-300 text-base  hover:tracking-wide"
                 >
                   ĐĂNG KÝ
                 </button>

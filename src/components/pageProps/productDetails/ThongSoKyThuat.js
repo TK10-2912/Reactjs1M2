@@ -4,7 +4,7 @@ import { SplOfferData } from "../../../constants";
 const ThongSoKyThuat = () => {
 	return (
 		<div className="max-w-full overflow-x-auto bg-white">
-			<div className="text-2xl m-4 font-bold">Thông số kỹ thuật</div>
+			<div className="text-2xl max-[450px]:text-xl m-4 font-bold">Thông số kỹ thuật</div>
 			<div class="w-full flex items-center justify-center">
 				<hr class="w-1/2 h-1 bg-red-500" />
 				<hr class="w-1/2 h-1 bg-gray-400" />

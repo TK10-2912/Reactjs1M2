@@ -19,12 +19,12 @@ const Keyboard = () => {
   return (
     <div className="w-full bg-white mt-5  rounded-lg  pb-16">
       <Heading heading="Bàn Phím" />
-      <Row className="grid grid-cols-7 gap-4 ">
-        <div className=" p-4 col-span-3 rounded-xl flex flex-div items-start ">
-          <img className="h-[96%] rounded-xl" src={headerKeyBoard}></img>
+      <Row className="grid grid-cols-7 max-[450px]:grid-cols-6 gap-4 ">
+        <div className=" p-4 col-span-3 max-[450px]:hidden rounded-xl flex flex-div items-start ">
+          <img className="h-[100%] rounded-xl" src={headerKeyBoard}></img>
         </div>
-        <div className="p-4 col-span-4 rounded-xl flex flex-div items-center ">
-          <div className="grid grid-cols-3 gap-8">
+        <div className="p-4 col-span-4 max-[450px]:col-span-6 rounded-xl flex flex-div items-center ">
+          <div className="grid grid-cols-3 max-[450px]:grid-cols-2 gap-8">
             <div >
               <Product
                 _id="100001"
@@ -40,6 +40,27 @@ const Keyboard = () => {
                 badge={true}
                 brand="Lenovo"
                 des="Laptop siuuu rẻ"
+                configuration={[
+                  { id:"pr_1",
+                    select1:"Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:18990000
+                  },
+                  {
+                    id:"pr_2",
+                    select1:"Core i7-7840HS,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:21890000
+                  },
+                  {
+                    id:"pr_3",
+                    select1:"Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:18990000
+                  },
+                  {
+                    id:"pr_4",
+                    select1:"Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:18990000
+                  }
+                ]}
               />
             </div>
             <div >
@@ -55,6 +76,27 @@ const Keyboard = () => {
                 stars={4}
                 sale={7}
                 des="Laptop siuuu rẻ"
+                configuration={[
+                  { id:"pr_1",
+                    select1:"Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:18990000
+                  },
+                  {
+                    id:"pr_2",
+                    select1:"Core i7-7840HS,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:21890000
+                  },
+                  {
+                    id:"pr_3",
+                    select1:"Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:18990000
+                  },
+                  {
+                    id:"pr_4",
+                    select1:"Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:18990000
+                  }
+                ]}
                 inStock={true}
               />
             </div>
@@ -72,6 +114,27 @@ const Keyboard = () => {
                 sale={7}
                 des="Laptop siuuu rẻ"
                 inStock={true}
+                configuration={[
+                  { id:"pr_1",
+                    select1:"Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:18990000
+                  },
+                  {
+                    id:"pr_2",
+                    select1:"Core i7-7840HS,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:21890000
+                  },
+                  {
+                    id:"pr_3",
+                    select1:"Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:18990000
+                  },
+                  {
+                    id:"pr_4",
+                    select1:"Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:18990000
+                  }
+                ]}
               /></div>
 
             <div >
@@ -88,9 +151,30 @@ const Keyboard = () => {
                 sale={7}
                 des="Laptop siuuu rẻ"
                 inStock={true}
+                configuration={[
+                  { id:"pr_1",
+                    select1:"Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:18990000
+                  },
+                  {
+                    id:"pr_2",
+                    select1:"Core i7-7840HS,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:21890000
+                  },
+                  {
+                    id:"pr_3",
+                    select1:"Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:18990000
+                  },
+                  {
+                    id:"pr_4",
+                    select1:"Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:18990000
+                  }
+                ]}
               />
             </div>
-            <div >
+            <div className="max-[450px]:hidden" >
               <Product
                 _id="100005"
                 img={keyboard5}
@@ -104,8 +188,29 @@ const Keyboard = () => {
                 sale={7}
                 des="Laptop siuuu rẻ"
                 inStock={true}
+                configuration={[
+                  { id:"pr_1",
+                    select1:"Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:18990000
+                  },
+                  {
+                    id:"pr_2",
+                    select1:"Core i7-7840HS,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:21890000
+                  },
+                  {
+                    id:"pr_3",
+                    select1:"Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:18990000
+                  },
+                  {
+                    id:"pr_4",
+                    select1:"Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:18990000
+                  }
+                ]}
               /></div>
-            <div >
+            <div className="max-[450px]:hidden">
               <Product
                 _id="100005"
                 img={keyboard6}
@@ -119,13 +224,34 @@ const Keyboard = () => {
                 sale={7}
                 des="Laptop siuuu rẻ"
                 inStock={true}
+                configuration={[
+                  { id:"pr_1",
+                    select1:"Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:18990000
+                  },
+                  {
+                    id:"pr_2",
+                    select1:"Core i7-7840HS,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:21890000
+                  },
+                  {
+                    id:"pr_3",
+                    select1:"Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:18990000
+                  },
+                  {
+                    id:"pr_4",
+                    select1:"Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    priceSelect:18990000
+                  }
+                ]}
               />
             </div>
           </div>
         </div>
       </Row>
       <Row justify={"center"}>
-        <Button className="text-2xl h-1/2 font-semibold border-2 border-black">Xem tất cả {">>"}</Button>
+        <Button className="text-2xl h-1/2 font-semibold text-white border-2 max-[450px]:text-base  bg-red-600 hover:bg-red-500 max-[450px]:text-white max-[450px]:border-none border-black">Xem tất cả {">>"}</Button>
       </Row>
     </div>
   );

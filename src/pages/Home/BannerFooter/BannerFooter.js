@@ -5,13 +5,13 @@ const BannerFooter = () => {
 
     return (
         <div className="w-full  mt-5 mb-5 h-full rounded-lg pb-16">
-            <Row gutter={32}>
-                <Col span={12}>
-                    <img className="rounded-xl" src={bannerFooter1} />
-                </Col>
-                <Col span={12}>
+            <Row className="grid grid-cols-6 gap-8">
+                <div className="col-span-3 max-[450px]:col-span-6 ">
+                    <img className="rounded-xl " src={bannerFooter1} />
+                </div>
+                <div className="col-span-3  max-[450px]:hidden">
                     <img className="rounded-xl" src={bannerFooter2} />
-                </Col>
+                </div>
             </Row>
         </div>
     );

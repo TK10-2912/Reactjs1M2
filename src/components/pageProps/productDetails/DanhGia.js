@@ -3,18 +3,17 @@ import { SplOfferData } from "../../../constants";
 import { Button, Col, Rate, Row } from "antd";
 
 const DanhGia = (productInfo) => {
-    console.log("hiihihih",productInfo);
     return (
         <>
             <div className="max-w-full overflow-x-auto bg-white rounded-xl">
-                <Row>
-                    <Col span={5}></Col>
-                    <Col span={14}>
+                <Row justify={"center"} >
+                    <Col span={1}></Col>
+                    <Col className="max-[450px]:px-3">
                         <div >
-                            <p className="font-semibold text-xl text-center my-4">ĐÁNH GIÁ SẢN PHẨM LAPTOP {productInfo.productName}</p>
-                            <span className="font-semibold text-xl">
+                            <p className="font-semibold w-full text-xl max-[450px]:text-base  text-center my-4 max-[450px]:my-2">ĐÁNH GIÁ SẢN PHẨM LAPTOP {productInfo.productName}</p>
+                            <span className="font-semibold text-xl max-[450px]:text-xs">
                                 ĐÁNH GIÁ CỦA BẠN VỀ SẢN PHẨM
-                                <Rate disabled={true} value={5} />
+                                <Rate disabled={true} value={5} className="max-[450px]:text-sm" />
                             </span>
                         </div>
 
@@ -28,7 +27,7 @@ const DanhGia = (productInfo) => {
                             </Row>
                         </form>
                     </Col>
-                    <Col span={5}></Col>
+                    <Col span={1}></Col>
                 </Row>
 
 
