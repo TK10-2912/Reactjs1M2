@@ -7,7 +7,7 @@ const ProductBanner = ({ itemsPerPageFromBanner }) => {
   //   const [selected, setSelected] = useState("");
   return (
     <div className="w-full flex flex-col md:flex-row md:items-center justify-between">
-      <div className="flex items-center gap-2 md:gap-6 mt-4 md:mt-0">
+      <div className="flex items-center gap-2 md:gap-6 md:mt-0">
         <div className="flex items-center gap-2 text-[#767676] relative">
           <label className="block">Show:</label>
           <select

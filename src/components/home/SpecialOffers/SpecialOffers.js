@@ -110,18 +110,28 @@ const SpecialOffers = (prop) => {
     {value: '64Gb  ',
     label: '64Gb ',
   },
+];
+const fill= [
+  {value: 'Nổi bật',
+  label: 'Nổi bật',
+},
+  {value: 'Mới nhất',
+  label: 'Mới nhất',
+},
+  {value: 'Nhiều tìm kiếm',
+  label: 'Nhiều tìm kiếm',
+}
 ]
   const catData = data.filter((item) => item.cat === category);
   return (
-    <div className="w-full pb-20">
-      <Row gutter={16} className="pl-3 mb-3" >
+    <div className="w-full">
+      <Row gutter={16} className="pl-3 mb-2" >
         <>
           <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-black border-solid  border-[1px] dark:hover:text-white rounded-lg px-3 py-2 dark:bg-blue-600 dark:focus:ring-blue-800 " type="button">
             <FilterOutlined />
             Bộ lọc
           </button>
-        </>
-        <Col>
+        <Col className=" max-[450px]:hidden">
           <Select
             className="h-full font-semibold text-xl"
             defaultValue="Hãng"
@@ -129,7 +139,7 @@ const SpecialOffers = (prop) => {
             options={hang}
           />
         </Col>
-        <Col>
+        <Col className=" max-[450px]:hidden">
           <Select
           className="h-full font-semibold text-xl"
             defaultValue="Giá"
@@ -137,38 +147,46 @@ const SpecialOffers = (prop) => {
             options={gia}
           />
         </Col>
-        <Col>
+        <Col className=" max-[450px]:hidden">
           <Select className="h-full font-semibold text-xl"
             defaultValue="Màn hình"
             style={{ width: 120 }}
             options={mahinh}
           />
         </Col>
-        <Col>
+        <Col className=" max-[450px]:hidden">
           <Select className="h-full font-semibold text-xl"
             defaultValue="CPU"
             style={{ width: 120 }}
             options={CPU}
           />
         </Col>
-        <Col>
+        <Col className=" max-[450px]:hidden">
           <Select className="h-full font-semibold text-xl"
             defaultValue="Ổ cứng"
             style={{ width: 120 }}
             options={ocung}
           />
         </Col>
-        <Col>
+        <Col className=" max-[450px]:hidden">
           <Select className="h-full font-semibold text-xl"
             defaultValue="Ram"
             style={{ width: 120 }}
             options={ram}
           />
         </Col>
-        <>
+        <Col className=" hidden max-[450px]:block">
+          <Select className="h-full font-semibold text-xl"
+            defaultValue="Nổi bật"
+            style={{ width: 120 }}
+            options={fill}
+          />
+        </Col>
+        
         </>
       </Row>
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-3 xl:grid-cols-3 gap-10">
+            
+      <div className="w-full grid grid-cols-1  max-[450px]:grid-cols-2  lgl:grid-cols-3 xl:grid-cols-3 gap-10">
         {catData.map((data) => (
           <Product
             key={data._id}

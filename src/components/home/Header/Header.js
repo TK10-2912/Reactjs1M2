@@ -43,14 +43,14 @@ const Header = () => {
   return (
     <div className="w-full bg-[#d0021b] relative">
       <div className="max-w-container mx-auto">
-        <Flex className="flex flex-col lg:flex-row items-start lg:items-center justify-between w-full px-4 pb-4 lg:pb-0 h-full lg:h-24">
+        <Flex className="flex flex-col max-[450px]:items-center max-[450px]:flex-row lg:flex-row items-start lg:items-center justify-between w-full px-4 max-[450px]:px-1 pb-4  max-[450px]:py-2  lg:pb-0 h-full lg:h-24">
           <Link to="/">
-            <img src={logoHeader} class="h-[100px] p-[10px]" alt="Flowbite Logo" />
+            <img src={logoHeader} class="h-[100px] max-[450px]:h-[50px] p-[10px]" alt="Flowbite Logo" />
           </Link>
 
-          <div className="relative w-full lg:w-[600px] h-[50px] text-base text-primeColor bg-white flex items-center gap-2 justify-between px-6 rounded-xl">
+          <div className="relative w-full  max-[450px]:h-[35px]   max-[450px]:w-[200px] lg:w-[600px] h-[50px] text-base text-primeColor bg-white flex items-center gap-2 justify-between px-6 rounded-xl">
             <input
-              className="flex-1 h-full outline-none placeholder:text-[#C4C4C4] placeholder:text-[14px] border-none"
+              className="flex-1 h-full  max-[450px]:w-full  outline-none placeholder:text-[#C4C4C4] placeholder:text-[14px] border-none"
               type="text"
               onChange={handleSearch}
               value={searchQuery}
@@ -104,9 +104,10 @@ const Header = () => {
               </div>
             )}
           </div>
+
           <div className="flex gap-4 mt-2 lg:mt-0 items-center pr-6 cursor-pointer relative">
-            <FaMap style={{ color: "white" }} className="text-xl mr-5" />
-            <BsSuitHeartFill className="text-2xl mr-5" style={{ color: "white" }} />
+            <FaMap style={{ color: "white" }} className="text-xl mr-5  max-[450px]:hidden" />
+            <BsSuitHeartFill className="text-2xl mr-5  max-[450px]:hidden" style={{ color: "white" }} />
             <div onClick={() => setShowUser(true)}
               className="flex mr-5">
               <FaCaretDown className="text-xl " style={{ color: "white" }} />

@@ -101,9 +101,9 @@ const Cart = () => {
                   
                 </div>
                 <p className="text-base max-[450px]:text-sm font-semibold ">TỔNG THANH TOÁN: <span className="text-red-700">{formatNumber(totalAmt + shippingCharge)}</span></p>
-                <div className="flex justify-end">
+                <div className="flex justify-end  max-[450px]:justify-center ">
                   <Link to="/paymentgateway">
-                    <button className="w-52 h-11 max-[450px]:justify-center font-medium max-[450px]:text-sm rounded-xl bg-blue-600 text-white hover:bg-black duration-300">
+                    <button className="w-52 h-11 font-medium max-[450px]:text-sm rounded-xl bg-blue-600 text-white hover:bg-black duration-300">
                       Tiến hành thanh toán 
                     </button>
                   </Link>

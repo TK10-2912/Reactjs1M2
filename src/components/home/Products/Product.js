@@ -31,7 +31,7 @@ const Product = (props) => {
   };
 
   const handleWishList = () => {
-    toast.success("Thêm vào giỏ hàng thành công");
+    toast.success("Thêm vào mục yêu thích thành công thành công");
     setWishList(wishList.push(props));
     console.log(wishList);
   };
@@ -43,7 +43,7 @@ const Product = (props) => {
           <Image className="w-full h-full cursor-pointer" imgSrc={props.img} />
         </div>
         <div className="absolute top-1 right-1  ">
-          {props.badge && <Badge text={"-"+ props.sale +"%"}  />}
+          {props.sale != undefined?  (<Badge className="max-[450px]:text-xs " text={"-"+ props.sale +"%"}  />): ""}
         </div>
         <div className="w-full h-32 absolute bg-white -bottom-[130px] group-hover:bottom-0 duration-700">
           <ul className="w-full h-full flex flex-col items-end justify-center gap-2 font-titleFont px-2 border-l border-r">
@@ -68,7 +68,7 @@ const Product = (props) => {
                   })
                 )
               }
-              className="text-[#767676] hover:text-primeColor text-sm font-normal border-b-[1px] border-b-gray-200 hover:border-b-primeColor flex items-center justify-end gap-2 hover:cursor-pointer pb-1 duration-300 w-full"
+              className="text-[#767676] max-[450px]:text-xs hover:text-primeColor text-sm font-normal border-b-[1px] border-b-gray-200 hover:border-b-primeColor flex items-center justify-end gap-2 hover:cursor-pointer pb-1 duration-300 w-full"
             >
               Thêm vào giỏ hàng
               <span>
@@ -77,7 +77,7 @@ const Product = (props) => {
             </li>
             <li
               onClick={handleProductDetails}
-              className="text-[#767676] hover:text-primeColor text-sm font-normal border-b-[1px] border-b-gray-200 hover:border-b-primeColor flex items-center justify-end gap-2 hover:cursor-pointer pb-1 duration-300 w-full"
+              className="max-[450px]:text-xs text-[#767676] hover:text-primeColor text-sm font-normal border-b-[1px] border-b-gray-200 hover:border-b-primeColor flex items-center justify-end gap-2 hover:cursor-pointer pb-1 duration-300 w-full"
             >
               Thông tin sản phẩm
               <span className="text-lg">
@@ -86,7 +86,7 @@ const Product = (props) => {
             </li>
             <li
               onClick={handleWishList}
-              className="text-[#767676] hover:text-primeColor text-sm font-normal border-b-[1px] border-b-gray-200 hover:border-b-primeColor flex items-center justify-end gap-2 hover:cursor-pointer pb-1 duration-300 w-full"
+              className="max-[450px]:text-xs text-[#767676] hover:text-primeColor text-sm font-normal border-b-[1px] border-b-gray-200 hover:border-b-primeColor flex items-center justify-end gap-2 hover:cursor-pointer pb-1 duration-300 w-full"
             >
               Thêm vào mục yêu thích
               <span>
@@ -98,7 +98,7 @@ const Product = (props) => {
       </div>
       <div className="max-w-80 py-6 flex flex-col gap-1 px-4">
         <div className="flex items-center justify-between font-titleFont">
-          <h2 className="text-base  max-[450px]:text-sm text-primeColor font-bold">
+          <h2 className="text-base  max-[450px]:text-xs text-primeColor font-bold">
             {props.productName}
           </h2>
         </div>
@@ -106,7 +106,7 @@ const Product = (props) => {
           <del className="text-[#767676] max-[450px]:text-xs text-[14px]">${formatNumber(props.priceOriginal)}</del>
         </div>
         <div>
-          <p className="text-[#ff0000] text-[19px] max-[450px]:text-sm font-semibold">{formatNumber(props.price)}</p>
+          <p className="text-[#ff0000] text-[19px] max-[450px]:text-xs font-semibold">{formatNumber(props.price)}</p>
         </div>
         <div class="flex items-center">
           <svg class="w-4 h-4 max-[450px]:text-xs text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">

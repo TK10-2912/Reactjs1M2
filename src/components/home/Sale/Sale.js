@@ -73,8 +73,8 @@ const Sale = () => {
 					</div>
 				</Carousel>
 			</Col>
-			<Col {...cssColResponsiveSpan(24,8,8,8,8,8)} span={8} className="rounded-xl max-[450px]:hidden">
-				<Col span={24} style={{ marginBottom: "10px" }}>
+			<Col {...cssColResponsiveSpan(24,8,8,8,8,8)} className="rounded-xl max-[450px]:flex ">
+				<Col span={12} style={{ marginBottom: "10px" }} className="max-[450px]:mb-0">
 					<Link to="/shop">
 						<Image
 							className="h-full w-full "
@@ -82,7 +82,7 @@ const Sale = () => {
 						/>
 					</Link>
 				</Col>
-				<Col span={24}>
+				<Col span={12}>
 					<Link to="/shop">
 						<Image
 							className="h-full w-full "

@@ -65,7 +65,7 @@ const Pagination = ({ itemsPerPage }) => {
 
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mdl:gap-4 lg:gap-10">
+      <div className="grid grid-cols-1 max-[450px]:grid-cols-2 m xl:grid-cols-3 gap-10 mdl:gap-4 lg:gap-10">
         <Items
           currentItems={currentItems}
           selectedBrands={selectedBrands}
