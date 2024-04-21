@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaFacebook, FaYoutube, FaLinkedin, FaGithub } from "react-icons/fa";
 import FooterListTitle from "./FooterListTitle";
-import { logoFooter, paymentCard } from "../../../assets/images";
+import { facebook, instagram, logoFooter, paymentCard, tiktok, twitter, zalo } from "../../../assets/images";
 import Image from "../../designLayouts/Image";
 import { PhoneOutlined, MailOutlined, EnvironmentOutlined, FacebookOutlined } from "@ant-design/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -104,7 +104,8 @@ const Footer = () => {
                   <input
                     onChange={(e) => setEmailInfo(e.target.value)}
                     value={emailInfo}
-                    className="w-full h-12 border-b border-gray-400 bg-transparent px-4 text-white text-lg placeholder:text-base outline-none border-t-0 border-l-0 border-r-0"
+                    placeholder="Nhập email"
+                    className="w-full h-12  border-b border-gray-400 bg-transparent px-4 text-white text-lg placeholder:text-base outline-none border-t-0 border-l-0 border-r-0"
                     type="text"
                   />
                   {errMsg && (
@@ -115,7 +116,7 @@ const Footer = () => {
                 </div>
                 <button
                   onClick={handleSubscription}
-                  className="bg-red-600 text-white w-[30%] h-12  hover:bg-red-500 duration-300 text-base  hover:tracking-wide"
+                  className="bg-red-600 text-white w-[30%] h-12  hover:bg-red-500 duration-300 rounded-lg text-base  hover:tracking-wide"
                 >
                   ĐĂNG KÝ
                 </button>
@@ -123,42 +124,21 @@ const Footer = () => {
             )}
             <div className="mb-4">
               <ul className="flex items-center gap-2">
-                <a
-                  href="https://www.youtube.com/@reactjsBD"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-red-600 duration-300">
-                    <FaYoutube />
+                  <li>
+                    <img src={facebook}/>
                   </li>
-                </a>
-                <a
-                  href="https://github.com/noorjsdivs"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-red-600 duration-300">
-                    <FaGithub />
+                  <li>
+                    <img src={instagram}/>
                   </li>
-                </a>
-                <a
-                  href="https://www.facebook.com/Noorlalu143/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-red-600 duration-300">
-                    <FaFacebook />
+                  <li>
+                    <img src={tiktok}/>
                   </li>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/noor-mohammad-ab2245193/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-red-600 duration-300">
-                    <FaLinkedin />
+                  <li>
+                    <img src={twitter}/>
                   </li>
-                </a>
+                  <li>
+                    <img src={zalo}/>
+                  </li>
               </ul>
             </div>
           </div>

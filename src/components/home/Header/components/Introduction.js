@@ -63,26 +63,26 @@ const Introduction = () => {
                     <img src={introImage} alt="Sky Gear" className="w-full h-auto rounded-lg shadow-md" />
                 </div>
             </div>
-            <div className="flex justify-center bg-white rounded-lg shadow-lg mb-4">
-                <div className="w-full md:w-1/3 p-4">
+            <div className="grid grid-cols-3 max-[450px]:grid-cols-1 gap-5 bg-white rounded-xl mb-5">
+                <div className="w-full  p-4 max-[450px]:w-full">
                     <div className=" p-6 text-center">
-                        <img src={introImageComment}  className="w-64 h-64 mx-auto rounded-xl mb-4" style={{border:"1px solid black"}}/>
-                        <p className="font-extrabold text-2xl">Anh Quang Hải (Hà Nội)</p>
-                        <p className="font-extrabold text-2xl"> "Không gian quán rất rộng rãi, nhân viên tư vấn rất nhiệt tình. Tôi đã mua 2 lần ở đây và sẽ còn quay lại"</p>
+                        <img src={introImageComment}  className="mx-auto rounded-xl mb-4 max-[450px]:w-[70%]" style={{border:"1px solid black"}}/>
+                        <p className="font-extrabold text-2xl max-[450px]:text-sm ">Anh Quang Hải (Hà Nội)</p>
+                        <p className="font-extrabold text-2xl max-[450px]:text-sm"> "Không gian quán rất rộng rãi, nhân viên tư vấn rất nhiệt tình. Tôi đã mua 2 lần ở đây và sẽ còn quay lại"</p>
                     </div>
                 </div>
-                <div className="w-full md:w-1/3 p-4">
+                <div className="w-full  p-4 max-[450px]:w-full">
                     <div className=" p-6 text-center">
-                        <img src={introImageComment}  className="w-64 h-64 mx-auto rounded-xl mb-4" style={{border:"1px solid black"}}/>
-                        <p className="font-extrabold text-2xl">Anh Văn Ngọc (Quảng Ninh)</p>
-                        <p className="font-extrabold text-2xl"> “Chất lượng dịch vụ rất tốt, đa dạng mẫu mã. Tôi sẽ giới thiệu cho bạn bè và người thân”</p>
+                        <img src={introImageComment}  className="mx-auto rounded-xl mb-4 max-[450px]:w-[70%]" style={{border:"1px solid black"}}/>
+                        <p className="font-extrabold text-2xl max-[450px]:text-sm">Anh Văn Ngọc (Quảng Ninh)</p>
+                        <p className="font-extrabold text-2xl max-[450px]:text-sm"> “Chất lượng dịch vụ rất tốt, đa dạng mẫu mã. Tôi sẽ giới thiệu cho bạn bè và người thân”</p>
                     </div>
                 </div>
-                <div className="w-full md:w-1/3 p-4">
+                <div className="w-full  p-4 max-[450px]:w-full">
                     <div className=" p-6 text-center">
-                        <img src={introImageComment}  className="w-64 h-64 mx-auto rounded-xl mb-4" style={{border:"1px solid black"}}/>
-                        <p className="font-extrabold text-2xl">Anh Minh Vương (Thái Bình)</p>
-                        <p className="font-extrabold text-2xl"> "Tôi thật sự rất hài lòng về chất lượng và dịch vụ tại đây. Tôi chắc chắn sẽ quay lại đây và mua hàng"</p>
+                        <img src={introImageComment}  className="mx-auto rounded-xl mb-4 max-[450px]:w-[70%]" style={{border:"1px solid black"}}/>
+                        <p className="font-extrabold text-2xl max-[450px]:text-sm">Anh Minh Vương (Thái Bình)</p>
+                        <p className="font-extrabold text-2xl max-[450px]:text-sm"> "Tôi thật sự rất hài lòng về chất lượng và dịch vụ tại đây. Tôi chắc chắn sẽ quay lại đây và mua hàng"</p>
                     </div>
                 </div>
             </div>

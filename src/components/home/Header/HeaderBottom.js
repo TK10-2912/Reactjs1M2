@@ -46,7 +46,7 @@ const HeaderBottom = () => {
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
         <div onClick={() => setShow(!show)} ref={ref} className="flex h-14 cursor-pointer items-center gap-2 text-primeColor">
           <HiOutlineMenuAlt4 className="w-5 h-5" style={{ color: "white" }} />
-          <p className="text-[20px] font-normal text-white whitespace-nowrap tracking-wider">Danh mục sản phẩm</p>
+          <p className="text-[20px] max-[450px]:text-sm font-normal text-white whitespace-nowrap tracking-wider">Danh mục sản phẩm</p>
           {show && (
             <motion.ul
               initial={{ y: 30, opacity: 0 }}
@@ -55,27 +55,27 @@ const HeaderBottom = () => {
               className="absolute top-36 z-50 bg-primeColor w-auto text-[#767676] h-auto p-4 pb-6"
             >
               <Link to={"category/imprimante"}>
-                <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                <li className="text-gray-400 px-4 py-1 border-b-[1px] max-[450px]:text-sm  border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
                  Laptop
                 </li>
               </Link>
               <Link to={"category/manhinh"}>
-                <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                <li className="text-gray-400 px-4 py-1 border-b-[1px] max-[450px]:text-sm border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
                   Màn hình
                 </li>
               </Link>
               <Link to={"category/Ruban"}>
-                <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                <li className="text-gray-400 px-4 py-1 border-b-[1px] max-[450px]:text-sm border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
                   Bàn phím
                 </li>
               </Link>
               <Link to={"category/Bac"}>
-                <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                <li className="text-gray-400 px-4 py-1 border-b-[1px] max-[450px]:text-sm border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
                   Chuột
                 </li>
               </Link>
               <Link to={"category/Bac"}>
-                <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                <li className="text-gray-400 px-4 py-1 border-b-[1px] max-[450px]:text-sm border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
                   Tai nghe
                 </li>
               </Link>

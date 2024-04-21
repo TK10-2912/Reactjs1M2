@@ -183,11 +183,22 @@ import slide6 from "../images/Slide/slide6.jpg";
 import slide7 from "../images/Slide/slide7.jpg";
 import chuot from "../images/Danhmucphobien/chuot.jpg";
 import tainghe from "../images/Danhmucphobien/tainghe.webp";
+//social 
+import facebook from "../images/mxh/facebook.png";
+import instagram from "../images/mxh/instagram.png";
+import tiktok from "../images/mxh/tiktok.png";
+import twitter from "../images/mxh/twitter.png";
+import zalo from "../images/mxh/zalo.png";
 
 
 export {
+  facebook,
+  instagram,
+  tiktok,
+  twitter,
+  zalo,
   newsFooter3,
-  bannerFooter1,bannerFooter2,
+  bannerFooter1, bannerFooter2,
   manhinh,
   chuot,
   tainghe,
@@ -205,25 +216,25 @@ export {
   logoHeader,
   //Laptop
   laptop1,
-laptop2,
-laptop3,
-laptop4,
-laptop5,
-laptop6,
-//keyboard
-keyboard1,
-keyboard2,
-keyboard3,
-keyboard4,
-keyboard5,
-keyboard6,
-//screen
-screen1,
-screen2,
-screen3,
-screen4,
-screen5,
-screen6,
+  laptop2,
+  laptop3,
+  laptop4,
+  laptop5,
+  laptop6,
+  //keyboard
+  keyboard1,
+  keyboard2,
+  keyboard3,
+  keyboard4,
+  keyboard5,
+  keyboard6,
+  //screen
+  screen1,
+  screen2,
+  screen3,
+  screen4,
+  screen5,
+  screen6,
   //news
   headerNews,
   newsMain1,
@@ -246,7 +257,7 @@ screen6,
   ship,
   win,
   introImage,
-  introImageComment,  
+  introImageComment,
   //=======================================
   logo,
   logoLight,
