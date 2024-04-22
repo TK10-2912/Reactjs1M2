@@ -20,15 +20,15 @@ const Category = () => {
     },
     {
       _id: 9007,
-      title: "Encre",
+      title: "manhinh",
     },
     {
       _id: 9008,
-      title: "Ruban",
+      title: "laptop",
     },
     {
       _id: 9009,
-      title: "Bac de dechet",
+      title: "banphim",
     },
   ];
 

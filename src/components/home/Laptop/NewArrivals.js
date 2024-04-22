@@ -74,6 +74,7 @@ const Laptop = () => {
                 priceOriginal={20000000}
                 color="Gray"
                 brand="Gigabyte"
+                type="Laptop"
                 badge={false}
                 stars={4}
                 sale={7}
@@ -113,6 +114,7 @@ const Laptop = () => {
                 price={54900000}
                 priceOriginal={52990000}
                 color="Gray"
+                type="Laptop"
                 brand="Gigabyte"
                 badge={false}
                 stars={4}
@@ -152,6 +154,7 @@ const Laptop = () => {
                 price={10790000}
                 priceOriginal={11990000}
                 color="Gray"
+                type="Laptop"
                 brand="Gigabyte"
                 badge={false}
                 stars={4}
@@ -187,6 +190,7 @@ const Laptop = () => {
               <Product
                 _id="100005"
                 img={laptop5}
+                type="Laptop"
                 prCode="MSP"
                 productName="Laptop Asus VivoBook 14"
                 price={13790000}
@@ -226,6 +230,7 @@ const Laptop = () => {
             <div className="max-[450px]:hidden">
               <Product
                 _id="100005"
+                type="Laptop"
                 img={laptop6}
                 prCode="MSP"
                 productName="Laptop gaming ASUS ROG Strix G16"

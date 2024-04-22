@@ -194,10 +194,19 @@ const fill= [
             img={data.img}
             productName={data.productName}
             price={data.price}
+            sale ={data.sale}
             currentPrice={data.currentPrice}
             color={data.color}
             badge={true}
             des={data.des}
+            stars={data.stars}
+            configuration={data.configuration}
+            priceOriginal={data.priceOriginal}
+            instock={data.inStock}
+            brand={data.brand}
+            prCode={data.prCode}
+            type={data.type}
+            
           />
         ))}
       </div>

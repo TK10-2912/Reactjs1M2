@@ -34,6 +34,13 @@ function Items({ currentItems, selectedBrands, selectedCategories }) {
             des={item.des}
             pdf={item.pdf}
             ficheTech={item.ficheTech}
+            stars={item.stars}
+            configuration={item.configuration}
+            priceOriginal={item.priceOriginal}
+            instock={item.instock}
+            brand={item.brand}
+            prCode={item.prCode}
+            type={item.type}
           />
         </div>
       ))}

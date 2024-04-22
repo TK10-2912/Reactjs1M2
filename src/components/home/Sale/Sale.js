@@ -28,8 +28,8 @@ const Sale = () => {
 		borderRadius: "50%",
 	};
 	return (
-		<Row style={{ marginTop: "10px", marginBottom: "10px" }}  gutter={[8, 8]}>
-			<Col {...cssColResponsiveSpan(24,16,16,16,16,16)} span={16} className="rounded-xl  max-[450px]:h-[150px]">
+		<Row style={{ marginTop: "10px", marginBottom: "10px" }} gutter={[8, 8]}>
+			<Col {...cssColResponsiveSpan(24, 16, 16, 16, 16, 16)} span={16} className="rounded-xl  max-[450px]:h-[150px]">
 				<Carousel style={{ height: "100%" }} className=" max-[450px]:h-[150px]" autoplay >
 					<div className=" max-[450px]:h-[150px]">
 						<h3 style={contentStyle}> <Link to="/shop">
@@ -73,22 +73,19 @@ const Sale = () => {
 					</div>
 				</Carousel>
 			</Col>
-			<Col {...cssColResponsiveSpan(24,8,8,8,8,8)} className="rounded-xl max-[450px]:flex ">
-				<Col span={12} style={{ marginBottom: "10px" }} className="max-[450px]:mb-0">
-					<Link to="/shop">
-						<Image
+			<Col {...cssColResponsiveSpan(24, 8, 8, 8, 8, 8)} className="rounded-xl max-[450px]:flex ">
+				<Col className="max-[450px]:mb-0">
+						<img
 							className="h-full w-full "
-							imgSrc={slide5}
+							src={slide5}
 						/>
-					</Link>
 				</Col>
-				<Col span={12}>
-					<Link to="/shop">
-						<Image
+				<Col >
+
+						<img
 							className="h-full w-full "
-							imgSrc={slide6}
+							src={slide6}
 						/>
-					</Link>
 				</Col>
 			</Col>
 		</Row>

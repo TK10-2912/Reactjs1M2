@@ -22,7 +22,7 @@ const SignIn = () => {
           avatar: logo,
         }
         setUserLocalStorage("loginUser", user)
-        navigate("/shop")
+        navigate("/")
       } else {
         message.warning("Mật khẩu hoặc tên đăng nhập không đúng!");
       }

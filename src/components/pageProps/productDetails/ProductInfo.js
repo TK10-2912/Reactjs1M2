@@ -36,11 +36,17 @@ const ProductInfo = ({ productInfo }) => {
 				<Col {...cssColResponsiveSpan(7, 12, 12, 12, 12, 12)} >
 					<h2 className="text-[25px] text-red-600 font-semibold max-[450px]:text-base max-[450px]:text-center">{formatNumber(productInfo.price)}</h2>
 				</Col>
-				<Col {...cssColResponsiveSpan(7, 6, 6, 6, 6, 6)} className="flex justify-end max-[450px]:justify-start">
-					<strike ><h2 className="text-[25px] max-[450px]:text-base ">{formatNumber(productInfo.priceOriginal)}</h2></strike>
-				</Col>
-				&nbsp; &nbsp; &nbsp;
-				<Tag color="red" style={{ height: 22 }}>{productInfo.sale}%</Tag>
+				{
+					productInfo.sale != undefined &&
+					<>
+						<Col {...cssColResponsiveSpan(7, 6, 6, 6, 6, 6)} className="flex justify-end max-[450px]:justify-start">
+							<strike ><h2 className="text-[25px] max-[450px]:text-base ">{productInfo.sale != undefined ? formatNumber(productInfo.priceOriginal) : ""}</h2></strike>
+						</Col>
+						&nbsp; &nbsp; &nbsp;
+						<Tag color="red" style={{ height: 22 }}>{productInfo.sale}%</Tag>
+					</>
+				}
+
 			</Row>
 			<Row>
 				<Col  {...cssColResponsiveSpan(7, 8, 8, 8, 8, 8)} span={8} className="text-[18px] border-r  border-black max-[450px]:text-[10px] max-[450px]:text-center">

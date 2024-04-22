@@ -103,7 +103,7 @@ const Product = (props) => {
           </h2>
         </div>
         <div>
-          <del className="text-[#767676] max-[450px]:text-xs text-[14px]">${formatNumber(props.priceOriginal)}</del>
+          <del className="text-[#767676] max-[450px]:text-xs text-[14px]">{ props.sale != undefined? formatNumber(props.priceOriginal): ""}</del>
         </div>
         <div>
           <p className="text-[#ff0000] text-[19px] max-[450px]:text-xs font-semibold">{formatNumber(props.price)}</p>

@@ -6,6 +6,7 @@ import Keyboard from "../../components/home/Keyboard/Keyboard";
 import Danhmucphobien from "../../components/home/Danhmucphobien/Danhmucphobien";
 import BannerFooter from "./BannerFooter/BannerFooter";
 import NewsFooter from "./NewsFooter/NewsFooter";
+import NavbarFooter from "./NavbarFooter";
 
 const Home = () => {
   return (

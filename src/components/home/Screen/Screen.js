@@ -43,22 +43,22 @@ const Screen = () => {
                 configuration={[
                   {
                     id: "pr_1",
-                    select1: "Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Độ phân giải SVGA ",
                     priceSelect: 18990000
                   },
                   {
                     id: "pr_2",
-                    select1: "Core i7-7840HS,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Màn hình HD",
                     priceSelect: 21890000
                   },
                   {
                     id: "pr_3",
-                    select1: "Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Màn hình HD+",
                     priceSelect: 18990000
                   },
                   {
                     id: "pr_4",
-                    select1: "Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Màn hình Full HD",
                     priceSelect: 18990000
                   }
                 ]}
@@ -72,6 +72,8 @@ const Screen = () => {
                 price={2090000}
                 priceOriginal={2490000}
                 color="Gray"
+                type="screen"
+                prCode="MSIGS66STEALTH"
                 brand="Gigabyte"
                 badge={false}
                 stars={4}
@@ -80,22 +82,22 @@ const Screen = () => {
                 configuration={[
                   {
                     id: "pr_1",
-                    select1: "Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Độ phân giải SVGA ",
                     priceSelect: 18990000
                   },
                   {
                     id: "pr_2",
-                    select1: "Core i7-7840HS,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Màn hình HD",
                     priceSelect: 21890000
                   },
                   {
                     id: "pr_3",
-                    select1: "Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Màn hình HD+",
                     priceSelect: 18990000
                   },
                   {
                     id: "pr_4",
-                    select1: "Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Màn hình Full HD",
                     priceSelect: 18990000
                   }
                 ]}
@@ -110,6 +112,8 @@ const Screen = () => {
                 price={2190000}
                 priceOriginal={4550000}
                 color="Gray"
+                type="screen"
+                prCode="MSIGS66STEALTH"
                 brand="Gigabyte"
                 badge={false}
                 stars={4}
@@ -118,22 +122,22 @@ const Screen = () => {
                 configuration={[
                   {
                     id: "pr_1",
-                    select1: "Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Độ phân giải SVGA ",
                     priceSelect: 18990000
                   },
                   {
                     id: "pr_2",
-                    select1: "Core i7-7840HS,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Màn hình HD",
                     priceSelect: 21890000
                   },
                   {
                     id: "pr_3",
-                    select1: "Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Màn hình HD+",
                     priceSelect: 18990000
                   },
                   {
                     id: "pr_4",
-                    select1: "Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Màn hình Full HD",
                     priceSelect: 18990000
                   }
                 ]}
@@ -149,6 +153,8 @@ const Screen = () => {
                 price={3390000}
                 priceOriginal={4490000}
                 color="Gray"
+                type="screen"
+                prCode="MSIGS66STEALTH"
                 brand="Gigabyte"
                 badge={false}
                 stars={4}
@@ -157,22 +163,22 @@ const Screen = () => {
                 configuration={[
                   {
                     id: "pr_1",
-                    select1: "Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Độ phân giải SVGA ",
                     priceSelect: 18990000
                   },
                   {
                     id: "pr_2",
-                    select1: "Core i7-7840HS,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Màn hình HD",
                     priceSelect: 21890000
                   },
                   {
                     id: "pr_3",
-                    select1: "Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Màn hình HD+",
                     priceSelect: 18990000
                   },
                   {
                     id: "pr_4",
-                    select1: "Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Màn hình Full HD",
                     priceSelect: 18990000
                   }
                 ]}
@@ -185,6 +191,8 @@ const Screen = () => {
                 img={screen5}
                 productName="Màn hình AOC 24G4E 24"
                 price={3390000}
+                type="screen"
+                prCode="MSIGS66STEALTH"
                 priceOriginal={3590000}
                 color="Gray"
                 brand="Gigabyte"
@@ -195,22 +203,22 @@ const Screen = () => {
                 configuration={[
                   {
                     id: "pr_1",
-                    select1: "Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Độ phân giải SVGA ",
                     priceSelect: 18990000
                   },
                   {
                     id: "pr_2",
-                    select1: "Core i7-7840HS,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Màn hình HD",
                     priceSelect: 21890000
                   },
                   {
                     id: "pr_3",
-                    select1: "Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Màn hình HD+",
                     priceSelect: 18990000
                   },
                   {
                     id: "pr_4",
-                    select1: "Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Màn hình Full HD",
                     priceSelect: 18990000
                   }
                 ]}
@@ -224,6 +232,8 @@ const Screen = () => {
                 price={2890000}
                 priceOriginal={3390000}
                 color="Gray"
+                type="screen"
+                prCode="MSIGS66STEALTH"
                 brand="Gigabyte"
                 badge={false}
                 stars={4}
@@ -232,22 +242,22 @@ const Screen = () => {
                 configuration={[
                   {
                     id: "pr_1",
-                    select1: "Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Độ phân giải SVGA ",
                     priceSelect: 18990000
                   },
                   {
                     id: "pr_2",
-                    select1: "Core i7-7840HS,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Màn hình HD",
                     priceSelect: 21890000
                   },
                   {
                     id: "pr_3",
-                    select1: "Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Màn hình HD+",
                     priceSelect: 18990000
                   },
                   {
                     id: "pr_4",
-                    select1: "Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
+                    select1: "Màn hình Full HD",
                     priceSelect: 18990000
                   }
                 ]}

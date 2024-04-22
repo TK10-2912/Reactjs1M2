@@ -9,7 +9,6 @@ const Danhmucphobien = () => {
         <div className="w-full bg-white rounded-lg  mb-5 max-[450px]:pb-3  pb-16 ">
             <Heading heading="Danh mục phổ biến" />
             <div className="grid grid-cols-5 gap-4 px-3 max-[450px]:overflow-x-auto  whitespace-nowrap">
-                
                     <div className="rounded-xl border  border-slate-800 ">
                         <img className="rounded-xl" src={laptop1} />
                         <p className="text-2xl max-[450px]:text-xs  font-medium text-center">Laptop</p>

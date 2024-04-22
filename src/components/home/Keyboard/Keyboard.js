@@ -39,7 +39,7 @@ const Keyboard = () => {
                 sale={7}
                 badge={true}
                 brand="Lenovo"
-                des="Laptop siuuu rẻ"
+                des="Bàn phím siuuu rẻ"
                 configuration={[
                   { id:"pr_1",
                     select1:"Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
@@ -75,7 +75,7 @@ const Keyboard = () => {
                 badge={false}
                 stars={4}
                 sale={7}
-                des="Laptop siuuu rẻ"
+                des="Bàn phím siuuu rẻ"
                 configuration={[
                   { id:"pr_1",
                     select1:"Core i5-13420H,8GB,1TB,RTX3050 6GB,15.6FHD 144Hz ",
@@ -112,7 +112,7 @@ const Keyboard = () => {
                 badge={false}
                 stars={4}
                 sale={7}
-                des="Laptop siuuu rẻ"
+                des="Bàn phím siuuu rẻ"
                 inStock={true}
                 configuration={[
                   { id:"pr_1",
@@ -149,7 +149,7 @@ const Keyboard = () => {
                 badge={false}
                 stars={4}
                 sale={7}
-                des="Laptop siuuu rẻ"
+                des="Bàn phím siuuu rẻ"
                 inStock={true}
                 configuration={[
                   { id:"pr_1",
@@ -186,7 +186,7 @@ const Keyboard = () => {
                 badge={false}
                 stars={4}
                 sale={7}
-                des="Laptop siuuu rẻ"
+                des="Bàn phím siuuu rẻ"
                 inStock={true}
                 configuration={[
                   { id:"pr_1",
@@ -222,7 +222,7 @@ const Keyboard = () => {
                 badge={false}
                 stars={4}
                 sale={7}
-                des="Laptop siuuu rẻ"
+                des="Bàn phím siuuu rẻ"
                 inStock={true}
                 configuration={[
                   { id:"pr_1",
