@@ -33,9 +33,10 @@ import News from "./pages/News/News";
 import Instruction from "./components/home/Header/About";
 import ForgetPasswords from "./pages/Account/ForgetPassword";
 import Introduction from "./components/home/Header/components/Introduction";
+import NavbarFooter from "./pages/Home/NavbarFooter";
 const Layout = () => {
   return (
-    <div>
+    <div >
       <ToastContainer
         position="top-right"
         autoClose={1000}
@@ -48,6 +49,7 @@ const Layout = () => {
         pauseOnHover
         theme="colored"
       />
+
       <Header />
       <HeaderBottom />
       <SpecialCase />
@@ -55,6 +57,9 @@ const Layout = () => {
       <Outlet />
       <Footer />
       <FooterBottom />
+      <div className="fixed bottom-0 bg-white w-full hidden max-[450px]:block">
+        <NavbarFooter />
+      </div>
     </div>
   );
 };
@@ -86,7 +91,7 @@ const router = createBrowserRouter(
     </Route>
   )
 );
-const App=()=> {
+const App = () => {
   const [showButton, setShowButton] = useState(false);
 
   const handleScroll = () => {
@@ -111,7 +116,7 @@ const App=()=> {
       <div className="flex flex-col justify-between">
         {showButton && (
           <button
-            className="fixed bottom-4 right-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            className="fixed bottom-4 right-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded max-[450px]:hidden"
             onClick={scrollToTop}
           >
             <FaArrowUp />
