@@ -126,7 +126,7 @@ const fill= [
   return (
     <div className="w-full">
       <Row gutter={16} className="pl-3 mb-2" >
-        <>
+       
           <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-black border-solid  border-[1px] dark:hover:text-white rounded-lg px-3 py-2 dark:bg-blue-600 dark:focus:ring-blue-800 " type="button">
             <FilterOutlined />
             Bộ lọc
@@ -182,10 +182,17 @@ const fill= [
             options={fill}
           />
         </Col>
-        
-        </>
       </Row>
-            
+      <Row align={"middle"}>
+        <p className="font-semibold">120 sản phẩm Sắp xếp: </p> &nbsp;
+        <Col className=" block max-[450px]:hidden">
+          <Select className="h-full font-semibold text-xl"
+            defaultValue="Nổi bật"
+            style={{ width: 120 }}
+            options={fill}
+          />
+        </Col>
+      </Row>
       <div className="w-full grid grid-cols-1  max-[450px]:grid-cols-2  lgl:grid-cols-3 xl:grid-cols-3 gap-10">
         {catData.map((data) => (
           <Product

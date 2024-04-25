@@ -16,9 +16,8 @@ const Shop = () => {
       <Breadcrumbs title="Sản phẩm" />
       {/* ================= Products Start here =================== */}
       <div className="max-w-container mx-auto px-4 flex justify-center bg-white rounded-xl py-[15px]">
-        <div className="w-full mdl:w-[80%] lgl:w-[75%] h-full flex flex-col gap-10">
+        <div className="w-full  h-full flex flex-col gap-10">
           <SpecialOffers />
-          <ProductBanner itemsPerPageFromBanner={itemsPerPageFromBanner} />
           <Pagination itemsPerPage={itemsPerPage} />
         </div>
       </div>

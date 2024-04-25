@@ -70,8 +70,8 @@ const ProductInfo = ({ productInfo }) => {
 						</Col>
 					))}
 			</Row>
-			<div className="grid grid-cols-2 gap-3">
-				<div className="col-span-2">
+			<div className="grid grid-cols-2 gap-3 ">
+				<div className="col-span-1 max-[450px]:col-span-2">
 					<button
 						onClick={() =>
 							dispatch(
@@ -86,16 +86,16 @@ const ProductInfo = ({ productInfo }) => {
 								})
 							)
 						}
-						className=" py-4 w-full max-[450px]:text-base max-[450px]:bg-yellow-400  max-[450px]:hover:bg-yellow-300 bg-blue-500  hover:bg-blue-600 duration-300 text-white text-lg font-titleFont rounded-md"
+						className="h-[100%] py-4 w-full max-[450px]:text-base max-[450px]:bg-yellow-400  max-[450px]:hover:bg-yellow-300 bg-blue-500  hover:bg-blue-600 duration-300 text-white text-lg font-titleFont rounded-md"
 					>
 						Thêm vào giỏ hàng
 
 					</button>
 				</div>
-				<div>
+				<div className="col-span-1 max-[450px]:col-span-1 ">
 					<Link to="/cart">
 						<button
-							className=" py-4 max-[450px]: p-2 max-[450px]:bg-red-700 w-full max-[450px]:text-base bg-blue-500 hover:bg-blue-600 duration-300 text-white text-lg font-titleFont rounded-md"
+							className="  py-4 max-[450px]: p-2 bg-red-700 w-full max-[450px]:text-base  hover:bg-red-500 duration-300 text-white text-lg font-titleFont rounded-md"
 						>
 							Mua ngay
 							<p className="text-[8px]">Giao tận nơi hoặc nhận tại shop</p>
@@ -103,9 +103,9 @@ const ProductInfo = ({ productInfo }) => {
 						</button>
 					</Link>
 				</div>
-				<div>
+				<div className="col-span-1  max-[450px]:col-span-1 ">
 					<button
-						className=" py-4 max-[450px]: p-2 w-full max-[450px]:text-base bg-blue-500 hover:bg-blue-600 duration-300 text-white text-lg font-titleFont rounded-md"
+						className=" hidden max-[450px]:block py-4 max-[450px]: p-2 w-full max-[450px]:text-base bg-blue-500 hover:bg-blue-600 duration-300 text-white text-lg font-titleFont rounded-md"
 					>
 						Trả góp qua thẻ
 						<p className="text-[8px]">Visa, Master, JCB</p>

@@ -108,6 +108,18 @@ const Header = () => {
           <div className="flex gap-4 mt-2 lg:mt-0 items-center pr-6 cursor-pointer relative">
             <FaMap style={{ color: "white" }} className="text-xl mr-5  max-[450px]:hidden" />
             <BsSuitHeartFill className="text-2xl mr-5  max-[450px]:hidden" style={{ color: "white" }} />
+           
+         
+            <Link to="/cart">
+              <div className="relative">
+                <FaShoppingCart className="text-2xl" color="white" />
+                {products.length > 0 ? (
+                  <span className="absolute font-titleFont top-3 right-[-0.5rem] text-xs w-4 h-4 flex items-center justify-center rounded-full bg-primeColor text-white">
+                    {products.length}
+                  </span>
+                ) : null}
+              </div>
+            </Link>
             <div onClick={() => setShowUser(true)}
               className="flex mr-5">
               <FaCaretDown className="text-xl " style={{ color: "white" }} />
@@ -155,16 +167,6 @@ const Header = () => {
 
               </motion.ul>
             )}
-            <Link to="/cart">
-              <div className="relative">
-                <FaShoppingCart className="text-2xl" color="white" />
-                {products.length > 0 ? (
-                  <span className="absolute font-titleFont top-3 right-[-0.5rem] text-xs w-4 h-4 flex items-center justify-center rounded-full bg-primeColor text-white">
-                    {products.length}
-                  </span>
-                ) : null}
-              </div>
-            </Link>
           </div>
         </Flex>
       </div >
