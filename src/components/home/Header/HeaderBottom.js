@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import { HiOutlineMenuAlt4 } from "react-icons/hi";
+
 import { FaSearch, FaUser, FaCaretDown, FaShoppingCart } from "react-icons/fa";
 import Flex from "../../designLayouts/Flex";
 import { Link, useNavigate } from "react-router-dom";
@@ -45,10 +45,13 @@ const HeaderBottom = () => {
 
 
     <nav class="bg-black border-gray-200 dark:border-gray-600 dark:bg-gray-900">
-      <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-        <div onClick={() => setShow(!show)} ref={ref} className="flex h-14 cursor-pointer items-center gap-2 text-primeColor">
-          <HiOutlineMenuAlt4 className="w-5 h-5" style={{ color: "white" }} />
-          <p className="text-[20px] max-[450px]:text-sm font-normal text-white whitespace-nowrap tracking-wider">Danh mục sản phẩm</p>
+      <div class="flex flex-wrap justify-between items-center mx-auto max-w w-[1440px] p-4">
+        <div onClick={() => setShow(!show)} ref={ref} className="flex h-8 max-[450px]:h-6 cursor-pointer items-center gap-2 text-primeColor">
+          <svg class="w-6 h-6 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+          </svg>
+
+          <p className=" max-[450px]:text-sm font-normal text-white whitespace-nowrap tracking-wider">Danh mục sản phẩm</p>
           {show && (
             <motion.ul
               initial={{ y: 30, opacity: 0 }}

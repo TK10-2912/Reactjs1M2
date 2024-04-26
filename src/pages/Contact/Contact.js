@@ -94,12 +94,12 @@ const Contact = () => {
 							<div class="px-4 py-10 max-[450px]:py-0 text-center">
 								<h1 class="text-3xl font-semibold max-[450px]:text-base">Liên hệ chúng tôi</h1>
 							</div>
-							<div className="flex justify-between max-[450px]:flex-col  ">
+							<div className="flex justify-between max-[450px]:flex-col gap-2 ">
 
 								<input
 									onChange={handleName}
 									value={clientName}
-									className=" py-1 max-[450px]:mb-3 rounded-full border-b-2 px-2 text-base font-medium placeholder:font-normal placeholder:text-sm outline-none focus-within:border-primeColor"
+									className="xl:w-1/2 py-1 max-[450px]:w-full max-[450px]:mb-3 rounded-full border-b-2 px-2 text-base font-medium placeholder:font-normal placeholder:text-sm outline-none focus-within:border-primeColor"
 									type="text"
 									placeholder="Họ tên"
 								/>
@@ -113,7 +113,7 @@ const Contact = () => {
 								<input
 									onChange={handleEmail}
 									value={email}
-									className="rounded-full py-1 border-b-2 px-2 text-base font-medium placeholder:font-normal placeholder:text-sm outline-none focus-within:border-primeColor"
+									className="xl:w-1/2 max-[450px]:w-full rounded-full py-1 border-b-2 px-2 text-base font-medium placeholder:font-normal placeholder:text-sm outline-none focus-within:border-primeColor"
 									type="email"
 									placeholder="Email"
 								/>

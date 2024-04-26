@@ -7,13 +7,18 @@ import Danhmucphobien from "../../components/home/Danhmucphobien/Danhmucphobien"
 import BannerFooter from "./BannerFooter/BannerFooter";
 import NewsFooter from "./NewsFooter/NewsFooter";
 import NavbarFooter from "./NavbarFooter";
+import SanPhamMoi from "../../components/home/SanPhamMoi";
 
 const Home = () => {
   return (
     <div className="w-full mx-auto">
+
       <div className="max-w-container mx-auto px-4">
         <Sale />
         <Danhmucphobien />
+      </div>
+      <SanPhamMoi />
+      <div className="max-w-container mx-auto px-4">
         <Laptop />
         <Screen />
         <Keyboard />

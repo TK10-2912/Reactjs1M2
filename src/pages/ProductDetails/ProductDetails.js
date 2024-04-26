@@ -53,7 +53,7 @@ const ProductDetails = () => {
 		setProductInfo(location.state.item);
 		setPrevLocation(location.pathname);
 		setImgHeader(productInfo.img)
-	}, [location, productInfo.ficheTech]);
+	}, [location, productInfo.ficheTech,productInfo.img]);
 
 	const settings = {
 		infinite: true,

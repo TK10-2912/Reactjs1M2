@@ -1,5 +1,6 @@
 import { Button, Row } from "antd";
 import React from "react";
+import { laptop2 } from "../../assets/images";
 const ProductDescrible = () => {
 
     return (
@@ -21,10 +22,10 @@ const ProductDescrible = () => {
             <h1 className="text-xl font-semibold">
                 Thiết kế
             </h1>
-            <img src="">
-            </img>
+            <img src={laptop2} />
+
         </div>
-        <Row justify={"center"}>
+        <Row justify={"center"} className="mb-2">
             <Button>Xem thêm</Button>
         </Row>
     </>)

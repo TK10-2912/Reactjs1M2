@@ -63,9 +63,9 @@ const ProductInfo = ({ productInfo }) => {
 
 			<Row gutter={10} className=" justify-evenly">
 				{productInfo.configuration !== undefined &&
-					productInfo.configuration.map(item => (
+					productInfo.configuration.map((item,index) => (
 						<Col {...cssColResponsiveSpan(10, 11, 11, 11, 11, 11)} className="rounded-lg  m-2 p-3" offset={item.id % 2 === 0 ? 2 : 0} style={{ boxShadow: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px", background: "#FFFFFF" }} key={"pr_" + item.id}>
-							<Checkbox className="text-[16px] font-semibold max-[450px]:text-[10px]" value={item.id}>{item.select1}</Checkbox>
+							<Checkbox className="text-[16px] font-semibold max-[450px]:text-[10px]" checked={index==1 ?true : false} value={item.id}>{item.select1}</Checkbox>
 							<p className="text-sm text-center font-bold text-red-700 max-[450px]:text-[10px]" >{formatNumber(Number(item.priceSelect))}</p>
 						</Col>
 					))}

@@ -34,6 +34,7 @@ import Instruction from "./components/home/Header/About";
 import ForgetPasswords from "./pages/Account/ForgetPassword";
 import Introduction from "./components/home/Header/components/Introduction";
 import NavbarFooter from "./pages/Home/NavbarFooter";
+import SanPhamMoi from "./components/home/SanPhamMoi";
 const Layout = () => {
   return (
     <div >
