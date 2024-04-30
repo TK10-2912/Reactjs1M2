@@ -57,46 +57,46 @@ const HeaderBottom = () => {
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
-              className="absolute top-36 z-50 bg-primeColor w-auto text-[#767676] h-auto p-4 pb-6"
+              className="absolute top-36 z-50 bg-white w-auto text-[#767676] h-auto p-4 pb-6"
             >
               <Link to={"category/laptop"}>
-                <li className="text-gray-400 justify-between px-4 py-1 border-b-[1px] max-[450px]:text-sm inline border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                <li className="text-gray-400 justify-between px-4 py-1 max-[450px]:text-sm hover:bg-slate-500 hover:text-white inline  duration-300 cursor-pointer">
                   Laptop
                 </li>
               </Link>
               <Link to={"category/manhinh"}>
-                <li className="text-gray-400 px-4 py-1 border-b-[1px] max-[450px]:text-sm border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                <li className="text-gray-400 px-4 py-1 max-[450px]:text-sm hover:bg-slate-500 hover:text-white  duration-300 cursor-pointer">
                   Màn hình
                 </li>
               </Link>
               <Link to={"category/banphim"}>
-                <li className="text-gray-400 px-4 py-1 border-b-[1px] max-[450px]:text-sm border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                <li className="text-gray-400 px-4 py-1 max-[450px]:text-sm hover:bg-slate-500 hover:text-white  duration-300 cursor-pointer">
                   Bàn phím
                 </li>
               </Link>
               <Link to={"category/manhinh"}>
-                <li className="text-gray-400 px-4 py-1 border-b-[1px] max-[450px]:text-sm border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                <li className="text-gray-400 px-4 py-1 max-[450px]:text-sm hover:bg-slate-500 hover:text-white  duration-300 cursor-pointer">
                   Chuột
                 </li>
               </Link>
               <Link to={"category/laptop"}>
-                <li className="text-gray-400 px-4 py-1 border-b-[1px] max-[450px]:text-sm border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                <li className="text-gray-400 px-4 py-1  max-[450px]:text-sm hover:bg-slate-500 hover:text-white duration-300 cursor-pointer">
                   Tai nghe
                 </li>
               </Link>
               <div className="hidden max-[450px]:block">
                 <Link to="/shop">
-                  <p className="text-gray-400 px-4 py-1 max-[450px]:text-sm hover:text-white duration-300 cursor-pointer">Sản phẩm</p>
+                  <p className="text-gray-400 px-4 py-1 max-[450px]:text-sm hover:bg-slate-500 hover:text-white font-semibold  duration-300 cursor-pointer">Sản phẩm</p>
                 </Link>
                 <Link to="/introduction">
-                  <p className="text-gray-400 px-4 py-1 max-[450px]:text-sm hover:text-white duration-300 cursor-pointer">Giới thiệu</p>
+                  <p className="text-gray-400 px-4 py-1 max-[450px]:text-sm hover:bg-slate-500  hover:text-white font-semibold duration-300 cursor-pointer">Giới thiệu</p>
                 </Link>
                 <Link to="/contact">
-                  <p className="text-gray-400 px-4 py-1 max-[450px]:text-sm  hover:text-white duration-300 cursor-pointer">Liên hệ</p>
+                  <p className="text-gray-400 px-4 py-1 max-[450px]:text-sm hover:bg-slate-500 hover:text-white font-semibold duration-300 cursor-pointer">Liên hệ</p>
                 </Link>
 
                 <Link to="/news">
-                  <p className="text-gray-400 px-4 py-1 max-[450px]:text-sm hover:text-white duration-300 cursor-pointer">Tin tức</p>
+                  <p className="text-gray-400 px-4 py-1 max-[450px]:text-sm hover:bg-slate-500  hover:text-white font-semibold duration-300 cursor-pointer">Tin tức</p>
                 </Link>
                 <Link to="/instruction">
                   <p className="text-gray-400 px-4 py-1 max-[450px]:text-sm hover:text-white duration-300 cursor-pointer">Hướng dẫn</p>
@@ -109,20 +109,20 @@ const HeaderBottom = () => {
         <div id="mega-menu-full-image" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
           <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
             <Link to="/shop">
-              <p className="text-white">Sản phẩm</p>
+              <p className="text-white hover:text-red-600">Sản phẩm</p>
             </Link>
             <Link to="/introduction">
-              <p className="text-white">Giới thiệu</p>
+              <p className="text-white hover:text-red-600">Giới thiệu</p>
             </Link>
             <Link to="/contact">
-              <p className="text-white">Liên hệ</p>
+              <p className="text-white hover:text-red-600">Liên hệ</p>
             </Link>
 
             <Link to="/news">
-              <p className="text-white">Tin tức</p>
+              <p className="text-white hover:text-red-600">Tin tức</p>
             </Link>
             <Link to="/instruction">
-              <p className="text-white">Hướng dẫn</p>
+              <p className="text-white hover:text-red-600">Hướng dẫn</p>
             </Link>
 
           </ul>

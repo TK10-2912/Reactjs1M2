@@ -35,6 +35,7 @@ import ForgetPasswords from "./pages/Account/ForgetPassword";
 import Introduction from "./components/home/Header/components/Introduction";
 import NavbarFooter from "./pages/Home/NavbarFooter";
 import SanPhamMoi from "./components/home/SanPhamMoi";
+import ChiTietDonHang from "./components/home/ChiTietDonHang";
 const Layout = () => {
   return (
     <div >
@@ -86,6 +87,7 @@ const router = createBrowserRouter(
         <Route path="/news" element={<News />}></Route>
         <Route path="/forgetpassword" element={<ForgetPasswords />}></Route>
         <Route path="/instruction" element={<Instruction />}></Route>
+        <Route path="/chitietdonhang" element={<ChiTietDonHang />}></Route>
       </Route>
       <Route path="/signup" element={<SignUp />}></Route>
       <Route path="/signin" element={<SignIn />}></Route>

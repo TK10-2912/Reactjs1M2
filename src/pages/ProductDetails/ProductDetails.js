@@ -5,7 +5,7 @@ import ProductInfo from "../../components/pageProps/productDetails/ProductInfo";
 import ProductDescrible from "./ProductDescribe";
 import ThongSoKyThuat from "../../components/pageProps/productDetails/ThongSoKyThuat";
 import DanhGia from "../../components/pageProps/productDetails/DanhGia";
-import { laptop1, laptop2, laptop3, laptop4, laptop5, laptop6 } from "../../assets/images";
+import { chitietsp1, chitietsp2, chitietsp3, chitietsp4, chitietsp5, laptop1, laptop2, laptop3, laptop4, laptop5, laptop6 } from "../../assets/images";
 import Slider from "react-slick";
 import Product from "../../components/home/Products/Product";
 import SampleNextArrow from "./SampleNextArrow";
@@ -123,11 +123,11 @@ const ProductDetails = () => {
 	};
 
 	const listImage = [
-		{ img: laptop1, id: 1 },
-		{ img: laptop2, id: 2 },
-		{ img: laptop3, id: 3 },
-		{ img: laptop4, id: 4 },
-		{ img: laptop5, id: 5 },
+		{ img: chitietsp1, id: 1 },
+		{ img: chitietsp2, id: 2 },
+		{ img: chitietsp3, id: 3 },
+		{ img: chitietsp4, id: 4 },
+		{ img: chitietsp5, id: 5 },
 	]
 	const setSelectImgHeader = (img) => {
 		setImgHeader(img);
@@ -138,7 +138,7 @@ const ProductDetails = () => {
 			<div className="max-w-container mx-auto px-4">
 				<div className="xl:-mt-10 -mt-7">
 
-					<Breadcrumbs title="" prevLocation={prevLocation} />
+					<Breadcrumbs title="" />
 				</div>
 				<div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 gap-4 h-full -mt-5 xl:-mt-8 pb-10 bg-gray-100 p-4">
 					<div className="h-full xl:col-span-3">

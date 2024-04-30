@@ -189,9 +189,20 @@ import instagram from "../images/mxh/instagram.png";
 import tiktok from "../images/mxh/tiktok.png";
 import twitter from "../images/mxh/twitter.png";
 import zalo from "../images/mxh/zalo.png";
+//chi tiet san pham
+import chitietsp1 from "../images/chitietsanpham/chitietsp1.webp";
+import chitietsp2 from "../images/chitietsanpham/chitietsp2.webp";
+import chitietsp3 from "../images/chitietsanpham/chitietsp3.webp";
+import chitietsp4 from "../images/chitietsanpham/chitietsp4.webp";
+import chitietsp5 from "../images/chitietsanpham/chitietsp5.webp";
 
 
 export {
+  chitietsp1,
+  chitietsp2,
+  chitietsp3,
+  chitietsp4,
+  chitietsp5,
   facebook,
   instagram,
   tiktok,

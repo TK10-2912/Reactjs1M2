@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { SlUser } from "react-icons/sl";
 import { useDispatch, useSelector } from "react-redux";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Breadcrumbs from "../../components/pageProps/Breadcrumbs";
 import { MdLocationOn } from "react-icons/md";
 import { IoIosArrowForward } from "react-icons/io";
-import { Col, Row } from "antd";
+import { Col, Row, Button } from "antd";
 
 import { FaKey } from "react-icons/fa";
 import { FaWallet } from "react-icons/fa";
@@ -78,6 +78,7 @@ const Account = () => {
                             <span className="material-icons mr-2"><SlUser /></span>
                             <span className="uppercase">Thông tin cá nhân</span>
                         </div>
+
                         <div className="py-2 px-4 cursor-pointer hover:bg-gray-200 hover:text-red-600 flex items-center" onClick={() => scrollToContent('tai-khoan')}>
                             <span className="material-icons mr-2"><FaKey /></span>
                             <span className="uppercase">Tài khoản và bảo mật</span>
@@ -120,6 +121,15 @@ const Account = () => {
                     {/* Nội dung tương ứng với từng mục */}
                     <div id="thong-tin-ca-nhan" className={`py-4  ${thongtincanhan == false ? "max-[450px]:hidden" : " max-[450px]:block"} block max-[450px]: px-8 bg-white rounded-lg shadow-lg mb-4`}>
                         <div className="text-center text-2xl font-bold max-[450px]:text-sm mb-4 uppercase">Thông tin cá nhân</div>
+                        <div>
+                            <div className="flex justify-center">
+                                <svg class="w-[9.5rem] h-[9.5rem] text-gray-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd" d="M12 20a7.966 7.966 0 0 1-5.002-1.756l.002.001v-.683c0-1.794 1.492-3.25 3.333-3.25h3.334c1.84 0 3.333 1.456 3.333 3.25v.683A7.966 7.966 0 0 1 12 20ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10c0 5.5-4.44 9.963-9.932 10h-.138C6.438 21.962 2 17.5 2 12Zm10-5c-1.84 0-3.333 1.455-3.333 3.25S10.159 13.5 12 13.5c1.84 0 3.333-1.455 3.333-3.25S13.841 7 12 7Z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div className="flex justify-center">
+                                <Button className="text-red-600 font-medium rounded-xl border-slate-600">Chọn ảnh</Button></div>
+                        </div>
                         <div>
 
                         </div>
@@ -292,8 +302,10 @@ const Account = () => {
                                 <button className="m-2 border-2 border-yellow-300 text-yellow-300 rounded-md p-2 max-[450px]:text-sm text-base">
                                     Đánh giá ngay
                                 </button>
-                                <button className="m-2 bg-blue-500 text-white rounded-md p-2 max-[450px]:text-sm text-base">
-                                   Chi tiết đơn hàng
+                                <button className="m-2 bg-red-600 hover:bg-red-500 text-white rounded-md p-2 max-[450px]:text-sm text-base">
+                                    <Link to={"/chitietdonhang"}>
+                                        Chi tiết đơn hàng
+                                    </Link>
                                 </button>
                             </Row>
 

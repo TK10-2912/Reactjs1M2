@@ -94,22 +94,22 @@ const Payment = () => {
               </span>
             </p>
           </div>
-          <h1 className="text-2xl max-[450px]:text-base">*Phương thức thanh toán</h1>
+          <span className="text-2xl max-[450px]:text-base"><span className="text-red-600">*</span> Phương thức thanh toán</span>
           <div className="flex flex-col items-center ">
             <div className="flex align-middle w-[410px]">
-              <input type="radio" value={"a"} className="mt-5 mr-2" /><div onClick={chooseNhanHang} className={`text-2xl max-[450px]:text-sm max-[450px]:w-[80%] max-[450px]:h-[30px] text-center rounded-md leading-[3rem] w-full border border-slate-800 ${nhanhang == true ? "bg-red-600 text-white" : "bg-white"} h-1/3`}  >Thanh toán khi nhận hàng</div> <br /></div>
+              <input type="radio" onChange={chooseNhanHang} checked={nhanhang} className="mt-5 mr-2" /><div className={`text-xl max-[450px]:text-sm max-[450px]:w-[80%] max-[450px]:h-[30px] text-center rounded-xl leading-[3rem] w-full border border-slate-800 ${nhanhang == true ? "bg-red-600 text-white" : "bg-white"} h-1/3`}  >Thanh toán khi nhận hàng</div> <br /></div>
             <div className="flex align-middle w-[410px] mt-3">
-              <input type="radio" value={"a"} className="mt-5 mr-2" /><div onClick={chooseMOMO} className={`text-2xl max-[450px]:text-sm max-[450px]:w-[80%] max-[450px]:h-[30px] text-center rounded-md leading-[3rem] w-full border border-slate-800 ${momo == true ? "bg-red-600 text-white" : "bg-white"} h-1/3`} >Thanh toán qua ví điện tử Momo</div><br />
+              <input type="radio" onChange={chooseMOMO} checked={momo} className="mt-5 mr-2" /><div className={`text-xl max-[450px]:text-sm max-[450px]:w-[80%] max-[450px]:h-[30px] text-center rounded-xl leading-[3rem] w-full border border-slate-800 ${momo == true ? "bg-red-600 text-white" : "bg-white"} h-1/3`} >Thanh toán qua ví điện tử Momo</div><br />
             </div>
             <div className="flex align-middle w-[410px] mt-3">
-              <input type="radio" value={"a"} className="mt-5 mr-2"/><div onClick={chooseVNPAY} className={`text-2xl max-[450px]:text-sm max-[450px]:w-[80%] max-[450px]:h-[30px] text-center rounded-md leading-[3rem] w-full border border-slate-800 ${vnPay == true ? "bg-red-600 text-white" : "bg-white"} h-1/3`}>Thanh toán qua ví điện tử VNPAY</div><br />
+              <input type="radio" onChange={chooseVNPAY} checked={vnPay} className="mt-5 mr-2" /><div className={`text-xl max-[450px]:text-sm max-[450px]:w-[80%] max-[450px]:h-[30px] text-center rounded-xl leading-[3rem] w-full border border-slate-800 ${vnPay == true ? "bg-red-600 text-white" : "bg-white"} h-1/3`}>Thanh toán qua ví điện tử VNPAY</div><br />
             </div>
             <div className="flex align-middle w-[410px] mt-3 mb-3">
-              <input type="radio" value={"a"} className="mt-5 mr-2" /><div onClick={chooseQR} className={`text-2xl max-[450px]:text-sm max-[450px]:w-[80%] max-[450px]:h-[30px] text-center rounded-md leading-[3rem] w-full border border-slate-800 ${qr == true ? "bg-red-600 text-white" : "bg-white"} h-1/3`}>Quét QR bằng ứng dụng ngân hàng</div><br />
+              <input type="radio" onChange={chooseQR} checked={qr} className="mt-5 mr-2" /><div className={`text-xl max-[450px]:text-sm max-[450px]:w-[80%] max-[450px]:h-[30px] text-center rounded-xl leading-[3rem] w-full border border-slate-800 ${qr == true ? "bg-red-600 text-white" : "bg-white"} h-1/3`}>Quét QR bằng ứng dụng ngân hàng</div><br />
             </div>
 
             <Link to="/paymentQR">
-              <button className="w-52 h-11 font-medium rounded-xl bg-red-700 text-white hover:bg-black duration-300">
+              <button className="w-52 h-11 font-medium rounded-xl bg-red-700 text-white hover:bg-red-600">
                 Thanh toán
               </button>
             </Link>

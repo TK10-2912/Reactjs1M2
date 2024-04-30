@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 import Header from "../../components/home/Header/Header";
 import Footer from "../../components/home/Footer/Footer";
 import { Col, Row } from "antd";
+import HeaderBottom from "../../components/home/Header/HeaderBottom";
 
 const SignUp = () => {
   return (
-    <div  className=" flex flex-col  bg-gray-100  max-[450px]:bg-white  ">
+    <div className=" flex flex-col  bg-gray-100  max-[450px]:bg-white  ">
       <Header />
+      <HeaderBottom />
       <div className="p-6 my-20 col-start-1 space-y-4 mx-auto bg-white max-[450px]:w-[95%]   rounded-lg h-full w-2/6">
         <h1 className="text-center text-xl font-semibold ">ĐĂNG KÝ NGƯỜI DÙNG MỚI </h1>
         <p className="text-center">Bạn đã có tài khoản, đăng nhập &nbsp;
