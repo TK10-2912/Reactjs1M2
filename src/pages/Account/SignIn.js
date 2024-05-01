@@ -6,6 +6,7 @@ import Footer from "../../components/home/Footer/Footer";
 import { Col, Row, message } from "antd";
 import { setUserLocalStorage } from "../../constants";
 import { logo } from "../../assets/images";
+import HeaderBottom from "../../components/home/Header/HeaderBottom";
 
 const SignIn = () => {
   // ============= Initial State Start here =============
@@ -33,8 +34,9 @@ const SignIn = () => {
 
 
   return (
-    <div  className=" flex flex-col  bg-gray-100  max-[450px]:bg-white  ">
+    <div className=" flex flex-col  bg-gray-100  max-[450px]:bg-white  ">
       <Header />
+      <HeaderBottom />
       <div className=" col-start-1 space-y-4 mx-auto  bg-white p-6 my-20 rounded-3xl max-[450px]:w-[95%] h-1/6 w-1/2 ">
         <h1 className="text-center text-xl font-semibold ">ĐĂNG NHẬP NGƯỜI DÙNG </h1>
         <p className="text-center">Bạn chưa có tài khoản, đăng ký &nbsp;
@@ -91,7 +93,7 @@ const SignIn = () => {
                 <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
                   <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd" />
                 </svg>
-               Đăng nhập bằng Facebook
+                Đăng nhập bằng Facebook
               </button>
             </Col>
 

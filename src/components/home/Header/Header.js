@@ -52,9 +52,9 @@ const Header = () => {
             <input
               className="flex-1 h-full  max-[450px]:w-full  outline-none placeholder:text-[#C4C4C4] placeholder:text-[14px] border-none"
               type="text"
-              onChange={handleSearch}
-              value={searchQuery}
-              placeholder="Nhập từ khóa"
+              // onChange={handleSearch}
+              // value={searchQuery}
+              placeholder="Tìm kiếm sản phẩm của bạn tại đây"
             />
             <FaSearch className="w-5 h-5" />
             {searchQuery && (
@@ -108,8 +108,8 @@ const Header = () => {
           <div className="flex gap-4 mt-2 lg:mt-0 items-center pr-6 cursor-pointer relative">
             <FaMap style={{ color: "white" }} className="text-xl mr-5  max-[450px]:hidden" />
             <BsSuitHeartFill className="text-2xl mr-5  max-[450px]:hidden" style={{ color: "white" }} />
-           
-         
+
+
             <Link to="/cart">
               <div className="relative">
                 <FaShoppingCart className="text-2xl" color="white" />
@@ -122,9 +122,8 @@ const Header = () => {
             </Link>
             <div onClick={() => setShowUser(true)}
               className="flex mr-5">
-              <FaCaretDown className="text-xl " style={{ color: "white" }} />
               {checkUser != undefined && checkUser != null ?
-                <img className="w-7 rounded-full " src={screen1}></img> : <FaUser style={{ color: "white" }} />
+                <img className="w-7 rounded-full " src={screen1}></img> : <FaUser className="text-white text-[20px]" style={{ color: "white" }} />
               }
 
             </div>
@@ -152,17 +151,19 @@ const Header = () => {
                     </Link>
                   </>
                 }
-                <Link to="/account">
-                  <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
-                    Tài khoản
-                  </li>
-                </Link>
+
                 {checkUser != undefined && checkUser != null ?
-                  <Link onClick={() => removeUserLocalStorage("loginUser")} to="/">
-                    <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
-                      Đăng xuất
-                    </li>
-                  </Link> : ""
+                  <>
+                    <Link to="/account">
+                      <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                        Tài khoản
+                      </li>
+                    </Link>
+                    <Link onClick={() => removeUserLocalStorage("loginUser")} to="/">
+                      <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                        Đăng xuất
+                      </li>
+                    </Link></> : ""
                 }
 
               </motion.ul>

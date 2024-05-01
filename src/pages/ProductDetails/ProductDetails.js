@@ -5,7 +5,7 @@ import ProductInfo from "../../components/pageProps/productDetails/ProductInfo";
 import ProductDescrible from "./ProductDescribe";
 import ThongSoKyThuat from "../../components/pageProps/productDetails/ThongSoKyThuat";
 import DanhGia from "../../components/pageProps/productDetails/DanhGia";
-import { laptop1, laptop2, laptop3, laptop4, laptop5, laptop6 } from "../../assets/images";
+import { chitietsp1, chitietsp2, chitietsp3, chitietsp4, chitietsp5, laptop1, laptop2, laptop3, laptop4, laptop5, laptop6 } from "../../assets/images";
 import Slider from "react-slick";
 import Product from "../../components/home/Products/Product";
 import SampleNextArrow from "./SampleNextArrow";
@@ -53,7 +53,7 @@ const ProductDetails = () => {
 		setProductInfo(location.state.item);
 		setPrevLocation(location.pathname);
 		setImgHeader(productInfo.img)
-	}, [location, productInfo.ficheTech,productInfo.img]);
+	}, [location, productInfo.ficheTech, productInfo.img]);
 
 	const settings = {
 		infinite: true,
@@ -123,26 +123,26 @@ const ProductDetails = () => {
 	};
 
 	const listImage = [
-		{ img: laptop1,id:1},
-		{ img: laptop2,id:2 },
-		{ img: laptop3,id:3 },
-		{ img: laptop4,id:4 },
-		{ img: laptop5,id:5 },
+		{ img: chitietsp1, id: 1 },
+		{ img: chitietsp2, id: 2 },
+		{ img: chitietsp3, id: 3 },
+		{ img: chitietsp4, id: 4 },
+		{ img: chitietsp5, id: 5 },
 	]
 	const setSelectImgHeader = (img) => {
 		setImgHeader(img);
-	  };
+	};
 	return (
 
 		<div className="w-full mx-auto border-b-[1px] border-b-gray-300">
 			<div className="max-w-container mx-auto px-4">
 				<div className="xl:-mt-10 -mt-7">
 
-					<Breadcrumbs title="" prevLocation={prevLocation} />
+					<Breadcrumbs title="" />
 				</div>
 				<div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 gap-4 h-full -mt-5 xl:-mt-8 pb-10 bg-gray-100 p-4">
 					<div className="h-full xl:col-span-3">
-						<div className="grid grid-cols-5 gap-3 bg-white px-4 pb-3">
+						<div className="grid grid-cols-5 gap-3 bg-white px-4 pb-3 h-full">
 							<div className="col-span-5 ">
 								<img
 									className="w-full h-full "
@@ -151,8 +151,8 @@ const ProductDetails = () => {
 								/>
 							</div>
 							{listImage.map(item => (
-								<div className={`border rounded-md border-slate-500 opacity-50 ${item.img === imgHeader ? "opacity-100":"opacity-50" }`} >
-									<img className="rounded-md cursor-pointer " src={item.img} onClick={()=>setSelectImgHeader(item.img)}>
+								<div className={`border rounded-md m-auto border-slate-500 opacity-50 ${item.img === imgHeader ? "opacity-100" : "opacity-50"}`} >
+									<img className="rounded-md cursor-pointer " src={item.img} onClick={() => setSelectImgHeader(item.img)}>
 									</img>
 								</div>
 							))}
@@ -160,7 +160,7 @@ const ProductDetails = () => {
 
 
 					</div>
-					<div className="h-full w-full md:col-span-2 xl:col-span-3 xl:px-4 bg-white flex flex-col gap-6 justify-center">
+					<div className="h-full w-full md:col-span-2 xl:col-span-3 xl:px-4 bg-white flex flex-col gap-6 justify-center p-[15px]">
 						<ProductInfo productInfo={productInfo} />
 					</div>
 					<div className="h-full xl:col-span-3 bg-white">

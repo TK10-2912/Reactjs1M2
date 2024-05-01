@@ -15,11 +15,11 @@ const Cart = () => {
   const [totalAmt, setTotalAmt] = useState("");
   const [shippingCharge, setShippingCharge] = useState("");
   useEffect(() => {
-    console.log("aaa",products);
+    console.log("aaa", products);
     let price = 0;
     products.map((item) => {
-      const piceSale= item.price - (item.price * item.sale)/100;
-      price +=  piceSale * item.quantity;
+      const piceSale = item.price - (item.price * item.sale) / 100;
+      price += piceSale * item.quantity;
       return price;
     });
     setTotalAmt(price);
@@ -74,7 +74,7 @@ const Cart = () => {
                     </span>
                   </p>
                   <p className="flex items-center justify-between max-[450px]:justify-start max-[450px]:text-[10px]   py-1.5 text-lg px-4 font-medium">
-                   Phí vận chuyển:
+                    Phí vận chuyển:
                     <span className="font-semibold tracking-wide max-[450px]:ml-3 font-titleFont">
                       {formatNumber(shippingCharge)}
                     </span>
@@ -98,15 +98,15 @@ const Cart = () => {
                       <button type="submit" class=" text-white absolute end-2.5 max-[450px]:right-[13%] bottom-2.5 bg-red-700 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Áp dụng</button>
                     </div>
                   </form>
-                  
+
                 </div>
                 <p className="text-base max-[450px]:text-sm font-semibold ">TỔNG THANH TOÁN: <span className="text-red-700">{formatNumber(totalAmt + shippingCharge)}</span></p>
                 <div className="flex justify-end  max-[450px]:justify-center ">
-                  <Link to="/paymentgateway">
-                    <button className="w-52 h-11 font-medium max-[450px]:text-sm rounded-xl bg-blue-600 text-white hover:bg-black duration-300">
-                      Tiến hành thanh toán 
-                    </button>
-                  </Link>
+                  <button className="w-full h-11 font-medium max-[450px]:text-sm rounded-xl bg-blue-600 text-white hover:bg-blue-5   duration-300">
+                    <Link to="/paymentgateway">
+                      Tiến hành thanh toán
+                    </Link>
+                  </button>
                 </div>
               </div>
             </div>
@@ -128,10 +128,11 @@ const Cart = () => {
               alt="emptyCart"
             />
           </div>
-     
+
         </motion.div>
-      )}
-    </div>
+      )
+      }
+    </div >
   );
 };
 
