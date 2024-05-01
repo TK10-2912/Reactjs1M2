@@ -65,13 +65,21 @@ const PaymentSuccess = () => {
                             <Col span="12" className="text-lg max-[450px]:text-sm font-medium opacity-50">Thời gian thanh toán:</Col>
                             <Col span="12" className="text-lg max-[450px]:text-sm font-medium opacity-50 text-right">{formattedDate}</Col>
                         </Row>
-                    </form>
-
-                    <Link to="/shop">
-                        <button className=" px-2 w-full max-[450px]:text-sm text-2xl h-11 font-medium rounded-xl bg-green-400 text-white hover:bg-black duration-300">
+                        <Row className="grid grid-cols-2 gap-2 max-[450px]:grid-cols-1 mt-2">
+                            <Link to="/chitietdonhang">
+                                <button className=" px-2 w-full  max-[450px]:text-sm text-base h-11 font-medium rounded-xl bg-[#1CB246] text-white hover:bg-black duration-300">
+                                    Chi tiết đơn hàng
+                                </button>
+                            </Link>
+                            <Link to="/">
+                        <button className=" max-[450px]:text-sm w-full text-base h-11 font-medium rounded-xl bg-[#1CB246] text-white hover:bg-black duration-300">
                             Tiếp tục mua hàng -------{">"}
                         </button>
                     </Link>
+                        </Row>
+                    </form>
+
+                   
                 </div>
 
             </div>
