@@ -220,7 +220,7 @@ const SanPhamMoi = () => {
                     </div>
                 </div>
                 <Row justify={"center"}>
-                    <Button className="text-2xl h-1/2  font-semibold text-gray-800 bg-white  hover:bg-red-500 hover:text-white max-[450px]:text-base  max-[450px]:border-none ">Xem tất cả {">>"}</Button>
+                    <Button className="text-2xl h-1/2  font-semibold text-white bg-red-600 hover:bg-red-500 max-[450px]:text-base max-[450px]:text-white border-none  ">Xem tất cả {">>"}</Button>
                 </Row>
             </div>
 

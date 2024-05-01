@@ -54,7 +54,7 @@ const Header = () => {
               type="text"
               onChange={handleSearch}
               value={searchQuery}
-              placeholder="Search your products here"
+              placeholder="Nhập từ khóa"
             />
             <FaSearch className="w-5 h-5" />
             {searchQuery && (
