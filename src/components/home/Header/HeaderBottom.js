@@ -9,6 +9,7 @@ import { paginationItems } from "../../../constants";
 import { BsSuitHeartFill } from "react-icons/bs";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComputer } from '@fortawesome/fontawesome-svg-core';
+import { iconHeadPhone, iconKeyboard, iconLaptop, iconMouse, iconScreen } from "../../../assets/images";
 
 const HeaderBottom = () => {
   const products = useSelector((state) => state.orebiReducer.products);
@@ -60,46 +61,71 @@ const HeaderBottom = () => {
               className="absolute top-36 z-50 bg-white w-auto text-[#767676] h-auto p-4 pb-6"
             >
               <Link to={"category/laptop"}>
-                <li className="text-gray-400 justify-between px-4 py-1 max-[450px]:text-sm hover:bg-slate-500 hover:text-white inline  duration-300 cursor-pointer">
-                  Laptop
-                </li>
+                <div className="px-1 flex items-center hover:bg-red-600">
+
+                  <img className="w-5 h-5" src={iconLaptop} />
+                  <li className="text-gray-600 justify-between px-4 py-1 max-[450px]:text-sm  hover:text-white inline  duration-300 cursor-pointer">
+                    Laptop&nbsp;&nbsp;&nbsp; &nbsp;   
+                  </li>
+                  <span>{">"}</span>
+                </div>
               </Link>
               <Link to={"category/manhinh"}>
-                <li className="text-gray-400 px-4 py-1 max-[450px]:text-sm hover:bg-slate-500 hover:text-white  duration-300 cursor-pointer">
-                  Màn hình
-                </li>
+                <div className="px-1 flex items-center hover:bg-red-600">
+
+                  <img className="w-5 h-5" src={iconScreen} />
+                  <li className="text-gray-600 px-4 py-1 max-[450px]:text-sm  hover:text-white  duration-300 cursor-pointer">
+                    Màn hình&nbsp;&nbsp; 
+                  </li>
+                  <span>{">"}</span>
+                </div>
               </Link>
               <Link to={"category/banphim"}>
-                <li className="text-gray-400 px-4 py-1 max-[450px]:text-sm hover:bg-slate-500 hover:text-white  duration-300 cursor-pointer">
-                  Bàn phím
-                </li>
+                <div className="px-1 flex items-center hover:bg-red-600">
+
+                  <img className="w-5 h-5" src={iconKeyboard} />
+                  <li className="text-gray-600 px-4 py-1 max-[450px]:text-sm  hover:text-white  duration-300 cursor-pointer">
+                    Bàn phím&nbsp;&nbsp; 
+                  </li>
+                  <span>{">"}</span>
+                </div>
               </Link>
               <Link to={"category/manhinh"}>
-                <li className="text-gray-400 px-4 py-1 max-[450px]:text-sm hover:bg-slate-500 hover:text-white  duration-300 cursor-pointer">
-                  Chuột
-                </li>
+                <div className="px-1 flex items-center hover:bg-red-600">
+
+                  <img className="w-5 h-5" src={iconMouse} />
+                  <li className="text-gray-600 px-4 py-1 max-[450px]:text-sm  hover:text-white  duration-300 cursor-pointer">
+                    Chuột&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
+                  </li>
+                  <span>{">"}</span>
+                </div>
               </Link>
               <Link to={"category/laptop"}>
-                <li className="text-gray-400 px-4 py-1  max-[450px]:text-sm hover:bg-slate-500 hover:text-white duration-300 cursor-pointer">
-                  Tai nghe
-                </li>
+                <div className="px-1 flex items-center hover:bg-red-600">
+
+                  <img className="w-5 h-5" src={iconHeadPhone} />
+                  <li className="text-gray-600 px-4 py-1  max-[450px]:text-sm  hover:text-white duration-300 cursor-pointer">
+                    Tai nghe&nbsp;&nbsp;&nbsp;  
+                  </li>
+                  <span>{">"}</span>
+                </div>
               </Link>
               <div className="hidden max-[450px]:block">
                 <Link to="/shop">
-                  <p className="text-gray-400 px-4 py-1 max-[450px]:text-sm hover:bg-slate-500 hover:text-white font-semibold  duration-300 cursor-pointer">Sản phẩm</p>
+                  <p className="text-gray-600 px-4 py-1 max-[450px]:text-sm   hover:bg-red-600 hover:text-white font-semibold  duration-300 cursor-pointer">Sản phẩm</p>
                 </Link>
                 <Link to="/introduction">
-                  <p className="text-gray-400 px-4 py-1 max-[450px]:text-sm hover:bg-slate-500  hover:text-white font-semibold duration-300 cursor-pointer">Giới thiệu</p>
+                  <p className="text-gray-600 px-4 py-1 max-[450px]:text-sm   hover:bg-red-600 hover:text-white font-semibold duration-300 cursor-pointer">Giới thiệu</p>
                 </Link>
                 <Link to="/contact">
-                  <p className="text-gray-400 px-4 py-1 max-[450px]:text-sm hover:bg-slate-500 hover:text-white font-semibold duration-300 cursor-pointer">Liên hệ</p>
+                  <p className="text-gray-600 px-4 py-1 max-[450px]:text-sm  hover:bg-red-600 hover:text-white font-semibold duration-300 cursor-pointer">Liên hệ</p>
                 </Link>
 
                 <Link to="/news">
-                  <p className="text-gray-400 px-4 py-1 max-[450px]:text-sm hover:bg-slate-500  hover:text-white font-semibold duration-300 cursor-pointer">Tin tức</p>
+                  <p className="text-gray-600 px-4 py-1 max-[450px]:text-sm   hover:bg-red-600 hover:text-white font-semibold duration-300 cursor-pointer">Tin tức</p>
                 </Link>
                 <Link to="/instruction">
-                  <p className="text-gray-400 px-4 py-1 max-[450px]:text-sm hover:text-white duration-300 cursor-pointer">Hướng dẫn</p>
+                  <p className="text-gray-600 px-4 py-1 max-[450px]:text-sm hover:bg-red-600 hover:text-white duration-300 cursor-pointer">Hướng dẫn</p>
                 </Link>
               </div>
 

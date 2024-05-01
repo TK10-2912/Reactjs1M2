@@ -196,8 +196,19 @@ import chitietsp3 from "../images/chitietsanpham/chitietsp3.webp";
 import chitietsp4 from "../images/chitietsanpham/chitietsp4.webp";
 import chitietsp5 from "../images/chitietsanpham/chitietsp5.webp";
 
+//iconsp
+import iconLaptop from "../images/iconSP/icons8_laptop_480px.png";
+import iconScreen from "../images/iconSP/icons8_monitor_96px.png";
+import iconMouse from "../images/iconSP/icons8_mouse_512px.png";
+import iconKeyboard from "../images/iconSP/icons8_keyboard_144px.png";
+import iconHeadPhone from "../images/iconSP/icons8_headphones_480px.png";
 
 export {
+  iconLaptop,
+  iconScreen,
+  iconMouse,
+  iconKeyboard,
+  iconHeadPhone,
   chitietsp1,
   chitietsp2,
   chitietsp3,

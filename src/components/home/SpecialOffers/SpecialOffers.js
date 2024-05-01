@@ -193,7 +193,7 @@ const fill= [
           />
         </Col>
       </Row>
-      <div className="w-full grid grid-cols-1  max-[450px]:grid-cols-2  lgl:grid-cols-3 xl:grid-cols-3 gap-10">
+      <div className="w-full grid mt-2 grid-cols-1  max-[450px]:grid-cols-2  lgl:grid-cols-5 xl:grid-cols-5 gap-10">
         {catData.map((data) => (
           <Product
             key={data._id}
