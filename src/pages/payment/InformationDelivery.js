@@ -5,14 +5,14 @@ const InformationDelivery = () => {
     return (
         <>
 
-            <p className="text-xl">Thông tin vận chuyển </p>
+            <p className="text-xl">Thông tin vận chuyển <span className="text-red-600"> *</span> </p>
             <i className="text-base">Bạn đã có tài khoản? <a href="#" className="text-blue-500">Đăng nhập ngay</a> để tự động điền địa chỉ.</i>
 
             <form class="max-w-md" autocomplete="off">
-                <div class="mb-5">
+                <div class="mb-5 w-[25%]">
                     <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                        <option value="DN">Văn phòng</option>
-                        <option value="ND">Nhà riêng</option>
+                        <option value="DN">Địa chỉ 1</option>
+                        <option value="ND">Địa chỉ 2</option>
                     </select>
                 </div>
                 <div class="mb-5">

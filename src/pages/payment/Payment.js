@@ -94,7 +94,7 @@ const Payment = () => {
               </span>
             </p>
           </div>
-          <span className="text-2xl max-[450px]:text-base"><span className="text-red-600">*</span> Phương thức thanh toán</span>
+          <span className="text-2xl max-[450px]:text-base"> Phương thức thanh toán<span className="text-red-600"> *</span></span>
           <div className="flex flex-col items-center ">
             <div className="flex align-middle w-[410px]">
               <input type="radio" onChange={chooseNhanHang} checked={nhanhang} className="mt-5 mr-2" /><div className={`text-xl max-[450px]:text-sm max-[450px]:w-[80%] max-[450px]:h-[30px] text-center rounded-xl leading-[3rem] w-full border border-slate-800 ${nhanhang == true ? "bg-red-600 text-white" : "bg-white"} h-1/3`}  >Thanh toán khi nhận hàng</div> <br /></div>

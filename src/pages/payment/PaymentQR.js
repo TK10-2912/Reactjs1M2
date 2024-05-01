@@ -10,7 +10,7 @@ const PaymentQR = () => {
                 <div className="h-full xl:col-span-6  bg-white p-4 rounded-xl flex flex-col items-center ">
                     <p className="font-semibold text-2xl max-[450px]:text-base">Quét mã QR dưới đây bằng ứng dụng MOMO để thanh toán</p>
                     <img className="w-1/3 max-[450px]:w-[85%]" src={anhmaQR}></img>
-                    <p className=" text-2xl max-[450px]:text-xs">Lưu ý: Mã QR này sẽ hết hạn sau 24h kể từ lúc tạo</p>
+                    <p className=" text-2xl max-[450px]:text-xs">Lưu ý: Mã QR này sẽ hết hạn sau 5 phút kể từ lúc tạo</p>
                     <p className=" text-2xl max-[450px]:text-xs">Sau khi thanh toán, hãy nhấp vào nút bên dưới </p>
                     <Link to="/paymentSuccess">
                         <button className=" px-2 w-full max-[450px]:mt-2 max-[450px]:text-sm text-2xl h-11 font-medium rounded-xl bg-red-600 text-white hover:bg-black duration-300">
